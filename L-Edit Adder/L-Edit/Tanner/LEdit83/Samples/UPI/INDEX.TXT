@@ -1,0 +1,58 @@
+                                Tanner Tools
+                              L-Edit UPI Files
+
+Location:  \UPI\
+
+Important: To properly run all UPI examples load \UPI\upisampl.tdb
+           before loading and running UPI Macros.
+Files:
+
+	intrpted\    Directory containing interpreted UPI Macros
+	dll\         Directory containing compiled (DLL) UPI Macros
+    upisampl.tdb     TDB file containing the setup required to run all sample
+                     UPI macros
+
+
+    Typical directory structure for a compiled UPI Macro:
+    dll\capacitr\      Directory containing compiled (DLL) Capacitor Macro
+       capacitr.c      File containing the macro source code
+       capacitr.def    File used for creating macro DLL
+       capacitr.mak    Microsoft Visual C++ Make file for creating Macro
+       demo.h          Program header file
+       release\        Directory used by Microsoft Visual C++ Make file
+         capacitr.dll  The macro DLL.
+
+
+	List of UPI Example Macros:
+	capacitr	 - CMOS Layout element
+	chngLayr	 - Change layer of selected objects
+        contact          - CMOS Layout element
+	gear		 - MEMS element
+	goto		 - Pan to a specific X, Y location
+        hworld           - Show how to display a message box
+	intrface 	 - Shows all the interface dialog boxes
+	mosfet		 - CMOS Layout element
+        move             - Move selected objects
+        palette          - Creating a layout palette
+	perimetr	 - calculate perimeter of a selected polygon
+	polarary	 - Create a circular array of instances
+	resistor	 - CMOS Layout element
+	spiral		 - MEMS element
+	spring		 - MEMS element
+	mfc              - A compiled UPI macro that illustrates the use of MFC (Microsoft Foundation Classes)
+                           In particular this macro demonstrate ways od creating MFC
+                           dialogs in UPI.
+
+
+
+Copyright © 1996-2001 Tanner EDA, A Division of Tanner Research, Inc.
+All Rights Reserved.
+
+Tanner Research, Inc.
+2650 East Foothill Boulevard
+Pasadena, CA  91107, USA
+
+Telephone: 1-877-304-5544 (Toll Free)
+	   1-626-792-3000
+Fax:	   1-626-792-0300
+e-mail:	   support@tanner.com

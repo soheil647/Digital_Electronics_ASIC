@@ -1,0 +1,14 @@
+$ TPR netlist written by S-Edit Win32 6.00 Beta 6
+$ Written on Feb 11, 1999 at 20:54:59
+C XOR2 A B Out;
+UX1 A B Net1;
+C XOR2 A B Out;
+UX3 Cin Net1 S;
+C NAND2 A B Out;
+UX2 A B Net3;
+C NAND2 A B Out;
+UX4 Cin Net1 Net2;
+C NAND2 A B Out;
+UX5 Net2 Net3 Cout;
+C Adder_IO A B Cin Cout S;
+UAdder_IO_1 A B Cin Cout S;

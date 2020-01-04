@@ -1,0 +1,81 @@
+File written by LVS 3.1/Win 95 as a result of: "C:\lvs_product\LVS V3.00\V3.0 Release\Examples\ex2.vdb" on Thu Jul 30 01:17:37 1998
+
+Command line:
+lvs Ex1_2.spc Ex2_1.spc -o ex2.out -c12 -dv5.000 -dg0.010 -vfpa 
+
+Engine configuration report:
+Consider Bulk nodes...................................................ON
+Consider Resistors as polarized elements..............................ON
+Consider Capacitors as polarized elements.............................ON
+Consider Inductors as polarized elements..............................ON
+Optimize shorted & parallel R, C, MOSFETs; series R and C.............OFF
+Replace series MOSFETs................................................OFF
+Fast Iteration........................................................OFF
+
+Parsing file Ex1_2.spc...
+Including file H:\testdata\lvs\wintest\longpathnamejusttomakeitharder\MODELS.SPC
+Flattening network...
+Parsing file Ex2_1.spc...
+Including file H:\testdata\lvs\wintest\longpathnamejusttomakeitharder\MODELS.SPC
+Flattening network...
+
+Device                  Ex1_2.spc    Ex2_1.spc
+--------------       ------------ ------------
+
+C                               4            4
+M_NSS                          20           20
+M_PSS                          24           24
+Total elements                 48           48
+
+Total nodes                    20           20
+
+Iterating...
+5% done
+10% done
+15% done
+20% done
+25% done
+
+Warning: Parametric mismatch between elements Ex1_2.spc: M346:L=2 W=5   (Not all decimals shown) and Ex2_1.spc: M6(XSUBA/X34):L=2 W=6   (Not all decimals shown)
+
+Warning: Parametric mismatch between elements Ex1_2.spc: M6:L=2 W=5   (Not all decimals shown) and Ex2_1.spc: M6(XSUBA/X33):L=2 W=6   (Not all decimals shown)
+30% done
+35% done
+40% done
+45% done
+50% done
+55% done
+60% done
+65% done
+70% done
+75% done
+80% done
+85% done
+
+************************** REPORTING FRAGMENTATION **************************
+
+Report of elements:
+*******************
+
+Report of nodes:
+****************
+Fragmented class of nodes
+Ex2_1.spc     GND                   connected to     4 C_NEG      20 M_NSS_BULK      12 M_NSS_D/S   
+---------------------------------------------------
+Fragmented class of nodes
+Ex2_1.spc     VDD                   connected to     4 C_POS      24 M_PSS_BULK      14 M_PSS_D/S   
+---------------------------------------------------
+Fragmented class of nodes
+Ex1_2.spc     4                     connected to     4 C_NEG      24 M_PSS_BULK      14 M_PSS_D/S   
+---------------------------------------------------
+Fragmented class of nodes
+Ex1_2.spc     0                     connected to     4 C_POS      20 M_NSS_BULK      12 M_NSS_D/S   
+---------------------------------------------------
+
+32 perfectly matched element class(es)
+18 perfectly matched node class(es)
+4 fragmented node class(es)
+
+
+
+	0 error(s), 2 warning(s)

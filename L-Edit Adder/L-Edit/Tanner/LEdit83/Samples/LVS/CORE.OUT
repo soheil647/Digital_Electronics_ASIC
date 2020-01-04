@@ -1,0 +1,119 @@
+File written by LVS 3.1/Win 95 as a result of: "C:\lvs_product\LVS V3.00\V3.01 Release\Examples\core.vdb" on Fri Jul 31 13:11:35 1998
+
+Command line:
+lvs core.spc core.sp -o core.out -nrcl -O -r -c12 -dv5.000 -dg0.010 -y1 -vfar 
+
+Engine configuration report:
+Consider Bulk nodes...................................................ON
+Consider Resistors as polarized elements..............................OFF
+Consider Capacitors as polarized elements.............................OFF
+Consider Inductors as polarized elements..............................OFF
+Optimize shorted & parallel R, C, MOSFETs; series R and C.............ON
+	Include elements with no parameters in optimization................OFF
+Replace series MOSFETs................................................ON
+	Catch permuted MOSFETs.............................................OFF
+Fast Iteration........................................................OFF
+
+Parsing file core.spc...
+Including file hp05.md
+Flattening network...
+Parsing file core.sp...
+Including file hp05.md
+Flattening network...
+
+Device                   core.spc      core.sp
+--------------       ------------ ------------
+
+R                              18           18
+M_NMOS                        520          504 MISMATCH (16)
+M_PMOS                        540          524 MISMATCH (16)
+Total elements               1078         1046 MISMATCH (32)
+
+Total nodes                   584          584
+Single-pin nodes                2            2
+
+Nodes in file core.spc connected to only one pin
+*********************
+21
+2
+*********************
+
+
+Nodes in file core.sp connected to only one pin
+*********************
+adj
+anainput
+*********************
+
+Optimizing networks...
+Eliminated from core.spc:
+    32 parallel MOSFET(s)
+     1 series resitor(s)
+     1 node(s)
+Eliminated from core.sp:
+     1 series resitor(s)
+     1 node(s)
+Replacing series transistors...
+core.spc: Replaced 547 series transistors (eliminating 285 nodes).
+core.sp: Replaced 547 series transistors (eliminating 285 nodes).
+
+Device                   core.spc      core.sp
+--------------       ------------ ------------
+
+3xSERIES_M_NMOS                23           23
+2xSERIES_M_NMOS               113          113
+2xSERIES_M_PMOS               126          126
+R                              17           17
+M_NMOS                        209          209
+M_PMOS                        272          272
+Total elements                760          760
+
+Total nodes                   298          298
+Single-pin nodes                2            2
+
+Nodes in file core.spc connected to only one pin
+*********************
+21
+2
+*********************
+
+
+Nodes in file core.sp connected to only one pin
+*********************
+adj
+anainput
+*********************
+
+********************************** ITERATING *********************************
+
+Iterating...
+5% done
+10% done
+15% done
+20% done
+25% done
+30% done
+35% done
+40% done
+45% done
+50% done
+55% done
+60% done
+65% done
+70% done
+75% done
+80% done
+85% done
+90% done
+95% done
+100% done
+
+
+
+******************************* FINAL RESULT *******************************
+
+
+Circuits are equal.
+Note: Series transistors have been replaced.
+	Lengths and widths not considered during this process.
+Note: Network has been optimized.

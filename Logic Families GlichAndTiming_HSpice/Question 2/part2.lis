@@ -1,0 +1,188 @@
+ ****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+  Copyright (C) 2012 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: ca4_part2.sp                                                      
+  Command line options: -i ca4_part2.sp -o ca4_part2.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   Anita                HOSTNAME: Anita-PC 
+  lic: HOSTID: "00fff2ef28a6 904ce5701846 0027135fc035 904ce5701846 00269eb45b31
+ " PID:      8492 
+  lic: Using FLEXlm license file: 
+  lic: 27000@Anita-PC 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12 
+  lic: NODE LOCKED license on hostid "00fff2ef28a6 904ce5701846 0027135fc035 904
+ ce5701846 00269eb45b3
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_G-2012.06-SP1\meta.cfg
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ ****ca4_part2***
+
+  ******  circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x1.                             inverter           1.00 
+        2 x2.                             inverter           1.00 
+        3 x3.                             inverter           1.00 
+ ** warning** associated with encrypted blocks were suppressed
+
+  
+  **warning** (ca4_part2.sp:28) Only 1 connection at node q1bqr called in element mtp2.
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=ca4_part2.pa0
+
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ ****ca4_part2***
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:clk     =   1.0000  0:clkbar  = 145.9826u 0:d       =   1.0000 
+ +0:q1      = 999.9926m 0:q1bar   = 150.9377u 0:q1bqr   =  33.7543m
+ +0:q2      = 154.0333u 0:qout    = 999.8647m 0:vdd     =   1.0000 
+
+
+ **** voltage sources
+
+ subckt                                   
+ element  0:vclock   0:vdin     0:vvin    
+  volts      1.0000     1.0000     1.0000 
+  current   -3.3554n   -1.7106n -158.1596n
+  power      3.3554n    1.7106n  158.1596n
+
+     total voltage source power dissipation=  163.2256n       watts
+
+
+
+
+ **** mosfets
+
+
+ subckt                                               x1         x1        
+ element  0:mtp1     0:mtn1     0:mtp2     0:mtn2     1:mp3      1:mn3     
+ model    0:pmos     0:nmos     0:pmos     0:nmos     0:pmos     0:nmos    
+ region       Linear     Cutoff     Cutoff     Linear     Cutoff     Linear
+  id        -1.6974n  136.1728a -964.8940f   -1.3644n  -63.4646n   64.3381n
+  ibs     -1.212e-25   -1.0000p  966.2609f -154.0787a -9.598e-25  3.324e-26
+  ibd       10.2192a   -1.0100p    1.0098p -209.5147a    1.0099p -202.6421a
+  vgs     -999.8540m    7.3563u  -33.6083m  999.8460m    0.         1.0000 
+  vds       -7.3563u    7.3563u  -33.6003m   -3.0956u -999.8540m  145.9826u
+  vbs        0.      -999.9926m  966.2457m -154.0333u    0.         0.     
+  vth     -430.8276m  655.8670m -563.3091m  494.9277m -161.4192m  494.8664m
+  vdsat   -426.9884m   40.4953m  -49.6782m  283.4506m  -46.9953m  283.5432m
+  vod     -569.0264m -655.8596m  529.7008m  504.9183m  161.4192m  505.1336m
+  beta     508.0616u    3.5479m  446.0280u    3.3309m  795.7510u    3.3307m
+  gam eff  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m
+  gm         1.9536n    3.6146f   26.2028p  615.6581p    1.3710u   29.0285n
+  gds      230.7435u   18.5098p   23.1014p  440.7538u  471.1660n  440.6513u
+  gmb      620.6413p  673.7804a    4.1283p  228.5941p  282.6207n   10.7782n
+  cdtot    258.5861a   70.5432a  144.6187a   88.2524a  118.5783a  126.6205a
+  cgtot    236.9156a   69.7004a  148.6722a  109.9778a  125.2762a  109.9777a
+  cstot    243.1372a   93.4467a  193.5121a  155.3929a  221.7230a  117.0193a
+  cbtot    262.5088a  104.2041a  208.9013a  131.2874a  244.2575a  131.2912a
+  cgs      138.0628a   32.3718a   70.6779a   47.7731a   68.4836a   61.6351a
+  cgd       97.5616a   32.3714a   68.2731a   61.6236a   42.2138a   47.7615a
+
+
+
+ subckt   x2         x2         x3         x3        
+ element  2:mp3      2:mn3      3:mp3      3:mn3     
+ model    0:pmos     0:nmos     0:pmos     0:nmos    
+ region       Cutoff     Linear     Linear     Cutoff
+  id       -63.4724n   66.5214n  -31.2062n   30.6905n
+  ibs     -9.598e-25  3.324e-26 -1.210e-25  9.562e-25
+  ibd        1.0098p -209.5147a  187.7619a   -1.0099p
+  vgs       -7.3563u  999.9926m -999.8460m  154.0333u
+  vds     -999.8491m  150.9377u -135.2551u  999.8647m
+  vbs        0.         0.         0.         0.     
+  vth     -161.4205m  494.8653m -430.7932m  274.7580m
+  vdsat    -46.9956m  283.5404m -427.0000m   38.1916m
+  vod      161.4132m  505.1273m -569.0528m -274.6040m
+  beta     795.7493u    3.3307m  508.0750u    5.8692m
+  gam eff  400.0000m  400.0000m  400.0000m  400.0000m
+  gm         1.3712u   30.0151n   35.9193n  680.4160n
+  gds      471.2202n  440.6449u  230.6981u  163.8388n
+  gmb      282.6526n   11.1443n   11.4103n  163.2499n
+  cdtot    118.5784a  126.6190a  258.5319a   58.2482a
+  cgtot    125.2768a  109.9776a  236.9142a   59.9599a
+  cstot    221.7235a  117.0201a  243.1704a  109.0295a
+  cbtot    244.2575a  131.2911a  262.5025a  122.3194a
+  cgs       68.4841a   61.6356a  138.0795a   32.3869a
+  cgd       42.2139a   47.7610a   97.5432a   20.0746a
+
+
+
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ ****ca4_part2***
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:clk     =   1.0000  0:clkbar  = 145.9501u 0:d       =   0.     
+ +0:q1      =   3.0957u 0:q1bar   = 999.8629m 0:q1bqr   = 810.6792m
+ +0:q2      = 810.6792m 0:qout    =   6.3198m 0:vdd     =   1.0000 
+
+
+          ***** job concluded
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ ****ca4_part2***
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      50 # elements   =      18
+  # resistors   =       0 # capacitors =       5 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      10 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.12           1          16
+  transient          0.16      200001        1406         584 rev=        70
+  readin             0.07
+  errchk             0.02
+  setup              0.03
+  output             0.00
+
+
+           peak memory used         55.01 megabytes
+           total cpu time            0.38 seconds
+           total elapsed time        7.08 seconds
+           job started at     13:40:16 12/18/2019
+           job ended   at     13:40:23 12/18/2019
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        6.68(s)

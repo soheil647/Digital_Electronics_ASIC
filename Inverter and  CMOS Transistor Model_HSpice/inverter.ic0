@@ -1,0 +1,16 @@
+* "simulator" "HSPICE" 
+* "version" "A-2008.03 32-BIT"
+* "format" "HSP"
+* "rundate" "11:04:44 10/21/2019 "
+* "netlist" "c:\users\ssa\desktop\hspice_inverter\inverter.sp "
+* "runtitle" "*cmos invertor*"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in =   1.0000        
++ out =  23.9673u       
++ vdd =   1.0000        
+***   END: Saved Operating Point ***                     

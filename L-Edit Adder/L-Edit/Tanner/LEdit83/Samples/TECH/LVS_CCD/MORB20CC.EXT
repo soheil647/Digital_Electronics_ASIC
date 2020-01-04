@@ -1,0 +1,166 @@
+# File:            mORB20CC.ext
+# For:             Extract definition file (for CCD)
+# Vendor:          Orbit Semiconductor, Inc.
+# Technology:      2.0U, N-Well (Lambda = 1.0um, Technology = SCNA)
+# Technology File: mORB20CC.tdb
+# This file will work only with L-EDIT Version 7 and greater.
+# Copyright (c)  1991-98
+# Tanner Research, Inc.  All rights reserved
+# ****************************************************************************
+
+# Format for connect statements:
+# connect ( <layer_1>, <layer_2>, <thru_layer> )
+
+connect(N Well,ndiff,ndiff)
+connect(subs,pdiff,pdiff)
+connect(allsubs, subs, subs)
+connect(ndiff,Metal1,ActiveContact)
+connect(pdiff,Metal1,ActiveContact)
+connect(Poly,Metal1,Poly Contact)
+connect(Poly2,Metal1,Poly2 Contact)
+connect(Metal1,Metal2,Via)
+
+####### Devices defined for extracting normal MOS transistors :
+
+# NMOS transistor with Poly1 gate : NMOS
+device = MOSFET(
+               RLAYER=ntran;  
+               Drain=ndiff, AREA, PERIMETER;
+               Gate=Poly;   
+               Source=ndiff, AREA, PERIMETER;
+               Bulk=subs;
+               MODEL=NMOS;
+               )
+
+# PMOS transistor with Poly1 gate : PMOS
+device = MOSFET(
+               RLAYER=ptran;
+               Drain=pdiff, AREA, PERIMETER;
+               Gate=Poly;
+               Source=pdiff, AREA, PERIMETER;
+               Bulk=N Well;
+               MODEL=PMOS
+               )
+
+# NMOS transistor with Poly2 Gate : Poly2NMOS
+device = MOSFET(
+               RLAYER=ntran2; 
+               Drain=ndiff, AREA, PERIMETER;
+               Gate=Poly2; 
+               Source=ndiff, AREA, PERIMETER;
+               Bulk=subs;
+               MODEL=NMOSP2;
+               )
+
+# PMOS transistor with Poly2 Gate : Poly2PMOS
+device = MOSFET(
+               RLAYER=ptran2;
+               Drain=pdiff, AREA, PERIMETER;
+               Gate=Poly2;
+               Source=pdiff, AREA, PERIMETER;
+               Bulk=N Well;
+               MODEL=PMOSP2
+               )
+
+####### Devices defined for extracting depletion transistors and CCD devices :
+
+# 1. depletion transistor (CCD overlap of Active) with Poly1 Gate : BNP1S2A0 
+device = SUBCKT(
+               RLAYER=ntran CCD;
+               G=Poly;
+               S1=ndiff;
+               S2=ndiff;
+               B=subs;
+               MODEL=BNP1S2A0;
+               )
+
+# 2. depletion transistor (CCD overlap of Active) with Poly2 Gate : BNP2S2A0 
+device = SUBCKT(
+               RLAYER=ntran2 CCD;
+               G=Poly2;
+               S1=ndiff;
+               S2=ndiff;
+               B=subs;
+               MODEL=BNP2S2A0;
+               )
+
+# 3. CCD device (CCD overlap of Active) with Poly1 Gate : BNP1S1A1 
+device = SUBCKT(
+               RLAYER=ntran CCD;
+               G=Poly;
+               S1=ndiff;
+               A1=P2GateOverP1Gate;
+               B=subs;
+               MODEL=BNP1S1A1;
+               )
+
+# 4. CCD device (CCD overlap of Active) with Poly1 Gate : BNP1S0A1 
+device = SUBCKT(
+               RLAYER=ntran CCD;
+               G=Poly;
+               A1=P2GateOverP1Gate;
+               B=subs;
+               MODEL=BNP1S0A1;
+               )
+
+# 5. CCD device (CCD overlap of Active) with Poly1 Gate : BNP1S0A2 
+device = SUBCKT(
+               RLAYER=ntran CCD;
+               G=Poly;
+               A1=P2GateOverP1Gate;
+               A2=P2GateOverP1Gate;
+               B=subs;
+               MODEL=BNP1S0A2;
+               )
+
+# 6. CCD device (CCD overlap of Active) with Poly1 Gate : BNP1S0A3 
+device = SUBCKT(
+               RLAYER=ntran CCD;
+               G=Poly;
+               A1=P2GateOverP1Gate;
+               A2=P2GateOverP1Gate;
+               A3=P2GateOverP1Gate;
+               B=subs;
+               MODEL=BNP1S0A3;
+               )
+
+# 7. CCD device (CCD overlap of Active) with Poly1 Gate : BNP2S1A1 
+device = SUBCKT(
+               RLAYER=ntran2 CCD;
+               G=Poly2;
+               S1=ndiff, WIDTH;
+               A1=P2GateOverP1Gate;
+               B=subs;
+               MODEL=BNP2S1A1;
+               )
+
+# 8. CCD device (CCD overlap of Active) with Poly1 Gate : BNP2S0A1 
+device = SUBCKT(
+               RLAYER=ntran2 CCD;
+               G=Poly2;
+               A1=P2GateOverP1Gate;
+               B=subs;
+               MODEL=BNP2S0A1;
+               )
+
+# 9. CCD device (CCD overlap of Active) with Poly1 Gate : BNP2S0A2 
+device = SUBCKT(
+               RLAYER=ntran2 CCD;
+               G=Poly2;
+               A1=P2GateOverP1Gate;
+               A2=P2GateOverP1Gate;
+               B=subs;
+               MODEL=BNP2S0A2;
+               )
+
+# 10. CCD device (CCD overlap of Active) with Poly1 Gate : BNP2S0A3 
+device = SUBCKT(
+               RLAYER=ntran2 CCD;
+               G=Poly2;
+               A1=P2GateOverP1Gate;
+               A2=P2GateOverP1Gate;
+               A3=P2GateOverP1Gate;
+               B=subs;
+               MODEL=BNP2S0A3;
+               )
+

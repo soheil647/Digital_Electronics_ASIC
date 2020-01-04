@@ -1,0 +1,9 @@
+; mfcupi.def : Declares the module parameters for the DLL.
+
+LIBRARY      "mfcupi"
+DESCRIPTION  'mfcupi Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	UPI_Entry_Point
+    HelloWorldMacro

@@ -1,0 +1,37 @@
+                            L-Edit Pro
+                  Layout Editor for MS-Windows 32-bit
+                           Version 8.30
+
+
+                          LICENSE STATEMENT
+
+This software is protected by both United States copyright law and
+international treaty provisions.  Therefore, you must prevent copies of
+this software from being used in two places at the same time.  Tanner
+Research, Inc. authorizes you to make archival copies of the software for
+the sole purpose of backing-up our software and protecting your investment.
+This software may be used by any number of people and may be freely moved
+from one computer location to another, so long as there is NO POSSIBILITY
+of it being used at one location while it is being used at another.  It is
+a violation of Tanner Research's copyright for two different people in two
+different places to use this software at the same time.
+
+NETWORKING: Multi-unit purchases of this software may be installed on
+networked systems with more computers than the number of units purchased.
+However, it is a violation of Tanner Research's copyright for more people
+than number of software units purchased to be using the program at one
+time.
+
+L-Edit is a trademark of Tanner Research, Inc.  Other brand and product
+names are trademarks or registered trademarks of their respective holders.
+Copyright © 1988-2001 Tanner EDA, A Division of Tanner Research, Inc. All
+rights reserved.
+
+Tanner Research, Inc.
+2650 East Foothill Boulevard
+Pasadena, CA  91107
+
+Telephone: (626) 792-3000
+Fax:       (626) 792-0300
+e-mail:    support@tanner.com
+web:       http:\\www.tannereda.com

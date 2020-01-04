@@ -1,0 +1,731 @@
+
+1
+
+A problem occurred when the program attempted to open  the  input
+file %s in response to a query from the program.
+
+2
+
+The program had a problem opening the  file  %s   provided  as  a
+command line argument.
+
+4
+
+The program was unable to open the ERROR file.
+
+5
+
+An error occurred in reading the START SECTION of the MI file.
+
+6
+
+An error occurred in parsing the TABLE OF CONTENTS.
+
+7
+
+An error occurred in reading the GLOBAL SECTION.
+
+9
+
+An error occurred in reading the BLOCK/ASSEMBLY DEFINITIONS.
+
+10
+
+The program was unable to locate  the  beginning  of  the  GLOBAL
+SECTION.
+
+12
+
+The program was unable to locate the beginning of  the  TABLE  OF
+CONTENTS.
+
+14
+
+The program was unable to locate the beginning  of  the  ASSEMBLY
+SECTION.
+
+16
+
+The program was unable to locate a SUBSECTION HEADING for a  part
+that already appears in the TABLE OF CONTENTS.
+
+17
+
+The program was unable to locate the beginning  of  the  ASSEMBLY
+HIERARCHY SECTION.
+
+18
+
+The program was unable to associate a SEQUENCE  NUMBER  with  the
+SUBFIGURE NAME.
+
+19
+
+The program was unable to locate the SUBFIGURE NAME  for  a  PART
+DEFINITION.
+
+20
+
+The program was unable to obtain a SEQUENCE NUMBER for a TABLE OF
+CONTENTS entry.
+
+21
+
+The program was unable  to  allocate  memory  for  the  TABLE  OF
+CONTENTS.
+
+23
+
+The program was unable to allocate memory for a PROPERTY.
+
+24
+
+The program was unable to allocate memory for a PARAMETER.
+
+25
+
+The program was unable to determine if the  drawing   is  a  TWO-
+DIMENSIONAL or THREE-DIMENSIONAL MODEL.
+
+26
+
+The program was unable to determine whether the ANGLE TYPE was in
+RADIANS, DEGREES OR RADIANS.
+
+27
+
+The program found a bad value for GRID RESOLUTION(0.0, a negative
+number, value must be > 1E-06).
+
+28
+
+The SUBFIGURE NAME had more characters than the allowed maximum.
+
+29
+
+The program was unable to locate the beginning of  a  POINT  DATA
+TYPE.
+
+30
+
+The program was unable to locate an item listed in the  TABLE  OF
+CONTENTS.
+
+31
+
+An error occurred when the program sought information  on  COLOR,
+LINE TYPE and LINE WEIGHT information.
+
+32
+
+The maximum number of PROPERTIES allowable  in  the  program  has
+been exceeded.
+
+33
+
+An error occurred when the program attempted to  obtain  PROPERTY
+ELEMENTS.
+
+34
+
+The program attempted to interpret an CHAMFER OR LINE ELEMENT but
+was  unable to determine it's end point or encountered unexpected
+data.
+
+35
+
+The program attempted to interpret a CONSTRUCTION  LINE  but  was
+unable  to  determine  it's  end  point or encountered unexpected
+data.
+
+36
+
+The program attempted to interpret  an  ARC  or  FILLET  but  was
+unable  to  determine  it's  end  point or encountered unexpected
+data.
+
+37
+
+The program attempted to interpret a CIRCLE  but  was  unable  to
+determine it's end point or encountered unexpected data.
+
+38
+
+The program attempted to interpret a CONSTRUCTION CIRCLE but  was
+unable  to  determine  it's  end  point or encountered unexpected
+data.
+
+39
+
+The program attempted to  interpret  a  SPLINE  ELEMENT  but  was
+unable  to  determine  it's  end  point or encountered unexpected
+data.
+
+40
+
+The program attempted to interpret a POLYMARKER but was unable to
+determine it's end point or encountered unexpected data.
+
+
+41
+
+The program attempted to interpret a POLYLINE but was  unable  to
+determine it's end point or encountered unexpected data.
+
+
+42
+
+The program attempted to REFERENCE a SEQUENCE  NUMBER  which  was
+EMPTY or UNDEFINED.
+
+43
+
+The program was unable to determine the end of an ASSEMBLY.
+
+44
+
+The program was unable to obtain data for a TRANSFORMATION MATRIX
+for an element other than simple TEXT.
+
+45
+
+The program was unable to resolve  INSERTION  POINT,  ANGLE,  and
+SCALE  FACTOR  information  pertaining to a TRANSFORMATION MATRIX
+for an element other than simple TEXT.
+
+46
+
+An ASSEMBLY made REFERENCE to a PART that does not exist.
+
+47
+
+An error occurred when the program attempted to build a COMPOSITE
+CURVE from it's components.
+
+48
+
+The program attempted to interpret a LEADER ARROW but was  unable
+to determine it's end point or encountered unexpected data.
+
+49
+
+The program attempted to interpret a TEXT BALLOON but was  unable
+to determine it's end point or encountered unexpected data.
+
+50
+
+The program attempted to interpret a HATCH ENTITY but was  unable
+to determine it's end point or encountered unexpected data.
+
+51
+
+The program attempted to interpret a TEXT ENTITY but  was  unable
+to determine it's end point or encountered unexpected data.
+
+52
+
+An error occurred when the program attempted to obtain data for a
+TRANSFORMATION MATRIX for a simple TEXT element.
+
+53
+
+An error occurred when the program attempted to obtain TEXT  DATA
+about   INSERTION   POINT,   ANGLE,   and   SCALE   FACTOR  on  a
+TRANSFORMATION MATRIX for a simple TEXT element.
+
+54
+
+An error occurred when the program attempted to  allocate  memory
+for TEXT STRINGS.
+
+55
+
+An error occurred when the program attempted to  allocate  memory
+for a TEXT data structure.
+
+56
+
+The program attempted to interpret a PLANAR FACE but  was  unable
+to determine it's end point or encountered unexpected data.
+
+57
+
+An error occurred while GLOBAL VARIABLES were being INITIALIZED.
+
+58
+
+The program was unable to allocate memory for a  COMPOSITE  CURVE
+DATA STRUCTURE.
+
+59
+
+An error occurred when the program attempted to REALLOC the  SIZE
+of the COMPOSITE CURVE MEMORY DATA STRUCTURE.
+
+60
+
+The allowable number of ARROWS for a dimension element  has  been
+exceeded.
+
+61
+
+The allowable number of DIMENSION LINES has been exceeded.
+
+62
+
+The allowable  number  of  DIMENSION  EXTENSION  lines  has  been
+exceeded.
+
+63
+
+The allowable number of EXTRA DIMENSION LINES has been exceeded.
+
+64
+
+The allowable number of DIMENSION ARCS has been exceeded.
+
+65
+
+The allowable number of EXTRA DIMENSION TEXT REFERENCES has  been
+exceeded.
+
+66
+
+The  allowable  number  of   PREFIX   TEXT   STRINGS   has   been
+exceeded.(DIMENSION DATA)
+
+67
+
+The  allowable  number  of  POSTFIX   TEXT   STRINGS   has   been
+exceeded.(DIMENSION DATA)
+
+68
+
+The program attempted  to interpret  a  DIMENSION ENTITY  but was
+unable  to  determine  it's  end  point or encountered unexpected
+data.
+
+69
+
+The program attempted to interpret an ASSOCIATED PROPERTY but was
+unable  to  determine  it's  end  point or encountered unexpected
+data.
+
+70
+
+The program attempted to  interpret  a  HATCH  PROPERTY  but  was
+unable to determine the end point or encountered unexpected data.
+
+71
+
+The program attempted to interpret an  DIMENSION  LINE  ATTRIBUTE
+but  was  unable  to  determine  it's  end  point  or encountered
+unexpected data.
+
+72
+
+The program attempted to interpret a DIMENSION TEXT ATTRIBUTE but
+was  unable to determine it's end point or encountered unexpected
+data.
+
+73
+
+The program attempted to interpret a DIMENSION  TEXT  FORMAT  but
+was  unable to determine it's end point or encountered unexpected
+data.
+
+74
+
+The program attempted to interpret an PART  STATUS  PROPERTY  but
+was  unable to determine it's end point or encountered unexpected
+data.
+
+75
+
+The program was unable to find the PROPERTIES SECTION.
+
+76
+
+The program was unable  to  determine  the  end  of  data  for  a
+DIMENSION ARROW FORMAT.
+
+77
+
+The cell number of the PROPERTIES CELL did not match the required
+sequence number.
+
+78
+
+The cell number of the DIMENSION ARROW FORMAT CELL did not  match
+the required sequence number.
+
+79
+
+The cell number of the DIMENSION  TEXT  ATTRIBUTE  CELL  did  not
+match the required sequence number.
+
+80
+
+The cell number of the DIMENSION TOLERANCE  VALUE  cell  did  not
+match the required sequence number.
+
+81
+
+The program attempted to interpret a  DIMENSION  TOLERANCE  VALUE
+but  was  unable  to  determine  it's  end  point  or encountered
+unexpected data.
+
+82
+
+An error occurred while the program was  reading  the  PROPERTIES
+SECTION.
+
+83
+
+An  error  occurred  when  the  program  attempted  to  read  the
+COMPOSITE PROPERTIES SECTION.
+
+84
+
+An error occurred when the program attempted to read the ASSEMBLY
+SECTION.
+
+86
+
+The program was unable to locate the VIEWER in the PATH.
+
+87
+
+The program was unable to allocate enough MEMORY  to  launch  the
+VIEWER.
+
+88
+
+The program was unable  to  launch  the  VIEWER  for  an  unknown
+reason.
+
+89
+
+An error occurred in the start up routine.
+
+
+90
+
+The program was unable to find it's own executable image  in  any
+of the directories indicated by the PATH environment variable.
+
+91
+
+At start up the program determines from the zeroth  command  line
+argument   whether   program  execution  depends  upon  the  PATH
+environment variable or not.  If the full PATH is used to  invoke
+the  program   it  will  assume  that  all the required files for
+program execution will reside in the  indicated  directory.  This
+message was generated because the program could not find the file
+"standard.shx", a font required for the viewer.
+
+92
+
+At start up the program determines from the zeroth  command  line
+argument   whether   program  execution  depends  upon  the  PATH
+environment variable or not.  If the full PATH is used to  invoke
+the  program   it  will  assume  that  all the required files for
+program execution will reside in the  indicated  directory.  This
+message was generated because the program could not find the file
+"symbols.shx", a font required for the viewer,  and  is  used  to
+emulate the HP font hp_Y14.5.
+
+93
+
+At start up the program determines from the zeroth  command  line
+argument   whether   program  execution  depends  upon  the  PATH
+environment variable or not.  If the full PATH is used to  invoke
+the  program   it  will  assume  that  all the required files for
+program execution will reside in the  indicated  directory.   The
+program was unable to find the error message file "mechmsg.txt".
+
+94
+
+At start up the program determines from the zeroth  command  line
+argument   whether   program  execution  depends  upon  the  PATH
+environment variable or not.  If the full PATH is used to  invoke
+the  program   it  will  assume  that  all the required files for
+program execution will reside in the indicated  directory.   This
+message  was generated because the program was unable to find the
+program "vu2d", Artwork  Conversion  Software's  general  purpose
+two-dimensional viewer.
+
+95
+
+At start up the program determines from the zeroth  command  line
+argument   whether   program  execution  depends  upon  the  PATH
+environment variable or not.  If the full PATH is used to  invoke
+the  program   it  will  assume  that  all the required files for
+program execution will reside in the indicated  directory.   This
+message  was generated because the program was unable to find the
+program "asmload.exe", a program  loader.   This  message  should
+only occur on MS/PC DOS platforms.
+
+96
+
+This message  occurs  when  multiple  output  options  have  been
+specified  on the command line. The only options that can be used
+together are -dxf and -iges, otherwise the output  option  allows
+only  one  option.  The options are:  -dxf, -egs, -gbr, -gds, and
+-iges.
+
+97
+
+This error occurs because the program has attempted to  create  a
+boundary  with more than the maximum of 200 vertices (in the case
+of GDSII output)  or  1,024  vertices  (in  the  case  of  GERBER
+output).  Data  loss will occur because the program will drop the
+figure.  The -link option has been specified either because GDSII
+output or GERBER output has been requested.
+
+
+98
+
+This message occurs when when the -link option has been turned on
+(GDSII  or  GERBER output requested) and the program is unable to
+open a temporary intermediate file called $CHAIN.DAT for writing.
+This  may  be  the  result of a file protection problem, the file
+being erased by another process, program, or user,  or  a  naming
+conflict  caused  by  running another copy of the software in the
+same directory.  This error will cause the program to quit.
+
+99
+
+The program is unable  to  allocate  memory  in  the  process  of
+creating  chained  or  linked  data.  The  -link  option has been
+specified because either GDSII output or GERBER output  has  been
+requested.
+
+100
+
+The program  is  unable  to  open  an  intermediate  file  called
+GBR_file.int  for  writing.   This  may  be  the result of a file
+protection problem, the file being  erased  by  another  process,
+program,  or user, or a naming conflict caused by running another
+copy of the software in the  same  directory.   This  error  will
+cause   the  program  to  quit.   (The  GERBER  option  has  been
+specified.)
+
+101
+
+The program is unable to close the file GBR_file.int.   This  may
+be the result of a file protection problem, the file being erased
+by another process, program, or user, or a naming conflict caused
+by  running  another  copy of the software in the same directory.
+(The GERBER option has been specified.)
+
+102
+
+This message is issued because the program is unable to open  the
+temporary  file  CFG.TMP for writing. This may be the result of a
+file  protection  problem,  the  file  being  erased  by  another
+process, program, or user, or a naming conflict caused by running
+another copy of the software in the same directory.   This  error
+will  cause  the  program  to  quit.  (The GERBER option has been
+specified.)
+
+103
+
+This message is issued when a floating  point  exception  occurs.
+This event has been trapped by the program and probably indicates
+that the program is working on data that may have been  corrupted
+or  created  incorrectly.  This  error will cause  the program to
+exit.
+
+104
+
+This message is issued when a buss error occurs.  This event  has
+been  trapped  by  the  program  and  probably indicates that the
+program is working on  data  that  may  have  been  corrupted  or
+created incorrectly.  This error will cause  the program to exit.
+
+105
+
+This message is issued when a  segment  violation  occurs.   This
+event has been trapped by the program and probably indicates that
+the program is working on data that may have  been  corrupted  or
+created  incorrectly.   The  program has gone out of its own data
+space to access data.
+
+106
+
+At start up the program determines from the zeroth  command  line
+argument   whether   program  execution  depends  upon  the  PATH
+environment variable or not.  If the full PATH is used to  invoke
+the  program   it  will  assume  that  all the required files for
+program execution will reside in the indicated  directory.   This
+message was generated because the program could not find the file
+"fixed.shx", a font required for the viewer.
+
+113
+
+At start up the program determines from the zeroth  command  line
+argument   whether   program  execution  depends  upon  the  PATH
+environment variable or not.  If the full PATH is used to  invoke
+the  program   it  will  assume  that  all the required files for
+program execution will reside in the indicated  directory.   This
+message was generated because the program could not find the file
+"block.shx", a font required for the viewer.
+
+107
+
+The program is unable to open the indicated GERBER aperture file.
+This  may  be  the  result of a file protection problem, the file
+being erased by another process, program, or user,  or  a  naming
+conflict  caused  by  running another copy of the software in the
+same directory. This usually occurs because  the  file  does  not
+exist.  (The GERBER option has been specified.)
+
+108
+
+This message is issued because an error has occurred  in  reading
+the  aperture  file.   The  file  was successfully opened but the
+program is unable to  read  it.   (The  GERBER  option  has  been
+specified.)
+
+109
+
+The -olist command line option has been specified  but  the  file
+that  should follow -olist doesn't exist.  (The GERBER option has
+been specified.)
+
+110
+
+The -olist command line option has been specified but the program
+is  unable to open the file that follows -olist.  This may be the
+result of a file protection problem, or a naming conflict  caused
+by  running  another  copy of the software in the same directory.
+(The GERBER option has been specified.)
+
+111
+
+An unspecified error has occurred in one or more of  the  command
+line options.
+
+112
+
+At start up the program determines from the zeroth  command  line
+argument   whether   program  execution  depends  upon  the  PATH
+environment variable or not.  If the full PATH is used to  invoke
+the  program   it  will  assume  that  all the required files for
+program execution will reside in the indicated  directory.   This
+message  was generated because the program was unable to find the
+program "gdsx2gbr", Artwork Conversion Software's general purpose
+GERBER engine which is required for MI to Gerber translation.
+
+200
+
+The -mlist command line option has been specified  but  the  file
+that  should follow -mlist doesn't exist.  (The GERBER option has
+been specified.)
+
+201
+
+The -mlist command line option has been specified but the program
+is  unable to open the file that follows -mlist.  This may be the
+result of a file protection problem, or a naming conflict  caused
+by  running  another  copy of the software in the same directory.
+(The GERBER option has been specified.)
+
+202
+
+The GERBER OUTLINE command line option  "-onN,M"  has  been  used
+with the incorrect syntax.
+
+114
+
+The -llist command line option has been specified  but  the  file
+that  should follow -llist doesn't exist.  (The GDS "-gds" option
+has been specified.)
+
+115
+
+The -llist command line option has been specified but the program
+is  unable to open the file that follows -llist.  This may be the
+result of a file protection problem, or a naming conflict  caused
+by  running  another  copy of the software in the same directory.
+(The GDS "-gds" option has been specified.)
+
+
+116
+
+The requested output is not a supported option for this package.
+
+516
+
+An error occurred in parsing the DXF HEADER SECTION.
+
+517
+
+An error occurred in parsing the DXF TABLE SECTION.
+
+518
+
+The program was unable  to  further  alloc  any  more  memory  in
+evaluating DXF POLYLINE data.
+
+519
+
+At start up the program determines from the zeroth  command  line
+argument   whether   program  execution  depends  upon  the  PATH
+environment variable or not.  If the full PATH is used to  invoke
+the  program   it  will  assume  that  all the required files for
+program execution will reside in the indicated  directory.   This
+message  was generated because the program was unable to find the
+program "gdx2mi", Artwork Conversion Software's MI output  module
+which is required for MI output.
+
+520
+
+The file "linetype.map", used for line  type  mapping,  does  not
+exist.
+
+521
+
+The file "linetype.map", used for line type mapping,  exists  but
+the  program  was  unable to open it for reading. This may be the
+result of a file protection problem.  At  start  up  the  program
+determines  from the zeroth command line argument whether program
+execution depends upon the PATH environment variable or not.   If
+the  full PATH is used to invoke the program  it will assume that
+all the required files for program execution will reside  in  the
+indicated directory. The program looks for this file first in the
+current directory,  then  in  places  determined  by  the  zeroth
+command line argument or the PATH environment variable.
+
+120
+
+The program is running in DEMO mode, and has been unable  to  add
+the VU file to the allowed list of CHECKSUMMED output files.
+
+121
+
+The program is running in DEMO mode, and has been unable  to  add
+the DXF file to the allowed list of CHECKSUMMED output files.
+
+122
+
+The program is running in DEMO mode, and has been unable  to  add
+the IGES file to the allowed list of CHECKSUMMED output files.
+
+123
+
+The program is running in DEMO mode, and has been unable  to  add
+the GERBER file to the allowed list of CHECKSUMMED output files.
+
+124
+
+The program is running in  DEMO  mode,  and  the  selected  input
+filename  is not among those in the list of filenames selected as
+demo files.
+
+125
+
+The program is running in DEMO mode, and the selected input  file
+fails the CHECKSUM test.
+

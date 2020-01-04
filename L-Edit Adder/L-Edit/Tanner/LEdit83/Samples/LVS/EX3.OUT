@@ -1,0 +1,79 @@
+File written by LVS 3.1/Win 95 as a result of: "C:\lvs_product\LVS V3.00\V3.0 Release\Examples\ex3_3.vdb" on Sun Jul 26 11:33:05 1998
+
+Command line:
+lvs Ex3_1.spc Ex3_2.spc -o ex3.out -p Ex3_2.pre -nrcl -c4 -dg0.010 -vfpar 
+
+Engine configuration report:
+Consider Bulk nodes...................................................ON
+Consider Resistors as polarized elements..............................OFF
+Consider Capacitors as polarized elements.............................OFF
+Consider Inductors as polarized elements..............................OFF
+Optimize shorted & parallel R, C, MOSFETs; series R and C.............OFF
+Replace series MOSFETs................................................OFF
+Fast Iteration........................................................OFF
+
+Parsing file Ex3_1.spc...
+	Failed opening H:\testdata\lvs\wintest\reson\MODELS.SPC...
+	Trying C:\lvs_product\LVS V3.00\V3.0 Release\Examples\MODELS.SPC
+Including file C:\lvs_product\LVS V3.00\V3.0 Release\Examples\MODELS.SPC
+	Failed opening H:\testdata\lvs\wintest\reson\MODELS.SPC...
+	Trying C:\lvs_product\LVS V3.00\V3.0 Release\Examples\MODELS.SPC
+Flattening network...
+Parsing file Ex3_2.spc...
+	Failed opening H:\testdata\lvs\wintest\reson\MODELS.SPC...
+	Trying C:\lvs_product\LVS V3.00\V3.0 Release\Examples\MODELS.SPC
+Including file C:\lvs_product\LVS V3.00\V3.0 Release\Examples\MODELS.SPC
+	Failed opening H:\testdata\lvs\wintest\reson\MODELS.SPC...
+	Trying C:\lvs_product\LVS V3.00\V3.0 Release\Examples\MODELS.SPC
+Flattening network...
+
+Device                  Ex3_1.spc    Ex3_2.spc
+--------------       ------------ ------------
+
+C                               4            4
+M_NSS                          20           20
+M_PSS                          24           24
+Total elements                 48           48
+
+Total nodes                    20           20
+Processing file Ex3_2.pre of matched elements/nodes
+Matched Elements M1(XSUBA/X34)_2 and M350
+Matched Elements M19(XSUBA/X34)_1 and M3419
+Matched Elements M1(XSUBA/X33)_2 and M3
+Matched Elements M19(XSUBA/X33)_1 and M19
+Matched Elements M10(XSUBA/X33)_1 and M10
+Matched Elements M10(XSUBA/X34)_1 and M3410
+Matched Elements C1(XSUBA/X33)_1 and C1_1
+Matched Elements C1(XSUBA/X34)_1 and C1_3
+Matched Elements C1(XSUBA/X34)_2 and C1_4
+Matched Elements C1(XSUBA/X33)_2 and C1_2
+********************************** ITERATING *********************************
+
+Iterating...
+5% done
+10% done
+15% done
+20% done
+25% done
+30% done
+35% done
+40% done
+45% done
+50% done
+55% done
+60% done
+65% done
+70% done
+75% done
+80% done
+85% done
+90% done
+95% done
+100% done
+
+
+
+******************************* FINAL RESULT *******************************
+
+
+Circuits are equal.

@@ -1,0 +1,52 @@
+****CA4_Part1***
+
+*****Libraries*****
+.protect
+.inc '32nm_bulk.pm'
+.unprotect
+
+.subckt NAND in1 in2 out vdd gnd
+Mp1 out in1 vdd PMOS L=45nm W=45nm
+Mp2 out in2 vdd PMOS L=45nm W=45nm
+
+Mn1 out in1 q2 NMOS L=45nm W=45nm
+Mn2 q2 in2 gnd NMOS L=45nm W=45nm
+C1 out gnd 20fF
+.ends NAND
+
+
+.subckt inverter in out vdd gnd
+Mp3 out in vdd PMOS L=45nm W=45nm
+Mn3 out in gnd NMOS L=45nm W=45nm
+C1 out gnd 10fF
+.ends inverter
+
+.subckt NOR in1 in2 out vdd gnd
+Mpp1 q1 in1 vdd PMOS L=45nm W=45nm
+Mpp2 out in2 q1 PMOS L=45nm W=45nm
+
+Mnn1 out in1 gnd NMOS L=45nm W=45nm
+Mnn2 out in2 gnd NMOS L=45nm W=45nm
+C1 out gnd 20fF
+.ends NOR
+
+*****Sources*****
+Vvin  vdd  gnd  1v
+VSin s gnd pulse 1v 0v 4n 4n 4n 8n 20n
+VRin r gnd pulse 1v 0v 10n 4n 4n 8n 20n
+VCin c  gnd pulse 1v 0v 0 3n 3n 6n 20n
+
+
+***Main_Circuit***
+X1 s c w1 vdd gnd  NAND
+X2 r c w2 vdd gnd  NAND
+
+X3 w1 v1 vdd gnd  inverter
+X4 w2 v2 vdd gnd  inverter
+
+X5 v1 Q Qbar vdd gnd  NOR
+X6 v2 Qbar Q vdd gnd  NOR
+
+.tran 1ps 200ns
+.op
+.end

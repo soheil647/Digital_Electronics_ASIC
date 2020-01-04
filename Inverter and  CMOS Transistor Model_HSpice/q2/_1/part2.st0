@@ -1,0 +1,27 @@
+***** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******
+ Input File: c:\users\ssa\desktop\hspice_inverter\q2\_1\part2.sp
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   ssa                  HOSTNAME: DESKTOP-UOD7U06
+ lic: HOSTID: "086266b8f0ab 00ff8567868f cc2f71da2fff cc2f71da2f00 ce2f71da2fff"
+ lic: Using FLEXlm license file:
+ lic: 7182@DESKTOP-UOD7U06
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9
+ lic: NODE LOCKED license on hostid "086266b8f0ab 00ff8567868f cc2f71da2fff cc2f
+ lic:
+ Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
+ init: begin read circuit files,  cpu clock=  6.90E-02
+ init: end read circuit files,  cpu clock=  7.30E-02 memory=    145 kb
+ init: begin check errors,  cpu clock=  7.30E-02
+ init: end check errors,  cpu clock=  8.10E-02 memory=    146 kb
+ init: begin setup matrix, pivot=    10 cpu clock=  8.10E-02
+       establish matrix -- done,  cpu clock=  8.30E-02 memory=    149 kb
+       re-order matrix -- done,  cpu clock=  8.50E-02 memory=    149 kb
+ init: end setup matrix,  cpu clock=  8.70E-02 memory=    159 kb
+ output: c:\users\ssa\desktop\hspice_inverter\q2\_1\part2.sw0
+ sweep: dc dc0    begin, #sweeps= 101 cpu clock=  9.30E-02
+ sweep: dc dc0    end,  cpu clock=  9.70E-02 memory=    159 kb
+>info:         ***** hspice job concluded
+ Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
+ lic: Release hspice token(s)

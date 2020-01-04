@@ -1,0 +1,2600 @@
+(edif
+	BPR_BARGRAPH
+	(edifVersion 2 0 0)
+	(edifLevel 0)
+	(keywordMap (keywordLevel 0))
+	(status
+		(written
+			(timestamp 1999 3 4 21 29 36)
+			(program "S-Edit" (version "Version 6.00 Beta 6"))))
+	(library TOP_BPR
+		(edifLevel 0)
+		(technology (numberDefinition (scale 1 (E 1 -12) (unit CAPACITANCE))))
+
+		(cell PadInC
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 3 4 21 29 36)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port DataIn
+						(property (rename &_23 "#") (string "1"))
+						(direction OUTPUT))
+					(port DataInB
+						(property (rename &_23 "#") (string "2"))
+						(direction OUTPUT))
+					(port DataInUnBuf
+						(property (rename &_23 "#") (string "3"))
+						(direction OUTPUT))
+					(port Pad
+						(property (rename &_23 "#") (string "4"))
+						(direction INPUT))
+					(property DEVICE (string "PadInC"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+		)))
+
+		(cell PadGnd
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 3 4 21 29 36)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(property DEVICE (string "PadGnd"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "1"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell PadVdd
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 3 4 21 29 36)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(property DEVICE (string "PadVdd"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "1"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "2"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell PadIOwithESD
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 3 4 21 29 36)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port SIGNAL
+						(property (rename &_23 "#") (string "1"))
+						(direction INOUT))
+					(property DEVICE (string "PadIOwithESD"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+		)))
+
+		(cell PadOut
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 3 4 21 29 36)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port DataOut
+						(property (rename &_23 "#") (string "1"))
+						(direction INPUT))
+					(port Pad
+						(property (rename &_23 "#") (string "2"))
+						(direction OUTPUT))
+					(property DEVICE (string "PadOut"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+		)))
+
+		(cell CONTROLR
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 3 4 21 29 36)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port CL
+						(property (rename &_23 "#") (string "1"))
+						(direction INPUT))
+					(port CLK
+						(property (rename &_23 "#") (string "2"))
+						(direction OUTPUT))
+					(port CP
+						(property (rename &_23 "#") (string "3"))
+						(direction INPUT))
+					(port D
+						(property (rename &_23 "#") (string "4"))
+						(direction INPUT))
+					(port DOWN
+						(property (rename &_23 "#") (string "5"))
+						(direction OUTPUT))
+					(port GREEN
+						(property (rename &_23 "#") (string "6"))
+						(direction OUTPUT))
+					(port LDREG
+						(property (rename &_23 "#") (string "7"))
+						(direction OUTPUT))
+					(port LDZERO
+						(property (rename &_23 "#") (string "8"))
+						(direction OUTPUT))
+					(port M2
+						(property (rename &_23 "#") (string "9"))
+						(direction OUTPUT))
+					(port PP0
+						(property (rename &_23 "#") (string "10"))
+						(direction OUTPUT))
+					(port PP1
+						(property (rename &_23 "#") (string "11"))
+						(direction OUTPUT))
+					(port PP2
+						(property (rename &_23 "#") (string "12"))
+						(direction OUTPUT))
+					(port PP3
+						(property (rename &_23 "#") (string "13"))
+						(direction OUTPUT))
+					(port PP4
+						(property (rename &_23 "#") (string "14"))
+						(direction OUTPUT))
+					(port PP5
+						(property (rename &_23 "#") (string "15"))
+						(direction OUTPUT))
+					(port PP6
+						(property (rename &_23 "#") (string "16"))
+						(direction OUTPUT))
+					(port PP7
+						(property (rename &_23 "#") (string "17"))
+						(direction OUTPUT))
+					(port PP8
+						(property (rename &_23 "#") (string "18"))
+						(direction OUTPUT))
+					(port PP9
+						(property (rename &_23 "#") (string "19"))
+						(direction OUTPUT))
+					(port PP10
+						(property (rename &_23 "#") (string "20"))
+						(direction OUTPUT))
+					(port PP11
+						(property (rename &_23 "#") (string "21"))
+						(direction OUTPUT))
+					(port PP12
+						(property (rename &_23 "#") (string "22"))
+						(direction OUTPUT))
+					(port PP13
+						(property (rename &_23 "#") (string "23"))
+						(direction OUTPUT))
+					(port RED
+						(property (rename &_23 "#") (string "24"))
+						(direction OUTPUT))
+					(port RLY0
+						(property (rename &_23 "#") (string "25"))
+						(direction OUTPUT))
+					(port RLY1
+						(property (rename &_23 "#") (string "26"))
+						(direction OUTPUT))
+					(port RLY2
+						(property (rename &_23 "#") (string "27"))
+						(direction OUTPUT))
+					(port RLY3
+						(property (rename &_23 "#") (string "28"))
+						(direction OUTPUT))
+					(port ROL
+						(property (rename &_23 "#") (string "29"))
+						(direction OUTPUT))
+					(port S0
+						(property (rename &_23 "#") (string "30"))
+						(direction OUTPUT))
+					(port S1
+						(property (rename &_23 "#") (string "31"))
+						(direction OUTPUT))
+					(port S2
+						(property (rename &_23 "#") (string "32"))
+						(direction OUTPUT))
+					(port S3
+						(property (rename &_23 "#") (string "33"))
+						(direction OUTPUT))
+					(port SC0
+						(property (rename &_23 "#") (string "34"))
+						(direction OUTPUT))
+					(port SC1
+						(property (rename &_23 "#") (string "35"))
+						(direction OUTPUT))
+					(port SD0
+						(property (rename &_23 "#") (string "36"))
+						(direction INPUT))
+					(port SD1
+						(property (rename &_23 "#") (string "37"))
+						(direction INPUT))
+					(port SD2
+						(property (rename &_23 "#") (string "38"))
+						(direction INPUT))
+					(port SD3
+						(property (rename &_23 "#") (string "39"))
+						(direction INPUT))
+					(port SD4
+						(property (rename &_23 "#") (string "40"))
+						(direction INPUT))
+					(port SD5
+						(property (rename &_23 "#") (string "41"))
+						(direction INPUT))
+					(port SD6
+						(property (rename &_23 "#") (string "42"))
+						(direction INPUT))
+					(port SD7
+						(property (rename &_23 "#") (string "43"))
+						(direction INPUT))
+					(port SD8
+						(property (rename &_23 "#") (string "44"))
+						(direction INPUT))
+					(port SD9
+						(property (rename &_23 "#") (string "45"))
+						(direction INPUT))
+					(port SD10
+						(property (rename &_23 "#") (string "46"))
+						(direction INPUT))
+					(port SD11
+						(property (rename &_23 "#") (string "47"))
+						(direction INPUT))
+					(port SD12
+						(property (rename &_23 "#") (string "48"))
+						(direction INPUT))
+					(port SD13
+						(property (rename &_23 "#") (string "49"))
+						(direction INPUT))
+					(port SM0
+						(property (rename &_23 "#") (string "50"))
+						(direction OUTPUT))
+					(port SM1
+						(property (rename &_23 "#") (string "51"))
+						(direction OUTPUT))
+					(port SM2
+						(property (rename &_23 "#") (string "52"))
+						(direction OUTPUT))
+					(port SM3
+						(property (rename &_23 "#") (string "53"))
+						(direction OUTPUT))
+					(port ST
+						(property (rename &_23 "#") (string "54"))
+						(direction INPUT))
+					(port STARTB
+						(property (rename &_23 "#") (string "55"))
+						(direction OUTPUT))
+					(port TST
+						(property (rename &_23 "#") (string "56"))
+						(direction INPUT))
+					(port U
+						(property (rename &_23 "#") (string "57"))
+						(direction INPUT))
+					(property DEVICE (string "CONTROLR"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "58"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "59"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell adc12b
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 3 4 21 29 36)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port adj
+						(property (rename &_23 "#") (string "1"))
+						(direction INOUT))
+					(port anagnd
+						(property (rename &_23 "#") (string "2"))
+						(direction INOUT))
+					(port anainput
+						(property (rename &_23 "#") (string "3"))
+						(direction INPUT))
+					(port clk
+						(property (rename &_23 "#") (string "4"))
+						(direction INPUT))
+					(port clr
+						(property (rename &_23 "#") (string "5"))
+						(direction INPUT))
+					(port datamark
+						(property (rename &_23 "#") (string "6"))
+						(direction OUTPUT))
+					(port q0
+						(property (rename &_23 "#") (string "7"))
+						(direction OUTPUT))
+					(port q1
+						(property (rename &_23 "#") (string "8"))
+						(direction OUTPUT))
+					(port q2
+						(property (rename &_23 "#") (string "9"))
+						(direction OUTPUT))
+					(port q3
+						(property (rename &_23 "#") (string "10"))
+						(direction OUTPUT))
+					(port q4
+						(property (rename &_23 "#") (string "11"))
+						(direction OUTPUT))
+					(port q5
+						(property (rename &_23 "#") (string "12"))
+						(direction OUTPUT))
+					(port q6
+						(property (rename &_23 "#") (string "13"))
+						(direction OUTPUT))
+					(port q7
+						(property (rename &_23 "#") (string "14"))
+						(direction OUTPUT))
+					(port q8
+						(property (rename &_23 "#") (string "15"))
+						(direction OUTPUT))
+					(port q9
+						(property (rename &_23 "#") (string "16"))
+						(direction OUTPUT))
+					(port q10
+						(property (rename &_23 "#") (string "17"))
+						(direction OUTPUT))
+					(port q11
+						(property (rename &_23 "#") (string "18"))
+						(direction OUTPUT))
+					(port serial_out
+						(property (rename &_23 "#") (string "19"))
+						(direction OUTPUT))
+					(port startb
+						(property (rename &_23 "#") (string "20"))
+						(direction INPUT))
+					(port vref
+						(property (rename &_23 "#") (string "21"))
+						(direction INPUT))
+					(property DEVICE (string "adc12b"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "22"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "23"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell Amp1
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 3 4 21 29 36)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port BiasN
+						(property (rename &_23 "#") (string "1"))
+						(direction INOUT))
+					(port BiasP
+						(property (rename &_23 "#") (string "2"))
+						(direction INOUT))
+					(port InM
+						(property (rename &_23 "#") (string "3"))
+						(direction INOUT))
+					(port InP
+						(property (rename &_23 "#") (string "4"))
+						(direction INOUT))
+					(port NCASC
+						(property (rename &_23 "#") (string "5"))
+						(direction INOUT))
+					(port Out
+						(property (rename &_23 "#") (string "6"))
+						(direction INOUT))
+					(port PCASC
+						(property (rename &_23 "#") (string "7"))
+						(direction INOUT))
+					(property DEVICE (string "Amp1"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "8"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "9"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell BSplit
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 3 4 21 29 36)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port BIAS_IN
+						(property (rename &_23 "#") (string "1"))
+						(direction INOUT))
+					(port NBIAS
+						(property (rename &_23 "#") (string "2"))
+						(direction INOUT))
+					(port NCASC
+						(property (rename &_23 "#") (string "3"))
+						(direction INOUT))
+					(port PBIAS
+						(property (rename &_23 "#") (string "4"))
+						(direction INOUT))
+					(port PCASC
+						(property (rename &_23 "#") (string "5"))
+						(direction INOUT))
+					(property DEVICE (string "BSplit"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "6"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "7"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell FINGERS
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 3 4 21 29 36)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port C3
+						(property (rename &_23 "#") (string "1"))
+						(direction OUTPUT))
+					(port CL
+						(property (rename &_23 "#") (string "2"))
+						(direction INPUT))
+					(port CLK
+						(property (rename &_23 "#") (string "3"))
+						(direction INPUT))
+					(port D0
+						(property (rename &_23 "#") (string "4"))
+						(direction INPUT))
+					(port D1
+						(property (rename &_23 "#") (string "5"))
+						(direction INPUT))
+					(port D2
+						(property (rename &_23 "#") (string "6"))
+						(direction INPUT))
+					(port D3
+						(property (rename &_23 "#") (string "7"))
+						(direction INPUT))
+					(port D4
+						(property (rename &_23 "#") (string "8"))
+						(direction INPUT))
+					(port D5
+						(property (rename &_23 "#") (string "9"))
+						(direction INPUT))
+					(port D6
+						(property (rename &_23 "#") (string "10"))
+						(direction INPUT))
+					(port D7
+						(property (rename &_23 "#") (string "11"))
+						(direction INPUT))
+					(port D8
+						(property (rename &_23 "#") (string "12"))
+						(direction INPUT))
+					(port D9
+						(property (rename &_23 "#") (string "13"))
+						(direction INPUT))
+					(port D10
+						(property (rename &_23 "#") (string "14"))
+						(direction INPUT))
+					(port D11
+						(property (rename &_23 "#") (string "15"))
+						(direction INPUT))
+					(port DD0
+						(property (rename &_23 "#") (string "16"))
+						(direction OUTPUT))
+					(port DD1
+						(property (rename &_23 "#") (string "17"))
+						(direction OUTPUT))
+					(port DD2
+						(property (rename &_23 "#") (string "18"))
+						(direction OUTPUT))
+					(port DD3
+						(property (rename &_23 "#") (string "19"))
+						(direction OUTPUT))
+					(port DD4
+						(property (rename &_23 "#") (string "20"))
+						(direction OUTPUT))
+					(port DD5
+						(property (rename &_23 "#") (string "21"))
+						(direction OUTPUT))
+					(port DD6
+						(property (rename &_23 "#") (string "22"))
+						(direction OUTPUT))
+					(port DD7
+						(property (rename &_23 "#") (string "23"))
+						(direction OUTPUT))
+					(port DD8
+						(property (rename &_23 "#") (string "24"))
+						(direction OUTPUT))
+					(port DD9
+						(property (rename &_23 "#") (string "25"))
+						(direction OUTPUT))
+					(port DD10
+						(property (rename &_23 "#") (string "26"))
+						(direction OUTPUT))
+					(port DD11
+						(property (rename &_23 "#") (string "27"))
+						(direction OUTPUT))
+					(port DD12
+						(property (rename &_23 "#") (string "28"))
+						(direction OUTPUT))
+					(port DD13
+						(property (rename &_23 "#") (string "29"))
+						(direction OUTPUT))
+					(port DOWN
+						(property (rename &_23 "#") (string "30"))
+						(direction INPUT))
+					(port LDREG
+						(property (rename &_23 "#") (string "31"))
+						(direction INPUT))
+					(port LDZERO
+						(property (rename &_23 "#") (string "32"))
+						(direction INPUT))
+					(port SD0
+						(property (rename &_23 "#") (string "33"))
+						(direction OUTPUT))
+					(port SD1
+						(property (rename &_23 "#") (string "34"))
+						(direction OUTPUT))
+					(port SD2
+						(property (rename &_23 "#") (string "35"))
+						(direction OUTPUT))
+					(port SD3
+						(property (rename &_23 "#") (string "36"))
+						(direction OUTPUT))
+					(port SD4
+						(property (rename &_23 "#") (string "37"))
+						(direction OUTPUT))
+					(port SD5
+						(property (rename &_23 "#") (string "38"))
+						(direction OUTPUT))
+					(port SD6
+						(property (rename &_23 "#") (string "39"))
+						(direction OUTPUT))
+					(port SD7
+						(property (rename &_23 "#") (string "40"))
+						(direction OUTPUT))
+					(port SD8
+						(property (rename &_23 "#") (string "41"))
+						(direction OUTPUT))
+					(port SD9
+						(property (rename &_23 "#") (string "42"))
+						(direction OUTPUT))
+					(port SD10
+						(property (rename &_23 "#") (string "43"))
+						(direction OUTPUT))
+					(port SD11
+						(property (rename &_23 "#") (string "44"))
+						(direction OUTPUT))
+					(port SD12
+						(property (rename &_23 "#") (string "45"))
+						(direction OUTPUT))
+					(port SD13
+						(property (rename &_23 "#") (string "46"))
+						(direction OUTPUT))
+					(property DEVICE (string "FINGERS"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "47"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "48"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell NUMBER
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 3 4 21 29 36)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port DD0
+						(property (rename &_23 "#") (string "1"))
+						(direction INPUT))
+					(port DD1
+						(property (rename &_23 "#") (string "2"))
+						(direction INPUT))
+					(port DD2
+						(property (rename &_23 "#") (string "3"))
+						(direction INPUT))
+					(port DD3
+						(property (rename &_23 "#") (string "4"))
+						(direction INPUT))
+					(port DD4
+						(property (rename &_23 "#") (string "5"))
+						(direction INPUT))
+					(port DD5
+						(property (rename &_23 "#") (string "6"))
+						(direction INPUT))
+					(port DD6
+						(property (rename &_23 "#") (string "7"))
+						(direction INPUT))
+					(port DD7
+						(property (rename &_23 "#") (string "8"))
+						(direction INPUT))
+					(port DD8
+						(property (rename &_23 "#") (string "9"))
+						(direction INPUT))
+					(port DD9
+						(property (rename &_23 "#") (string "10"))
+						(direction INPUT))
+					(port DD10
+						(property (rename &_23 "#") (string "11"))
+						(direction INPUT))
+					(port DD11
+						(property (rename &_23 "#") (string "12"))
+						(direction INPUT))
+					(port DD12
+						(property (rename &_23 "#") (string "13"))
+						(direction INPUT))
+					(port DD13
+						(property (rename &_23 "#") (string "14"))
+						(direction INPUT))
+					(port L32
+						(property (rename &_23 "#") (string "15"))
+						(direction OUTPUT))
+					(port L33
+						(property (rename &_23 "#") (string "16"))
+						(direction OUTPUT))
+					(port L34
+						(property (rename &_23 "#") (string "17"))
+						(direction OUTPUT))
+					(port L35
+						(property (rename &_23 "#") (string "18"))
+						(direction OUTPUT))
+					(port L36
+						(property (rename &_23 "#") (string "19"))
+						(direction OUTPUT))
+					(port L37
+						(property (rename &_23 "#") (string "20"))
+						(direction OUTPUT))
+					(port L38
+						(property (rename &_23 "#") (string "21"))
+						(direction OUTPUT))
+					(port M2
+						(property (rename &_23 "#") (string "22"))
+						(direction INPUT))
+					(port PP0
+						(property (rename &_23 "#") (string "23"))
+						(direction INPUT))
+					(port PP1
+						(property (rename &_23 "#") (string "24"))
+						(direction INPUT))
+					(port PP2
+						(property (rename &_23 "#") (string "25"))
+						(direction INPUT))
+					(port PP3
+						(property (rename &_23 "#") (string "26"))
+						(direction INPUT))
+					(port PP4
+						(property (rename &_23 "#") (string "27"))
+						(direction INPUT))
+					(port PP5
+						(property (rename &_23 "#") (string "28"))
+						(direction INPUT))
+					(port PP6
+						(property (rename &_23 "#") (string "29"))
+						(direction INPUT))
+					(port PP7
+						(property (rename &_23 "#") (string "30"))
+						(direction INPUT))
+					(port PP8
+						(property (rename &_23 "#") (string "31"))
+						(direction INPUT))
+					(port PP9
+						(property (rename &_23 "#") (string "32"))
+						(direction INPUT))
+					(port PP10
+						(property (rename &_23 "#") (string "33"))
+						(direction INPUT))
+					(port PP11
+						(property (rename &_23 "#") (string "34"))
+						(direction INPUT))
+					(port PP12
+						(property (rename &_23 "#") (string "35"))
+						(direction INPUT))
+					(port PP13
+						(property (rename &_23 "#") (string "36"))
+						(direction INPUT))
+					(port SC0
+						(property (rename &_23 "#") (string "37"))
+						(direction INPUT))
+					(port SC1
+						(property (rename &_23 "#") (string "38"))
+						(direction INPUT))
+					(port SM0
+						(property (rename &_23 "#") (string "39"))
+						(direction INPUT))
+					(port SM1
+						(property (rename &_23 "#") (string "40"))
+						(direction INPUT))
+					(port SM2
+						(property (rename &_23 "#") (string "41"))
+						(direction INPUT))
+					(property DEVICE (string "NUMBER"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "42"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "43"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell BARGRAPH
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 3 4 21 29 36)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port CLK
+						(property (rename &_23 "#") (string "1"))
+						(direction INPUT))
+					(port CLR
+						(property (rename &_23 "#") (string "2"))
+						(direction INPUT))
+					(port GREEN
+						(property (rename &_23 "#") (string "3"))
+						(direction INPUT))
+					(port L0
+						(property (rename &_23 "#") (string "4"))
+						(direction OUTPUT))
+					(port L1
+						(property (rename &_23 "#") (string "5"))
+						(direction OUTPUT))
+					(port L2
+						(property (rename &_23 "#") (string "6"))
+						(direction OUTPUT))
+					(port L3
+						(property (rename &_23 "#") (string "7"))
+						(direction OUTPUT))
+					(port L4
+						(property (rename &_23 "#") (string "8"))
+						(direction OUTPUT))
+					(port L5
+						(property (rename &_23 "#") (string "9"))
+						(direction OUTPUT))
+					(port L6
+						(property (rename &_23 "#") (string "10"))
+						(direction OUTPUT))
+					(port L7
+						(property (rename &_23 "#") (string "11"))
+						(direction OUTPUT))
+					(port L8
+						(property (rename &_23 "#") (string "12"))
+						(direction OUTPUT))
+					(port L9
+						(property (rename &_23 "#") (string "13"))
+						(direction OUTPUT))
+					(port L10
+						(property (rename &_23 "#") (string "14"))
+						(direction OUTPUT))
+					(port L11
+						(property (rename &_23 "#") (string "15"))
+						(direction OUTPUT))
+					(port L12
+						(property (rename &_23 "#") (string "16"))
+						(direction OUTPUT))
+					(port L13
+						(property (rename &_23 "#") (string "17"))
+						(direction OUTPUT))
+					(port L14
+						(property (rename &_23 "#") (string "18"))
+						(direction OUTPUT))
+					(port L15
+						(property (rename &_23 "#") (string "19"))
+						(direction OUTPUT))
+					(port L16
+						(property (rename &_23 "#") (string "20"))
+						(direction OUTPUT))
+					(port L17
+						(property (rename &_23 "#") (string "21"))
+						(direction OUTPUT))
+					(port L18
+						(property (rename &_23 "#") (string "22"))
+						(direction OUTPUT))
+					(port L19
+						(property (rename &_23 "#") (string "23"))
+						(direction OUTPUT))
+					(port L20
+						(property (rename &_23 "#") (string "24"))
+						(direction OUTPUT))
+					(port L21
+						(property (rename &_23 "#") (string "25"))
+						(direction OUTPUT))
+					(port L22
+						(property (rename &_23 "#") (string "26"))
+						(direction OUTPUT))
+					(port L23
+						(property (rename &_23 "#") (string "27"))
+						(direction OUTPUT))
+					(port L24
+						(property (rename &_23 "#") (string "28"))
+						(direction OUTPUT))
+					(port L25
+						(property (rename &_23 "#") (string "29"))
+						(direction OUTPUT))
+					(port L26
+						(property (rename &_23 "#") (string "30"))
+						(direction OUTPUT))
+					(port L27
+						(property (rename &_23 "#") (string "31"))
+						(direction OUTPUT))
+					(port L28
+						(property (rename &_23 "#") (string "32"))
+						(direction OUTPUT))
+					(port L29
+						(property (rename &_23 "#") (string "33"))
+						(direction OUTPUT))
+					(port L30
+						(property (rename &_23 "#") (string "34"))
+						(direction OUTPUT))
+					(port L31
+						(property (rename &_23 "#") (string "35"))
+						(direction OUTPUT))
+					(port LDREG
+						(property (rename &_23 "#") (string "36"))
+						(direction INPUT))
+					(port LDZERO
+						(property (rename &_23 "#") (string "37"))
+						(direction INPUT))
+					(port RED
+						(property (rename &_23 "#") (string "38"))
+						(direction INPUT))
+					(port ROL
+						(property (rename &_23 "#") (string "39"))
+						(direction INPUT))
+					(port SC0
+						(property (rename &_23 "#") (string "40"))
+						(direction INPUT))
+					(port SC1
+						(property (rename &_23 "#") (string "41"))
+						(direction INPUT))
+					(port SHIFT
+						(property (rename &_23 "#") (string "42"))
+						(direction INPUT))
+					(port SM3
+						(property (rename &_23 "#") (string "43"))
+						(direction INPUT))
+					(property DEVICE (string "BARGRAPH"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "44"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "45"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell TOP_BPR
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 3 4 21 29 36)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface)
+				(contents
+					(instance PadInC_6
+						(viewRef view_1 (cellRef PadInC))
+						(portInstance DataIn)
+						(portInstance DataInB)
+						(portInstance DataInUnBuf)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadInC_5
+						(viewRef view_1 (cellRef PadInC))
+						(portInstance DataIn)
+						(portInstance DataInB)
+						(portInstance DataInUnBuf)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadInC_4
+						(viewRef view_1 (cellRef PadInC))
+						(portInstance DataIn)
+						(portInstance DataInB)
+						(portInstance DataInUnBuf)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadInC_3
+						(viewRef view_1 (cellRef PadInC))
+						(portInstance DataIn)
+						(portInstance DataInB)
+						(portInstance DataInUnBuf)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadInC_2
+						(viewRef view_1 (cellRef PadInC))
+						(portInstance DataIn)
+						(portInstance DataInB)
+						(portInstance DataInUnBuf)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadInC_1
+						(viewRef view_1 (cellRef PadInC))
+						(portInstance DataIn)
+						(portInstance DataInB)
+						(portInstance DataInUnBuf)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadGnd
+						(viewRef view_1 (cellRef PadGnd))
+						(portInstance Gnd)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadVdd
+						(viewRef view_1 (cellRef PadVdd))
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadIOwithESD_5
+						(viewRef view_1 (cellRef PadIOwithESD))
+						(portInstance SIGNAL)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadIOwithESD_4
+						(viewRef view_1 (cellRef PadIOwithESD))
+						(portInstance SIGNAL)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadIOwithESD_3
+						(viewRef view_1 (cellRef PadIOwithESD))
+						(portInstance SIGNAL)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadIOwithESD_2
+						(viewRef view_1 (cellRef PadIOwithESD))
+						(portInstance SIGNAL)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadIOwithESD_1
+						(viewRef view_1 (cellRef PadIOwithESD))
+						(portInstance SIGNAL)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_2
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_3
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_4
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_5
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_6
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_7
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_8
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_9
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance CONTROLR_1
+						(viewRef view_1 (cellRef CONTROLR))
+						(portInstance CL)
+						(portInstance CLK)
+						(portInstance CP)
+						(portInstance D)
+						(portInstance DOWN)
+						(portInstance GREEN)
+						(portInstance LDREG)
+						(portInstance LDZERO)
+						(portInstance M2)
+						(portInstance PP0)
+						(portInstance PP1)
+						(portInstance PP2)
+						(portInstance PP3)
+						(portInstance PP4)
+						(portInstance PP5)
+						(portInstance PP6)
+						(portInstance PP7)
+						(portInstance PP8)
+						(portInstance PP9)
+						(portInstance PP10)
+						(portInstance PP11)
+						(portInstance PP12)
+						(portInstance PP13)
+						(portInstance RED)
+						(portInstance RLY0)
+						(portInstance RLY1)
+						(portInstance RLY2)
+						(portInstance RLY3)
+						(portInstance ROL)
+						(portInstance S0)
+						(portInstance S1)
+						(portInstance S2)
+						(portInstance S3)
+						(portInstance SC0)
+						(portInstance SC1)
+						(portInstance SD0)
+						(portInstance SD1)
+						(portInstance SD2)
+						(portInstance SD3)
+						(portInstance SD4)
+						(portInstance SD5)
+						(portInstance SD6)
+						(portInstance SD7)
+						(portInstance SD8)
+						(portInstance SD9)
+						(portInstance SD10)
+						(portInstance SD11)
+						(portInstance SD12)
+						(portInstance SD13)
+						(portInstance SM0)
+						(portInstance SM1)
+						(portInstance SM2)
+						(portInstance SM3)
+						(portInstance ST)
+						(portInstance STARTB)
+						(portInstance TST)
+						(portInstance U)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_65
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_48
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_47
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_30
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_29
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_28
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_27
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_26
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_38
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_37
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_36
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_35
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_34
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_33
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance adc12b_1
+						(viewRef view_1 (cellRef adc12b))
+						(portInstance adj)
+						(portInstance anagnd)
+						(portInstance anainput)
+						(portInstance clk)
+						(portInstance clr)
+						(portInstance datamark)
+						(portInstance q0)
+						(portInstance q1)
+						(portInstance q2)
+						(portInstance q3)
+						(portInstance q4)
+						(portInstance q5)
+						(portInstance q6)
+						(portInstance q7)
+						(portInstance q8)
+						(portInstance q9)
+						(portInstance q10)
+						(portInstance q11)
+						(portInstance serial_out)
+						(portInstance startb)
+						(portInstance vref)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance Amp1_1
+						(viewRef view_1 (cellRef Amp1))
+						(portInstance BiasN)
+						(portInstance BiasP)
+						(portInstance InM)
+						(portInstance InP)
+						(portInstance NCASC)
+						(portInstance Out)
+						(portInstance PCASC)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance BSplit_1
+						(viewRef view_1 (cellRef BSplit))
+						(portInstance BIAS_IN)
+						(portInstance NBIAS)
+						(portInstance NCASC)
+						(portInstance PBIAS)
+						(portInstance PCASC)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance FINGERS_1
+						(viewRef view_1 (cellRef FINGERS))
+						(portInstance C3)
+						(portInstance CL)
+						(portInstance CLK)
+						(portInstance D0)
+						(portInstance D1)
+						(portInstance D2)
+						(portInstance D3)
+						(portInstance D4)
+						(portInstance D5)
+						(portInstance D6)
+						(portInstance D7)
+						(portInstance D8)
+						(portInstance D9)
+						(portInstance D10)
+						(portInstance D11)
+						(portInstance DD0)
+						(portInstance DD1)
+						(portInstance DD2)
+						(portInstance DD3)
+						(portInstance DD4)
+						(portInstance DD5)
+						(portInstance DD6)
+						(portInstance DD7)
+						(portInstance DD8)
+						(portInstance DD9)
+						(portInstance DD10)
+						(portInstance DD11)
+						(portInstance DD12)
+						(portInstance DD13)
+						(portInstance DOWN)
+						(portInstance LDREG)
+						(portInstance LDZERO)
+						(portInstance SD0)
+						(portInstance SD1)
+						(portInstance SD2)
+						(portInstance SD3)
+						(portInstance SD4)
+						(portInstance SD5)
+						(portInstance SD6)
+						(portInstance SD7)
+						(portInstance SD8)
+						(portInstance SD9)
+						(portInstance SD10)
+						(portInstance SD11)
+						(portInstance SD12)
+						(portInstance SD13)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance NUMBER_1
+						(viewRef view_1 (cellRef NUMBER))
+						(portInstance DD0)
+						(portInstance DD1)
+						(portInstance DD2)
+						(portInstance DD3)
+						(portInstance DD4)
+						(portInstance DD5)
+						(portInstance DD6)
+						(portInstance DD7)
+						(portInstance DD8)
+						(portInstance DD9)
+						(portInstance DD10)
+						(portInstance DD11)
+						(portInstance DD12)
+						(portInstance DD13)
+						(portInstance L32)
+						(portInstance L33)
+						(portInstance L34)
+						(portInstance L35)
+						(portInstance L36)
+						(portInstance L37)
+						(portInstance L38)
+						(portInstance M2)
+						(portInstance PP0)
+						(portInstance PP1)
+						(portInstance PP2)
+						(portInstance PP3)
+						(portInstance PP4)
+						(portInstance PP5)
+						(portInstance PP6)
+						(portInstance PP7)
+						(portInstance PP8)
+						(portInstance PP9)
+						(portInstance PP10)
+						(portInstance PP11)
+						(portInstance PP12)
+						(portInstance PP13)
+						(portInstance SC0)
+						(portInstance SC1)
+						(portInstance SM0)
+						(portInstance SM1)
+						(portInstance SM2)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance BARGRAPH_1
+						(viewRef view_1 (cellRef BARGRAPH))
+						(portInstance CLK)
+						(portInstance CLR)
+						(portInstance GREEN)
+						(portInstance L0)
+						(portInstance L1)
+						(portInstance L2)
+						(portInstance L3)
+						(portInstance L4)
+						(portInstance L5)
+						(portInstance L6)
+						(portInstance L7)
+						(portInstance L8)
+						(portInstance L9)
+						(portInstance L10)
+						(portInstance L11)
+						(portInstance L12)
+						(portInstance L13)
+						(portInstance L14)
+						(portInstance L15)
+						(portInstance L16)
+						(portInstance L17)
+						(portInstance L18)
+						(portInstance L19)
+						(portInstance L20)
+						(portInstance L21)
+						(portInstance L22)
+						(portInstance L23)
+						(portInstance L24)
+						(portInstance L25)
+						(portInstance L26)
+						(portInstance L27)
+						(portInstance L28)
+						(portInstance L29)
+						(portInstance L30)
+						(portInstance L31)
+						(portInstance LDREG)
+						(portInstance LDZERO)
+						(portInstance RED)
+						(portInstance ROL)
+						(portInstance SC0)
+						(portInstance SC1)
+						(portInstance SHIFT)
+						(portInstance SM3)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_32
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_31
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_25
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_24
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_23
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_22
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_21
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_20
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_19
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_18
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_17
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_16
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_15
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_14
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_13
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_12
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_11
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_10
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_39
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_40
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_41
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_42
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_43
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_44
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadOut_45
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance PadInC_7
+						(viewRef view_1 (cellRef PadInC))
+						(portInstance DataIn)
+						(portInstance DataInB)
+						(portInstance DataInUnBuf)
+						(portInstance Pad)
+						(property Pad (string ""))
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(net SM3
+						(joined
+							(portRef SM3 (instanceRef CONTROLR_1))
+							(portRef SM3 (instanceRef BARGRAPH_1))
+					))
+					(net N23
+						(joined
+							(portRef SM0 (instanceRef CONTROLR_1))
+							(portRef SM0 (instanceRef NUMBER_1))
+					))
+					(net N25
+						(joined
+							(portRef PP13 (instanceRef CONTROLR_1))
+							(portRef PP13 (instanceRef NUMBER_1))
+					))
+					(net N26
+						(joined
+							(portRef PP12 (instanceRef CONTROLR_1))
+							(portRef PP12 (instanceRef NUMBER_1))
+					))
+					(net L12
+						(joined
+							(portRef L12 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_20))
+					))
+					(net L11
+						(joined
+							(portRef L11 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_19))
+					))
+					(net L10
+						(joined
+							(portRef L10 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_18))
+					))
+					(net LITE37
+						(joined
+							(portRef Pad (instanceRef PadOut_44))
+					))
+					(net LITE38
+						(joined
+							(portRef Pad (instanceRef PadOut_45))
+					))
+					(net SET
+						(joined
+							(portRef Pad (instanceRef PadInC_4))
+					))
+					(net Vref
+						(joined
+							(portRef vref (instanceRef adc12b_1))
+							(portRef SIGNAL (instanceRef PadIOwithESD_3))
+							))
+					(net RLY0
+						(joined
+							(portRef RLY0 (instanceRef CONTROLR_1))
+							(portRef DataOut (instanceRef PadOut_2))
+					))
+					(net RLY1
+						(joined
+							(portRef RLY1 (instanceRef CONTROLR_1))
+							(portRef DataOut (instanceRef PadOut_3))
+					))
+					(net RLY2
+						(joined
+							(portRef RLY2 (instanceRef CONTROLR_1))
+							(portRef DataOut (instanceRef PadOut_4))
+					))
+					(net N122
+						(joined
+							(portRef DD13 (instanceRef FINGERS_1))
+							(portRef DD13 (instanceRef NUMBER_1))
+					))
+					(net N121
+						(joined
+							(portRef DD12 (instanceRef FINGERS_1))
+							(portRef DD12 (instanceRef NUMBER_1))
+					))
+					(net N120
+						(joined
+							(portRef DD11 (instanceRef FINGERS_1))
+							(portRef DD11 (instanceRef NUMBER_1))
+					))
+					(net L15
+						(joined
+							(portRef L15 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_23))
+					))
+					(net L14
+						(joined
+							(portRef L14 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_22))
+					))
+					(net L13
+						(joined
+							(portRef L13 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_21))
+					))
+					(net RLY3
+						(joined
+							(portRef RLY3 (instanceRef CONTROLR_1))
+							(portRef DataOut (instanceRef PadOut_5))
+					))
+					(net SCAN0
+						(joined
+							(portRef Pad (instanceRef PadOut_6))
+					))
+					(net SCAN1
+						(joined
+							(portRef Pad (instanceRef PadOut_7))
+					))
+					(net SCAN2
+						(joined
+							(portRef Pad (instanceRef PadOut_8))
+					))
+					(net CLK
+						(joined
+							(portRef CLK (instanceRef CONTROLR_1))
+							(portRef clk (instanceRef adc12b_1))
+							(portRef CLK (instanceRef FINGERS_1))
+							(portRef CLK (instanceRef BARGRAPH_1))
+							(portRef DataIn (instanceRef PadInC_7))
+					))
+					(net L19
+						(joined
+							(portRef L19 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_27))
+					))
+					(net L18
+						(joined
+							(portRef L18 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_26))
+					))
+					(net Serial_out
+						(joined
+							(portRef serial_out (instanceRef adc12b_1))
+					))
+					(net D2
+						(joined
+							(portRef q2 (instanceRef adc12b_1))
+							(portRef D2 (instanceRef FINGERS_1))
+					))
+					(net D1
+						(joined
+							(portRef q1 (instanceRef adc12b_1))
+							(portRef D1 (instanceRef FINGERS_1))
+					))
+					(net D0
+						(joined
+							(portRef q0 (instanceRef adc12b_1))
+							(portRef D0 (instanceRef FINGERS_1))
+					))
+					(net N90
+						(joined
+							(portRef anainput (instanceRef adc12b_1))
+							(portRef Out (instanceRef Amp1_1))
+							(portRef InM (instanceRef Amp1_1))
+					))
+					(net N92
+						(joined
+							(portRef NCASC (instanceRef Amp1_1))
+							(portRef NCASC (instanceRef BSplit_1))
+					))
+					(net N91
+						(joined
+							(portRef BiasN (instanceRef Amp1_1))
+							(portRef NBIAS (instanceRef BSplit_1))
+					))
+					(net L17
+						(joined
+							(portRef L17 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_25))
+					))
+					(net L16
+						(joined
+							(portRef L16 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_24))
+					))
+					(net SCAN3
+						(joined
+							(portRef Pad (instanceRef PadOut_9))
+					))
+					(net N95
+						(joined
+							(portRef SD13 (instanceRef CONTROLR_1))
+							(portRef SD13 (instanceRef FINGERS_1))
+					))
+					(net D5
+						(joined
+							(portRef q5 (instanceRef adc12b_1))
+							(portRef D5 (instanceRef FINGERS_1))
+					))
+					(net D4
+						(joined
+							(portRef q4 (instanceRef adc12b_1))
+							(portRef D4 (instanceRef FINGERS_1))
+					))
+					(net D3
+						(joined
+							(portRef q3 (instanceRef adc12b_1))
+							(portRef D3 (instanceRef FINGERS_1))
+					))
+					(net N93
+						(joined
+							(portRef PCASC (instanceRef Amp1_1))
+							(portRef PCASC (instanceRef BSplit_1))
+					))
+					(net N94
+						(joined
+							(portRef BiasP (instanceRef Amp1_1))
+							(portRef PBIAS (instanceRef BSplit_1))
+					))
+					(net CLR
+						(joined
+							(portRef Pad (instanceRef PadInC_6))
+					))
+					(net N1
+						(joined
+							(portRef DataInUnBuf (instanceRef PadInC_6))
+					))
+					(net D
+						(joined
+							(portRef DataIn (instanceRef PadInC_2))
+							(portRef D (instanceRef CONTROLR_1))
+					))
+					(net N96
+						(joined
+							(portRef SD12 (instanceRef CONTROLR_1))
+							(portRef SD12 (instanceRef FINGERS_1))
+					))
+					(net N97
+						(joined
+							(portRef SD11 (instanceRef CONTROLR_1))
+							(portRef SD11 (instanceRef FINGERS_1))
+					))
+					(net N98
+						(joined
+							(portRef SD10 (instanceRef CONTROLR_1))
+							(portRef SD10 (instanceRef FINGERS_1))
+					))
+					(net DOWN
+						(joined
+							(portRef DOWN (instanceRef CONTROLR_1))
+							(portRef DOWN (instanceRef FINGERS_1))
+					))
+					(net D8
+						(joined
+							(portRef q8 (instanceRef adc12b_1))
+							(portRef D8 (instanceRef FINGERS_1))
+					))
+					(net D7
+						(joined
+							(portRef q7 (instanceRef adc12b_1))
+							(portRef D7 (instanceRef FINGERS_1))
+					))
+					(net D6
+						(joined
+							(portRef q6 (instanceRef adc12b_1))
+							(portRef D6 (instanceRef FINGERS_1))
+					))
+					(net LITE11
+						(joined
+							(portRef Pad (instanceRef PadOut_19))
+					))
+					(net LITE10
+						(joined
+							(portRef Pad (instanceRef PadOut_18))
+					))
+					(net CLOCK
+						(joined
+							(portRef Pad (instanceRef PadInC_7))
+					))
+					(net N2
+						(joined
+							(portRef DataInB (instanceRef PadInC_6))
+					))
+					(net CL
+						(joined
+							(portRef DataIn (instanceRef PadInC_6))
+							(portRef CL (instanceRef CONTROLR_1))
+							(portRef clr (instanceRef adc12b_1))
+							(portRef CL (instanceRef FINGERS_1))
+							(portRef CLR (instanceRef BARGRAPH_1))
+					))
+					(net N3
+						(joined
+							(portRef DataInUnBuf (instanceRef PadInC_5))
+					))
+					(net N4
+						(joined
+							(portRef DataInB (instanceRef PadInC_5))
+					))
+					(net N5
+						(joined
+							(portRef DataInUnBuf (instanceRef PadInC_4))
+					))
+					(net UP_IN
+						(joined
+							(portRef Pad (instanceRef PadInC_3))
+					))
+					(net N99
+						(joined
+							(portRef SD9 (instanceRef CONTROLR_1))
+							(portRef SD9 (instanceRef FINGERS_1))
+					))
+					(net L21
+						(joined
+							(portRef L21 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_29))
+					))
+					(net L20
+						(joined
+							(portRef L20 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_28))
+					))
+					(net D9
+						(joined
+							(portRef q9 (instanceRef adc12b_1))
+							(portRef D9 (instanceRef FINGERS_1))
+					))
+					(net LITE15
+						(joined
+							(portRef Pad (instanceRef PadOut_23))
+					))
+					(net LITE14
+						(joined
+							(portRef Pad (instanceRef PadOut_22))
+					))
+					(net LITE13
+						(joined
+							(portRef Pad (instanceRef PadOut_21))
+					))
+					(net LITE12
+						(joined
+							(portRef Pad (instanceRef PadOut_20))
+					))
+					(net LITE1
+						(joined
+							(portRef Pad (instanceRef PadOut_11))
+					))
+					(net LITE0
+						(joined
+							(portRef Pad (instanceRef PadOut_10))
+					))
+					(net TEST
+						(joined
+							(portRef Pad (instanceRef PadInC_5))
+					))
+					(net N6
+						(joined
+							(portRef DataInB (instanceRef PadInC_4))
+					))
+					(net N7
+						(joined
+							(portRef DataInUnBuf (instanceRef PadInC_3))
+					))
+					(net N8
+						(joined
+							(portRef DataInB (instanceRef PadInC_3))
+					))
+					(net CP
+						(joined
+							(portRef DataIn (instanceRef PadInC_1))
+							(portRef CP (instanceRef CONTROLR_1))
+					))
+					(net L24
+						(joined
+							(portRef L24 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_48))
+					))
+					(net L23
+						(joined
+							(portRef L23 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_47))
+					))
+					(net L22
+						(joined
+							(portRef L22 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_30))
+					))
+					(net LITE18
+						(joined
+							(portRef Pad (instanceRef PadOut_26))
+					))
+					(net LITE17
+						(joined
+							(portRef Pad (instanceRef PadOut_25))
+					))
+					(net LITE16
+						(joined
+							(portRef Pad (instanceRef PadOut_24))
+					))
+					(net LITE4
+						(joined
+							(portRef Pad (instanceRef PadOut_14))
+					))
+					(net LITE3
+						(joined
+							(portRef Pad (instanceRef PadOut_13))
+					))
+					(net LITE2
+						(joined
+							(portRef Pad (instanceRef PadOut_12))
+					))
+					(net N9
+						(joined
+							(portRef DataInUnBuf (instanceRef PadInC_2))
+					))
+					(net RELAY0
+						(joined
+							(portRef Pad (instanceRef PadOut_2))
+					))
+					(net RELAY1
+						(joined
+							(portRef Pad (instanceRef PadOut_3))
+					))
+					(net N100
+						(joined
+							(portRef SD8 (instanceRef CONTROLR_1))
+							(portRef SD8 (instanceRef FINGERS_1))
+					))
+					(net N101
+						(joined
+							(portRef SD7 (instanceRef CONTROLR_1))
+							(portRef SD7 (instanceRef FINGERS_1))
+					))
+					(net LDREG
+						(joined
+							(portRef LDREG (instanceRef CONTROLR_1))
+							(portRef LDREG (instanceRef FINGERS_1))
+							(portRef LDREG (instanceRef BARGRAPH_1))
+					))
+					(net L25
+						(joined
+							(portRef L25 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_65))
+					))
+					(net LITE19
+						(joined
+							(portRef Pad (instanceRef PadOut_27))
+					))
+					(net L28
+						(joined
+							(portRef L28 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_35))
+					))
+					(net L27
+						(joined
+							(portRef L27 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_34))
+					))
+					(net L26
+						(joined
+							(portRef L26 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_33))
+					))
+					(net LITE8
+						(joined
+							(portRef Pad (instanceRef PadOut_32))
+					))
+					(net LITE7
+						(joined
+							(portRef Pad (instanceRef PadOut_31))
+					))
+					(net LITE6
+						(joined
+							(portRef Pad (instanceRef PadOut_16))
+					))
+					(net LITE5
+						(joined
+							(portRef Pad (instanceRef PadOut_15))
+					))
+					(net ST
+						(joined
+							(portRef DataIn (instanceRef PadInC_4))
+							(portRef ST (instanceRef CONTROLR_1))
+					))
+					(net RELAY2
+						(joined
+							(portRef Pad (instanceRef PadOut_4))
+					))
+					(net RELAY3
+						(joined
+							(portRef Pad (instanceRef PadOut_5))
+					))
+					(net N102
+						(joined
+							(portRef SD6 (instanceRef CONTROLR_1))
+							(portRef SD6 (instanceRef FINGERS_1))
+					))
+					(net N103
+						(joined
+							(portRef SD5 (instanceRef CONTROLR_1))
+							(portRef SD5 (instanceRef FINGERS_1))
+					))
+					(net N104
+						(joined
+							(portRef SD4 (instanceRef CONTROLR_1))
+							(portRef SD4 (instanceRef FINGERS_1))
+					))
+					(net RED
+						(joined
+							(portRef RED (instanceRef CONTROLR_1))
+							(portRef RED (instanceRef BARGRAPH_1))
+					))
+					(net L29
+						(joined
+							(portRef L29 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_36))
+					))
+					(net D11
+						(joined
+							(portRef q11 (instanceRef adc12b_1))
+							(portRef D11 (instanceRef FINGERS_1))
+					))
+					(net D10
+						(joined
+							(portRef q10 (instanceRef adc12b_1))
+							(portRef D10 (instanceRef FINGERS_1))
+					))
+					(net LITE9
+						(joined
+							(portRef Pad (instanceRef PadOut_17))
+					))
+					(net U
+						(joined
+							(portRef DataIn (instanceRef PadInC_3))
+							(portRef U (instanceRef CONTROLR_1))
+					))
+					(net Adj
+						(joined
+							(portRef adj (instanceRef adc12b_1))
+							(portRef SIGNAL (instanceRef PadIOwithESD_5))
+					))
+					(net Bias
+						(joined
+							(portRef BIAS_IN (instanceRef BSplit_1))
+							(portRef SIGNAL (instanceRef PadIOwithESD_1))
+					))
+					(net N105
+						(joined
+							(portRef SD3 (instanceRef CONTROLR_1))
+							(portRef SD3 (instanceRef FINGERS_1))
+					))
+					(net N106
+						(joined
+							(portRef SD2 (instanceRef CONTROLR_1))
+							(portRef SD2 (instanceRef FINGERS_1))
+					))
+					(net N107
+						(joined
+							(portRef SD1 (instanceRef CONTROLR_1))
+							(portRef SD1 (instanceRef FINGERS_1))
+					))
+					(net LDZERO
+						(joined
+							(portRef LDZERO (instanceRef CONTROLR_1))
+							(portRef LDZERO (instanceRef FINGERS_1))
+							(portRef LDZERO (instanceRef BARGRAPH_1))
+					))
+					(net LITE20
+						(joined
+							(portRef Pad (instanceRef PadOut_28))
+					))
+					(net DOWN_IN
+						(joined
+							(portRef Pad (instanceRef PadInC_2))
+					))
+					(net N10
+						(joined
+							(portRef DataInB (instanceRef PadInC_2))
+					))
+					(net STARTB
+						(joined
+							(portRef STARTB (instanceRef CONTROLR_1))
+							(portRef startb (instanceRef adc12b_1))
+					))
+					(net N108
+						(joined
+							(portRef SD0 (instanceRef CONTROLR_1))
+							(portRef SD0 (instanceRef FINGERS_1))
+					))
+					(net N44
+						(joined
+							(portRef PP11 (instanceRef CONTROLR_1))
+							(portRef PP11 (instanceRef NUMBER_1))
+					))
+					(net N43
+						(joined
+							(portRef PP10 (instanceRef CONTROLR_1))
+							(portRef PP10 (instanceRef NUMBER_1))
+					))
+					(net GREEN
+						(joined
+							(portRef GREEN (instanceRef CONTROLR_1))
+							(portRef GREEN (instanceRef BARGRAPH_1))
+					))
+					(net LITE24
+						(joined
+							(portRef Pad (instanceRef PadOut_48))
+					))
+					(net LITE23
+						(joined
+							(portRef Pad (instanceRef PadOut_47))
+					))
+					(net LITE22
+						(joined
+							(portRef Pad (instanceRef PadOut_30))
+					))
+					(net LITE21
+						(joined
+							(portRef Pad (instanceRef PadOut_29))
+					))
+					(net L30
+						(joined
+							(portRef L30 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_37))
+					))
+					(net N109
+						(joined
+							(portRef DD0 (instanceRef FINGERS_1))
+							(portRef DD0 (instanceRef NUMBER_1))
+					))
+					(net L0
+						(joined
+							(portRef L0 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_10))
+					))
+					(net N11
+						(joined
+							(portRef DataInUnBuf (instanceRef PadInC_1))
+					))
+					(net N13
+						(joined
+							(portRef DataInB (instanceRef PadInC_1))
+					))
+					(net AnaGnd
+						(joined
+							(portRef anagnd (instanceRef adc12b_1))
+							(portRef SIGNAL (instanceRef PadIOwithESD_4))
+					))
+					(net N45
+						(joined
+							(portRef PP9 (instanceRef CONTROLR_1))
+							(portRef PP9 (instanceRef NUMBER_1))
+					))
+					(net N46
+						(joined
+							(portRef PP8 (instanceRef CONTROLR_1))
+							(portRef PP8 (instanceRef NUMBER_1))
+					))
+					(net N47
+						(joined
+							(portRef PP7 (instanceRef CONTROLR_1))
+							(portRef PP7 (instanceRef NUMBER_1))
+					))
+					(net LITE25
+						(joined
+							(portRef Pad (instanceRef PadOut_65))
+					))
+					(net L31
+						(joined
+							(portRef L31 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_38))
+					))
+					(net LITE27
+						(joined
+							(portRef Pad (instanceRef PadOut_34))
+					))
+					(net LITE26
+						(joined
+							(portRef Pad (instanceRef PadOut_33))
+					))
+					(net Data_mark
+						(joined
+							(portRef datamark (instanceRef adc12b_1))
+					))
+					(net L33
+						(joined
+							(portRef L33 (instanceRef NUMBER_1))
+							(portRef DataOut (instanceRef PadOut_40))
+					))
+					(net L32
+						(joined
+							(portRef L32 (instanceRef NUMBER_1))
+							(portRef DataOut (instanceRef PadOut_39))
+					))
+					(net L3
+						(joined
+							(portRef L3 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_13))
+					))
+					(net L2
+						(joined
+							(portRef L2 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_12))
+					))
+					(net L1
+						(joined
+							(portRef L1 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_11))
+					))
+					(net N12
+						(joined
+							(portRef DataInUnBuf (instanceRef PadInC_7))
+					))
+					(net N48
+						(joined
+							(portRef PP6 (instanceRef CONTROLR_1))
+							(portRef PP6 (instanceRef NUMBER_1))
+					))
+					(net N49
+						(joined
+							(portRef PP5 (instanceRef CONTROLR_1))
+							(portRef PP5 (instanceRef NUMBER_1))
+					))
+					(net LITE29
+						(joined
+							(portRef Pad (instanceRef PadOut_36))
+					))
+					(net LITE28
+						(joined
+							(portRef Pad (instanceRef PadOut_35))
+					))
+					(net N110
+						(joined
+							(portRef DD1 (instanceRef FINGERS_1))
+							(portRef DD1 (instanceRef NUMBER_1))
+					))
+					(net L37
+						(joined
+							(portRef L37 (instanceRef NUMBER_1))
+							(portRef DataOut (instanceRef PadOut_44))
+					))
+					(net L36
+						(joined
+							(portRef L36 (instanceRef NUMBER_1))
+							(portRef DataOut (instanceRef PadOut_43))
+					))
+					(net L35
+						(joined
+							(portRef L35 (instanceRef NUMBER_1))
+							(portRef DataOut (instanceRef PadOut_42))
+					))
+					(net L34
+						(joined
+							(portRef L34 (instanceRef NUMBER_1))
+							(portRef DataOut (instanceRef PadOut_41))
+					))
+					(net L7
+						(joined
+							(portRef L7 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_31))
+					))
+					(net L6
+						(joined
+							(portRef L6 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_16))
+					))
+					(net L5
+						(joined
+							(portRef L5 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_15))
+					))
+					(net L4
+						(joined
+							(portRef L4 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_14))
+					))
+					(net N14
+						(joined
+							(portRef DataInB (instanceRef PadInC_7))
+					))
+					(net TST
+						(joined
+							(portRef DataIn (instanceRef PadInC_5))
+							(portRef TST (instanceRef CONTROLR_1))
+					))
+					(net S0
+						(joined
+							(portRef S0 (instanceRef CONTROLR_1))
+							(portRef DataOut (instanceRef PadOut_6))
+					))
+					(net SC0
+						(joined
+							(portRef SC0 (instanceRef CONTROLR_1))
+							(portRef SC0 (instanceRef NUMBER_1))
+							(portRef SC0 (instanceRef BARGRAPH_1))
+					))
+					(net ROL
+						(joined
+							(portRef ROL (instanceRef CONTROLR_1))
+							(portRef ROL (instanceRef BARGRAPH_1))
+					))
+					(net N113
+						(joined
+							(portRef DD4 (instanceRef FINGERS_1))
+							(portRef DD4 (instanceRef NUMBER_1))
+					))
+					(net N112
+						(joined
+							(portRef DD3 (instanceRef FINGERS_1))
+							(portRef DD3 (instanceRef NUMBER_1))
+					))
+					(net N111
+						(joined
+							(portRef DD2 (instanceRef FINGERS_1))
+							(portRef DD2 (instanceRef NUMBER_1))
+					))
+					(net L38
+						(joined
+							(portRef L38 (instanceRef NUMBER_1))
+							(portRef DataOut (instanceRef PadOut_45))
+					))
+					(net L9
+						(joined
+							(portRef L9 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_17))
+					))
+					(net L8
+						(joined
+							(portRef L8 (instanceRef BARGRAPH_1))
+							(portRef DataOut (instanceRef PadOut_32))
+					))
+					(net S1
+						(joined
+							(portRef S1 (instanceRef CONTROLR_1))
+							(portRef DataOut (instanceRef PadOut_7))
+					))
+					(net S2
+						(joined
+							(portRef S2 (instanceRef CONTROLR_1))
+							(portRef DataOut (instanceRef PadOut_8))
+					))
+					(net S3
+						(joined
+							(portRef S3 (instanceRef CONTROLR_1))
+							(portRef DataOut (instanceRef PadOut_9))
+					))
+					(net SC1
+						(joined
+							(portRef SC1 (instanceRef CONTROLR_1))
+							(portRef SC1 (instanceRef NUMBER_1))
+							(portRef SC1 (instanceRef BARGRAPH_1))
+					))
+					(net N116
+						(joined
+							(portRef DD7 (instanceRef FINGERS_1))
+							(portRef DD7 (instanceRef NUMBER_1))
+					))
+					(net N115
+						(joined
+							(portRef DD6 (instanceRef FINGERS_1))
+							(portRef DD6 (instanceRef NUMBER_1))
+					))
+					(net N114
+						(joined
+							(portRef DD5 (instanceRef FINGERS_1))
+							(portRef DD5 (instanceRef NUMBER_1))
+					))
+					(net C3
+						(joined
+							(portRef C3 (instanceRef FINGERS_1))
+							(portRef SHIFT (instanceRef BARGRAPH_1))
+					))
+					(net XTAL_IN
+						(joined
+							(portRef Pad (instanceRef PadInC_1))
+					))
+					(net Anainput
+						(joined
+							(portRef InP (instanceRef Amp1_1))
+							(portRef SIGNAL (instanceRef PadIOwithESD_2))
+					))
+					(net N50
+						(joined
+							(portRef PP4 (instanceRef CONTROLR_1))
+							(portRef PP4 (instanceRef NUMBER_1))
+					))
+					(net N51
+						(joined
+							(portRef PP3 (instanceRef CONTROLR_1))
+							(portRef PP3 (instanceRef NUMBER_1))
+					))
+					(net N52
+						(joined
+							(portRef PP2 (instanceRef CONTROLR_1))
+							(portRef PP2 (instanceRef NUMBER_1))
+					))
+					(net N53
+						(joined
+							(portRef PP1 (instanceRef CONTROLR_1))
+							(portRef PP1 (instanceRef NUMBER_1))
+					))
+					(net LITE31
+						(joined
+							(portRef Pad (instanceRef PadOut_38))
+					))
+					(net LITE30
+						(joined
+							(portRef Pad (instanceRef PadOut_37))
+					))
+					(net N119
+						(joined
+							(portRef DD10 (instanceRef FINGERS_1))
+							(portRef DD10 (instanceRef NUMBER_1))
+					))
+					(net N118
+						(joined
+							(portRef DD9 (instanceRef FINGERS_1))
+							(portRef DD9 (instanceRef NUMBER_1))
+					))
+					(net N117
+						(joined
+							(portRef DD8 (instanceRef FINGERS_1))
+							(portRef DD8 (instanceRef NUMBER_1))
+					))
+					(net LITE32
+						(joined
+							(portRef Pad (instanceRef PadOut_39))
+					))
+					(net LITE33
+						(joined
+							(portRef Pad (instanceRef PadOut_40))
+					))
+					(net N21
+						(joined
+							(portRef SM2 (instanceRef CONTROLR_1))
+							(portRef SM2 (instanceRef NUMBER_1))
+					))
+					(net N22
+						(joined
+							(portRef SM1 (instanceRef CONTROLR_1))
+							(portRef SM1 (instanceRef NUMBER_1))
+					))
+					(net N54
+						(joined
+							(portRef PP0 (instanceRef CONTROLR_1))
+							(portRef PP0 (instanceRef NUMBER_1))
+					))
+					(net N20
+						(joined
+							(portRef M2 (instanceRef CONTROLR_1))
+							(portRef M2 (instanceRef NUMBER_1))
+					))
+					(net LITE34
+						(joined
+							(portRef Pad (instanceRef PadOut_41))
+					))
+					(net LITE35
+						(joined
+							(portRef Pad (instanceRef PadOut_42))
+					))
+					(net LITE36
+						(joined
+							(portRef Pad (instanceRef PadOut_43))
+					))
+				)
+		))
+	)
+	(design ROOT
+		(cellRef TOP_BPR
+			(libraryRef TOP_BPR)))
+)

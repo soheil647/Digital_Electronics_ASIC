@@ -1,0 +1,29 @@
+                           Tanner Tools/Libraries
+               L-Edit/SPR Standard Cell Layout Design Guides
+
+Location:  \SPR\
+
+Files:
+        index.txt       This file.
+        standard.tdb    Illustrations in TDB, can be loaded into L-Edit.        
+        standard.eps    Illustration in Postscript.
+                        Can be printed out by a Postscript printer or inserted
+                        into a Windows Application (such as MSWord).
+        example1        Directory which contains the LIGHTS example
+                        (without global signal routing, 62 gates).
+        example2        Directory which contains the BARGRAPH example
+                        (global signal routing, 3510 gates, 2 routing layers).
+        example3        Directory which contains the BARGRAPH3Layer example
+                        (global signal routing, 3510 gates, 3 routing layers).
+
+Copyright © 1994-2001 Tanner EDA, A Division of Tanner Research, Inc.
+All Rights Reserved.
+
+Tanner Research, Inc.
+2650 East Foothill Boulevard
+Pasadena, CA  91107, USA
+
+Telephone: 1-877-304-5544 (Toll Free)
+	   1-626-792-3000
+Fax:	   1-626-792-0300
+e-mail:	   support@tanner.com

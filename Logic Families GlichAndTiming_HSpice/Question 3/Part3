@@ -1,0 +1,46 @@
+****CA4_Part3***
+
+*****Libraries*****
+.protect
+.inc '32nm_bulk.pm'
+.unprotect
+
+.subckt NAND2 in1 in2 out vdd gnd
+Mp1 out in1 vdd PMOS L=32nm W=32nm
+Mp2 out in2 vdd PMOS L=32nm W=32nm
+
+Mn1 out in1 q2 NMOS L=32nm W=32nm
+Mn2 q2 in2 gnd NMOS L=32nm W=32nm
+C1 out gnd 10fF
+.ends NAND2
+
+.subckt NAND3 in1 in2 in3 out vdd gnd
+Mp1 out in1 vdd PMOS L=32nm W=32nm
+Mp2 out in2 vdd PMOS L=32nm W=32nm
+Mp3 out in3 vdd PMOS L=32nm W=32nm
+
+Mn1 out in1 q2 NMOS L=32nm W=32nm
+Mn1 q2 in2 q3 NMOS L=32nm W=32nm
+Mn2 q3 in3 gnd NMOS L=32nm W=32nm
+
+C1 out gnd 10fF
+.ends NAND3
+
+
+*****Sources*****
+Vvin  vdd  gnd  1v
+VDin d gnd 1v pulse 0v 1v 10n 80ps 80ps 15ns 100n
+VClock clk  gnd 1v pulse 1v 0v 0n 80ps 80ps 10n 20n
+
+***Main_Circuit***
+
+X1 r4 r2 r1 vdd gnd NAND2
+X2 r1 clk r2 vdd gnd NAND2
+X3 r2 clk r4 r3 vdd gnd NAND3
+X4 d r3 r4 vdd gnd NAND2
+X5 r2 r6 r5 vdd gnd NAND2
+X6 r3 r5 r6 vdd gnd NAND2
+
+.tran 1ps 200ns
+.op
+.end

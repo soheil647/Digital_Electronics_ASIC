@@ -1,0 +1,176 @@
+#                  File: mORBn20.ext / lights.ext
+#                   For: Extractor definition file
+#                Vendor: Orbit Semiconductor, Inc.
+#            Technology: 2.0U (Lambda = 1.0um) / N-well (SCNA) 
+# Copyright (c)  1991-99
+# Tanner Research, Inc.  All rights reserved
+# ****************************************************************************
+
+# connections according to fab / device physics
+
+connect(n well wire, ndiff, ndiff)
+connect(subs, pdiff, pdiff)
+connect(allsubs, subs, subs)
+connect(p base wire, pdiff, pdiff)
+connect(npn, pdiff, pdiff)
+connect(P Base, subs, P Base)
+connect(ndiff, Metal1, Active Contact)
+connect(pdiff, Metal1, Active Contact)
+connect(poly wire, Metal1, Poly Contact)
+connect(poly2 wire, Metal1, Poly2 Contact)
+connect(Metal1, Metal2, Via)
+connect(LPNP emitter, pdiff, LPNP emitter)
+connect(LPNP collector, pdiff, LPNP collector)
+
+# NMOS transistor with poly1 gate
+device = MOSFET(
+               RLAYER=ntran;  
+               Drain=ndiff, WIDTH;
+               Gate=poly wire;   
+               Source=ndiff, WIDTH;
+               Bulk=subs;
+               MODEL=NMOS;
+               )
+# PMOS transistor with poly1 gate
+device = MOSFET(
+               RLAYER=ptran;
+               Drain=pdiff, WIDTH;
+               Gate=poly wire;
+               Source=pdiff, WIDTH;
+               Bulk=n well wire;
+               MODEL=PMOS;
+               )
+#
+# NMOS transistor with poly2 gate
+device = MOSFET(
+               RLAYER=ntran2;  
+               Drain=ndiff, WIDTH;
+               Gate=poly2 wire;   
+               Source=ndiff, WIDTH;
+               Bulk=subs;
+               MODEL=NMOSp2;
+               )
+# PMOS transistor with poly2 gate
+device = MOSFET(
+               RLAYER=ptran2;
+               Drain=pdiff, WIDTH;
+               Gate=poly2 wire;
+               Source=pdiff, WIDTH;
+               Bulk=n well wire;
+               MODEL=PMOSp2;
+               )
+#
+# NPN transistor
+device = BJT(
+            RLAYER=npn;
+            Collector=n well wire;
+            Base=npn;
+            Emitter=ndiff;
+            Substrate=allsubs;
+            MODEL=NPN;
+            )
+
+# PNP transistor
+device = BJT(
+            RLAYER=LPNP ID;
+            Collector=LPNP collector;
+            Base=n well wire ;
+            Emitter=LPNP emitter;
+            Substrate=allsubs;
+            MODEL=PNP;
+            )
+#
+# Poly1-Poly2 capacitor
+device = CAP(
+            RLAYER=Poly1-Poly2 Capacitor ID;
+            Plus=poly2 wire;
+            Minus=poly wire;
+            MODEL=;
+            )
+
+# NMOS capacitor
+device = CAP(
+            RLAYER=NMOS Capacitor ID;
+            Plus=poly wire;
+            Minus=ndiff;
+            MODEL=;
+            )
+# PMOS capacitor
+device = CAP(
+            RLAYER=PMOS Capacitor ID;
+            Plus=poly wire;
+            Minus=pdiff;
+            MODEL=;
+            )
+
+# Poly resistor
+device = RES(
+            RLAYER=Poly Resistor ID;
+            Plus=poly wire, WIDTH;
+            Minus=poly wire, WIDTH;
+            MODEL=;
+            )
+# Poly2 resistor
+device = RES(
+            RLAYER=Poly2 Resistor ID;
+            Plus=poly2 wire, WIDTH;
+            Minus=poly2 wire, WIDTH;
+            MODEL=;
+            )
+# N Diffusion resistor
+device = RES(
+            RLAYER=N Diff Resistor ID;
+            Plus=ndiff, WIDTH;
+            Minus=ndiff, WIDTH;
+            MODEL=;
+            )
+# P Diffusion resistor
+device = RES(
+            RLAYER=P Diff Resistor ID;
+            Plus=pdiff, WIDTH;
+            Minus=pdiff, WIDTH;
+            MODEL=;
+            )
+# P Base resistor
+device = RES(
+            RLAYER=P Base Resistor ID;
+            Plus=p base wire, WIDTH;
+            Minus=p base wire, WIDTH;
+            MODEL=;
+            )
+# N Well resistor
+device = RES(
+            RLAYER=N Well Resistor ID;
+            Plus=n well wire, WIDTH;
+            Minus=n well wire, WIDTH;
+            MODEL=;
+            )
+# Bonding Area Capacitance
+  device = CAP(
+               RLAYER=Pad Comment;
+               Plus=Metal1;
+               Minus=allsubs;
+               MODEL=;
+              )
+# Diodes
+  device = DIODE(
+                 RLAYER=diode pdiff;
+                 Plus=pdiff, WIDTH;
+                 Minus=n well wire, WIDTH;
+                 MODEL=Dpdiff;
+                 )IGNORE_SHORTS
+
+  device = DIODE(
+                 RLAYER=diode ndiff;
+                 Plus=subs, WIDTH;
+                 Minus=ndiff,WIDTH;
+                 MODEL=Dndiff;
+                 )IGNORE_SHORTS
+# Lateral Diode
+  device = DIODE(
+                 RLAYER=diode_lat;
+                 Plus=pdiff, WIDTH;
+                 Minus=ndiff, WIDTH;
+                 MODEL=D_lateral;
+                 )IGNORE_SHORTS
+

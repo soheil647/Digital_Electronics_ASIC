@@ -1,0 +1,31 @@
+(CIF written by the Tanner Research layout editor, L-Edit);
+(Version: 8.30);
+(TECHNOLOGY: Generic~0.5~micron~N-Well~Process);
+(DATE: 9 Jun 103);
+(FABCELL: NONE);
+(L-Edit Layer Poly = CIF Layer CPG);
+(L-Edit Layer Active = CIF Layer CAA);
+(L-Edit Layer Metal1 = CIF Layer CMF);
+(L-Edit Layer Metal1-Tight = CIF Layer CMF);
+(L-Edit Layer Metal2 = CIF Layer CMS);
+(L-Edit Layer Metal2-Tight = CIF Layer CMS);
+(L-Edit Layer Metal3 = CIF Layer CMT);
+(L-Edit Layer N Well = CIF Layer CWN);
+(L-Edit Layer Cap Well = CIF Layer CWC);
+(L-Edit Layer N Select = CIF Layer CSN);
+(L-Edit Layer P Select = CIF Layer CSP);
+(L-Edit Layer Poly Contact = CIF Layer CCP);
+(L-Edit Layer Active Contact = CIF Layer CCA);
+(L-Edit Layer Via1 = CIF Layer CVA);
+(L-Edit Layer Via2 = CIF Layer CVS);
+(L-Edit Layer Overglass = CIF Layer COG);
+(L-Edit Layer Pad Comment = CIF Layer XP);
+(L-Edit Layer Icon/Outline = CIF Layer CX);
+(SCALING: 1 CIF Unit = 1/2000 Microns);
+DS 1 2 40;
+9 Cell0;
+L CPG;
+P 47000,29000 47000,35000 -1000,35000 -1000,-2000
+ 15000,-2000 15000,9000 53000,9000 53000,29000;
+DF;
+E

@@ -1,0 +1,96 @@
+File written by LVS 3.13/Win32 as a result of: "lvs_ccd.vdb"
+
+Command line:
+lvs morb20cc.spc morb20cc.cir -o morb20cc.out -e morb20cc.elm -nrcl -y2 -vfa 
+
+Engine configuration report:
+Consider Bulk nodes...................................................ON
+Consider Resistors as polarized elements..............................OFF
+Consider Capacitors as polarized elements.............................OFF
+Consider Inductors as polarized elements..............................OFF
+Optimize shorted & parallel R, C, MOSFETs; series R and C.............OFF
+Replace series MOSFETs................................................OFF
+Fast Iteration........................................................OFF
+
+Reading element definitions from file morb20cc.elm
+Parsing file morb20cc.spc...
+Flattening network...
+Parsing file morb20cc.cir...
+Flattening network...
+
+Device               morb20cc.spc morb20cc.cir
+--------------       ------------ ------------
+
+M_NMOSP2                        1            1
+M_PMOSP2                        1            1
+M_NMOS                          1            1
+BNP2S0A3                        0            0
+BNP1S0A3                        0            0
+BNP2S0A2                        0            0
+BNP1S0A2                        1            1
+BNP2S1A1                        2            2
+BNP1S1A1                        0            0
+BNP2S2A0                        0            0
+BNP1S2A0                        4            4
+BNP2S0A1                        0            0
+BNP1S0A1                        0            0
+Total elements                 10           10
+
+Total nodes                    18           18
+Single-pin nodes                8            8
+
+
+
+Iterating...
+5% done
+10% done
+15% done
+20% done
+25% done
+30% done
+35% done
+40% done
+45% done
+50% done
+55% done
+60% done
+65% done
+70% done
+75% done
+80% done
+85% done
+90% done
+95% done
+100% done
+
+*************************** REPORTING AUTOMORPHISM ***************************
+
+Report of elements:
+*******************
+Automorph class of elements
+morb20cc.spc  X1_BNP1S0A2          fanout: A1/A2 (  1,   1)   B = 10   G =  2   
+morb20cc.cir  X4_BNP1S0A2          fanout: A1/A2 (  1,   1)   B = 10   G =  2   
+---------------------------------------------------
+Automorph class of elements
+morb20cc.spc  M2                   fanout: BULK =  1   D/S (  1,   1)   G =  2   
+morb20cc.cir  M121                 fanout: BULK =  1   D/S (  1,   1)   G =  2   
+---------------------------------------------------
+Automorph class of elements
+morb20cc.spc  M3                   fanout: BULK = 10   D/S (  1,   1)   G =  2   
+morb20cc.cir  M120                 fanout: BULK = 10   D/S (  1,   1)   G =  2   
+---------------------------------------------------
+Automorph class of elements
+morb20cc.spc  M1                   fanout: BULK = 10   D/S (  1,  10)   G = 10   
+morb20cc.cir  M119                 fanout: BULK = 10   D/S (  1,  10)   G = 10   
+---------------------------------------------------
+
+6 perfectly matched element class(es)
+4 automorphed element class(es)
+18 perfectly matched node class(es)
+
+
+Doing detailed trial matching...
+
+Circuits are equal.
+Note: Networks only compared as far down as specified in the element description file.
+Run time: 0:00 (min:sec)

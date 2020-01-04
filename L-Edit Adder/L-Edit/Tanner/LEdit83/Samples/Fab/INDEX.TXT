@@ -1,0 +1,30 @@
+                                Tanner Tools
+                    L-Edit Application fabrication Files
+
+Location: \FAB\
+
+Files:
+
+This directory contains examples in submitting a finished design to MOSIS
+or Orbit/Foresight for fabrication.
+
+    Example.tdb	 Optical motion sensor chip example.
+    Header.orb   Sample header file for submitting a project to
+                   Orbit/Foresight.
+    Header1.mos  Sample header file for submitting a project to Mosis.
+    Header2.mos  Sample header file for submitting a TinyChip project to
+                   Mosis.
+    index.txt   This file.
+                        
+
+Copyright © 1988-2001 Tanner EDA, A Division of Tanner Research, Inc.
+All Rights Reserved.
+
+Tanner Research, Inc.
+2650 East Foothill Boulevard
+Pasadena, CA  91107, USA
+
+Telephone: 1-877-304-5544 (Toll Free)
+	   1-626-792-3000
+Fax:	   1-626-792-0300
+e-mail:	   support@tanner.com

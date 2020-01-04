@@ -1,0 +1,161 @@
+Node and elements after first round of iterations
+
+Perfectly matched nodes
+=======================
+
+File: layout_resonator.spc      <==>  schematic_resonator.spc       
+========================
+2_m                             <==>  N5                            
+4_m                             <==>  N7                            
+2_e                             <==>  N8                            
+4_e                             <==>  N6                            
+20_m                            <==>  N2                            
+1_m                             <==>  N4                            
+20_e                            <==>  N3                            
+1_e                             <==>  N1                            
+7_e                             <==>  tope                          
+7_m                             <==>  topm                          
+6_e                             <==>  bote                          
+6_m                             <==>  botm                          
+8_e                             <==>  rte                           
+8_m                             <==>  rtm                           
+5_e                             <==>  lte                           
+5_m                             <==>  ltm                           
+-----------------------
+
+Other nodes
+=======================
+
+-----------------------
+
+-----------------------
+
+
+Perfectly matched elements
+=======================
+
+File: layout_resonator.spc      <==>  schematic_resonator.spc       
+=======================
+XSpring_Top_fspring             <==>  XFSpring4_fspring             
+XSpring_Bottom_fspring          <==>  XFSpring3_fspring             
+XComb_Right_comb                <==>  XComb2_comb                   
+XComb_Left_comb                 <==>  XComb1_comb                   
+-----------------------
+
+Other elements
+=======================
+
+-----------------------
+XPlateInst_plate4             
+XMass5_plate4                 
+
+-----------------------
+
+==============================================================================
+
+Node and elements after trial matching and second round of iterations
+
+Perfectly matched nodes
+=======================
+
+File: layout_resonator.spc      <==>  schematic_resonator.spc       
+========================
+2_m                             <==>  N5                            
+4_m                             <==>  N7                            
+2_e                             <==>  N8                            
+4_e                             <==>  N6                            
+20_m                            <==>  N2                            
+1_m                             <==>  N4                            
+20_e                            <==>  N3                            
+1_e                             <==>  N1                            
+7_e                             <==>  tope                          
+7_m                             <==>  topm                          
+6_e                             <==>  bote                          
+6_m                             <==>  botm                          
+8_e                             <==>  rte                           
+8_m                             <==>  rtm                           
+5_e                             <==>  lte                           
+5_m                             <==>  ltm                           
+-----------------------
+
+Other nodes
+=======================
+
+-----------------------
+
+-----------------------
+
+
+Perfectly matched elements
+=======================
+
+File: layout_resonator.spc      <==>  schematic_resonator.spc       
+=======================
+XSpring_Top_fspring             <==>  XFSpring4_fspring             
+XSpring_Bottom_fspring          <==>  XFSpring3_fspring             
+XComb_Right_comb                <==>  XComb2_comb                   
+XComb_Left_comb                 <==>  XComb1_comb                   
+XPlateInst_plate4               <==>  XMass5_plate4                 
+-----------------------
+
+Other elements
+=======================
+
+-----------------------
+
+-----------------------
+
+==============================================================================
+
+Perfectly matched nodes
+=======================
+
+File: layout_resonator.spc      <==>  schematic_resonator.spc       
+========================
+2_m                             <==>  N5                            
+4_m                             <==>  N7                            
+2_e                             <==>  N8                            
+4_e                             <==>  N6                            
+20_m                            <==>  N2                            
+1_m                             <==>  N4                            
+20_e                            <==>  N3                            
+1_e                             <==>  N1                            
+7_e                             <==>  tope                          
+7_m                             <==>  topm                          
+6_e                             <==>  bote                          
+6_m                             <==>  botm                          
+8_e                             <==>  rte                           
+8_m                             <==>  rtm                           
+5_e                             <==>  lte                           
+5_m                             <==>  ltm                           
+-----------------------
+
+Other nodes
+=======================
+
+-----------------------
+
+-----------------------
+
+
+Perfectly matched elements
+=======================
+
+File: layout_resonator.spc      <==>  schematic_resonator.spc       
+=======================
+XSpring_Top_fspring             <==>  XFSpring4_fspring             
+XSpring_Bottom_fspring          <==>  XFSpring3_fspring             
+XComb_Right_comb                <==>  XComb2_comb                   
+XComb_Left_comb                 <==>  XComb1_comb                   
+XPlateInst_plate4               <==>  XMass5_plate4                 
+-----------------------
+
+Other elements
+=======================
+
+-----------------------
+
+-----------------------
+
+==============================================================================
+

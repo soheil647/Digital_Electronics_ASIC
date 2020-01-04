@@ -1,0 +1,75 @@
+****************************************************************************
+
+                          Tanner L-Edit Setups
+                                dedicated to
+             Orbit N-well 2.0um CCD process provided by MOSIS
+
+                            Tanner Research, Inc
+                           2650 E. Foothill Blvd.
+                         Pasadena, California 91107
+
+****************************************************************************
+
+		WARNING
+
+All sample technology setups are distributed for demonstration purpose 
+only.  These setups may be out of date or may not match with the foundry’s
+process technology setup information and should be used for evaluation
+purposes only.
+
+
+All sample technology setups are provided "as is" without warranty of 
+any kind.  Tanner EDA disclaims all warranties, either express or implied,
+including their quality, performance, merchantability, or fitness for a
+particular purpose.  In no event will Tanner EDA be liable for direct, 
+indirect, special, incidental or consequential damages arising out of the 
+use or inability to use the programs or accompanying materials.  This 
+limitation will apply even if Tanner EDA or authorized dealer has been 
+advised of the possibility of such damage.  In particular, Tanner EDA is 
+not responsible for any costs including but not limited to those incurred
+as a result of loss of profits or revenue, loss of use of the provided 
+programs, loss of data, the cost of a substitute program, claims by third
+parties or for other similar costs.
+
+
+
+The files in this directory are for extracting CCD and depletion mode
+MOSFET devices using L-Edit/EXT.  The files are for demonstration only.
+For detailed illustrations of the methodology used to extracte CCD devices,
+please read the article "CMOS & CCD Designs: Extraction & Verification",
+pp.8~15, Tanner Tools Newsletter, Spring Issue '93.
+
+Files: 
+
+mORB20CC.TDB	An extraction example. It includes two cells: Cell mORB20CC is
+		the layout of an output stage of a CCD imager, from which its
+		SPICE netlist containing various CCD devices can be extracted.
+		Cell CCD_Out is the schematic of Cell mORB20CC, for
+		illustration only. This file can be also used as a technology
+		setup file.
+
+mORB20CC.EXT	Extraction definition file for MOSIS:Orbit N-Well 2.0um CCD
+		process (with MOSIS scalable rules).
+
+mORB20CC.ELM	CCD Element definition file for LVS verification using LVS.
+
+mORB20CC.SPC	Netlist extracted from the example cell mORB20CC by L-Edit.
+
+mORB20CC.CIR	Netlist output from the example schematic mORB20CC by
+		ViewLogic.
+
+lvs_ccd.vdb	LVS Setup file for verification of the example.
+
+mORB20CC.out	Output of the LVS verification of the example.
+
+Copyright © 1998-2001 Tanner EDA, A Division of Tanner Research, Inc.
+All Rights Reserved.
+
+Tanner Research, Inc.
+2650 East Foothill Boulevard
+Pasadena, CA  91107, USA
+
+Telephone: 1-877-304-5544 (Toll Free)
+	   1-626-792-3000
+Fax:	   1-626-792-0300
+e-mail:	   support@tanner.com

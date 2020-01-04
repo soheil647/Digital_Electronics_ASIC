@@ -1,0 +1,47 @@
+                                Tanner Tools
+                        L-Edit/Layers Setup Samples
+
+Location:  \LAYERS\
+
+Files:
+   BlackBG.tdb    L-Edit layer setup example:
+                     Black Background with overlapping layers getting
+                     lighter.
+   BlckBG2.tdb    L-Edit layer setup example:
+                     Black Background with overlapping layers getting
+                     lighter, with outlines.
+   GaAs.tdb       L-Edit layer setup example:
+                     Layer rendering information for MOSIS GaAs process.
+   GaAs2.tdb      L-Edit layer setup example:
+                     Layer rendering information for MOSIS GaAs process,
+                     with outlines.
+   Ledit2.tdb     Alternate of L-Edit.tdb setup file:
+                     with multiple layer paths and outlines.
+   OutLine.tdb    L-Edit layer setup example:
+                     Layers are outlines instead of fills.
+   Pastel.tdb     L-Edit layer setup example:
+                     A pastel color map and a set of stipple layers are
+                     used.
+   ReadGDS.tdb    L-Edit layer setup example:
+                     Contains definitions for GDSII layers 0 to 127.
+   Stripe.tdb     L-Edit layer setup example:
+                     Striped layer rendering scheme is used: colored
+                     stripes to distinguish cut-to-poly, cut-to-active,
+                     and via.
+   Stripe2.tdb    L-Edit layer setup example:
+                     Striped layer rendering scheme is used: colored
+                     stripes to distinguish cut-to-poly, cut-to-active,
+                     and via, with outlines.
+   index.txt      This file.
+
+Copyright © 1988-2001 Tanner EDA, A Division of Tanner Research, Inc.
+All Rights Reserved.
+
+Tanner Research, Inc.
+2650 East Foothill Boulevard
+Pasadena, CA  91107, USA
+
+Telephone: 1-877-304-5544 (Toll Free)
+	   1-626-792-3000
+Fax:	   1-626-792-0300
+e-mail:	   support@tanner.com

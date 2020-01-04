@@ -1,0 +1,9 @@
+.model NMOS NMOS
+.model NMOSp2 NMOSp2
+.model PMOS PMOS
+.model PMOSp2 PMOSp2
+.model PNP PNP
+.model NPN NPN
+.model Dpdiff Dpdiff
+.model Dndiff Dndiff
+.model D_lateral D_lateral

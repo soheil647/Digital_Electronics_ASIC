@@ -1,0 +1,57 @@
+                        Tanner Tools -- BPR Example
+             			Panel Meter
+		The IC circuit under demonstration is commonly used in 
+		   industrial process control applications. 
+
+Features:
+   * Internal controller implements a variety of process display functions. (Cell "Controlr")
+   * 64-segments tri-color bargraph display. (Cell "Bargraph")
+   * 16-segment, 4-point programmable annunciater. (Cell "Fingers")
+   * 4-digit numerical display. (Cell "Number")
+   * 12-bit Analog-to-Digital converter. (Cell "adc12b")
+   * Analog amplifier and input circuitry. (Cell "Amp1")
+   * Remote process monitoring.
+   * Single 5-V power supply.
+
+Applications:
+   * Process-to-control interface.
+   * Computer-to-process interface.
+   * Complex engineering units conversion.
+
+Files:
+        
+        index.txt        	This file.
+
+	top_bpr.edn		EDIF netlist.
+	PanelMeter.sdb		S-Edit Schematic.
+	panelmeter.sp		BPR Signal Integrity SPICE models.
+	PanelMeter_Done.tdb	Completely routed design that could be used for 
+				  extraction and LVS.
+	PanelMeter_Placed.tdb	Placed design which also contains data for 
+				timing analysis and electrical pin models
+				used for T-Spice simulation for the nets 
+				mentioned in documentation.
+	PanelMeter_Start.tdb	Contains techology setup and all blocks 
+				- ca be used for BPR initialization with both 
+				TPR(*.tpr) and EDIF(*.edn) netlists.
+	PM_Library.tdb		Panel Meter Standard cell library.
+	pm_setup.tdb		Panel Meter technology setup file.
+	top_bpr.tpr		TPR netlist.
+        mhp_n05.ext      	An extraction definition file for L-Edit/Extract.
+                         	This process definition file supports MOSIS/HP
+                         	N-well 0.5um Process Technology.
+        mhp_n05.xst      	A cross-section definition file for L-Edit/Cross-
+                         	Section. This process definition file supports 
+                         	MOSIS/HP N-well 0.5um Process Technology.
+
+Copyright © 1998-2001 Tanner EDA, A Division of Tanner Research, Inc.
+All Rights Reserved.
+
+Tanner Research, Inc.
+2650 East Foothill Boulevard
+Pasadena, CA  91107, USA
+
+Telephone: 1-877-304-5544 (Toll Free)
+	   1-626-792-3000
+Fax:	   1-626-792-0300
+e-mail:	   support@tanner.com

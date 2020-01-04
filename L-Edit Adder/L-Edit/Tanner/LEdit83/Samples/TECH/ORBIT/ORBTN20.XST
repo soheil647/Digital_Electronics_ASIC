@@ -1,0 +1,36 @@
+# File:		ORBTn20.xst
+# For:		Cross-section process definition file
+# Vendor:		Orbit Semiconductor, Inc./Foresight
+# Technology:	2.0u (Lambda = 1.0um) / N-well (N202P2MNPN)
+# Technology File:	ORBTn20.tdb
+# Copyright © 1991-2001 Tanner EDA, A Division of Tanner Research, Inc.
+# All Rights Reserved 
+# ************************************************************************
+#
+#	L-Edit
+#Step	Layer Name	Depth	Label	[Angle[offset]]	Comment
+#-------	--------------------------	---------	----------	----------------------	---------------------
+gd   -             10		p-							#  1. Substrate
+id  "Well X"        3		n-							#  2. n-Well
+id   ActPSelNotPoly 0.9		p+		75		0			#  3. p-Implant
+id   ActNSelNotPoly 0.9		n+		75		0			#  4. n-Implant
+id   CCD&Act        0.4		-							#  5. CCD Implant
+id  "P Base"        2		-							#  6. NPN Base Implant
+gd   -              0.6		-							#  7. Field Oxide
+e    Active         0.6		-		45					#  8. 
+gd   -              0.04	-							#  9. Gate Oxide
+gd   Poly           0.4		-							# 10. Polysilicon
+e    NotPoly        0.44 	-		45					# 11.
+gd   -              0.07	-		45					# 12. 2nd Gate Oxide
+gd   Poly2          0.4	 	-							# 13. 2nd Polysilicon
+e    NotPoly2       0.47  	-		60					# 14.
+gd   -              0.9 	-							# 15. 
+e   "P/P2/Act Contact" 0.9 -		60					# 16.
+gd   Metal1         0.6	 	-							# 17. Metal 1
+e   "Not Metal1"    0.6	 	-		45					# 18.
+gd   -              1	 	-							# 19. 
+e    Via            1	 	-		60					# 20.
+gd   Metal2         1.15	-							# 21. Metal 2
+e    "Not Metal2"   1.15 	-		45					# 22.
+gd   -              2	 	-							# 23. Overglass
+e    Overglass      2	 	-							# 24.

@@ -1,0 +1,527 @@
+/verticals
+{ 
+  newpath
+  xm { 
+    0 moveto
+    0 ym rlineto
+  }for
+  stroke
+}def
+
+/horizontals
+{
+  newpath
+  ym {
+  0 exch moveto
+  xm 0 rlineto
+  }for
+  stroke
+}def 
+
+/diags45
+{
+  newpath
+  gsave
+  ym neg 0 translate
+  xm ym add{
+    0 moveto
+    ym ym rlineto
+  }for
+  stroke
+  grestore
+}def
+
+/diags315
+{newpath
+  gsave
+  ym neg 0 translate
+  xm ym add{
+    ym moveto 
+    ym ym neg rlineto
+  }for
+  stroke
+  grestore
+}def
+
+/style2
+{ gsave
+  translate
+  /ym exch def
+  /xm exch def
+  0 300 verticals
+  grestore
+} def
+
+/style3
+{ gsave
+  translate
+  /ym exch def
+  /xm exch def
+  0 300 horizontals
+  grestore
+} def
+
+/style4
+{ gsave
+  translate
+  /ym exch def
+  /xm exch def
+  0 300 diags45
+  grestore
+} def
+
+/style5
+{ gsave
+  translate
+  /ym exch def
+  /xm exch def
+  0 300 diags315
+  grestore
+} def
+
+
+/style6
+{ gsave
+  translate
+  /ym exch def
+  /xm exch def
+  0 500 verticals
+  200 500 verticals
+  grestore
+} def
+
+/style7
+{ gsave
+  translate
+  /ym exch def
+  /xm exch def
+  0 500 horizontals
+  200 500 horizontals
+  grestore
+} def
+
+/style8
+{ gsave
+  translate
+  /ym exch def
+  /xm exch def
+  0 500 diags45
+  200 500 diags45
+  grestore
+} def
+
+/style9
+{ gsave
+  translate
+  /ym exch def
+  /xm exch def
+  0 500 diags315
+  200 500 diags315
+  grestore
+} def
+
+/style10
+{ gsave
+  translate
+  /ym exch def
+  /xm exch def
+  0 700 verticals
+  200 700 verticals
+  400 700 verticals
+  grestore
+} def
+
+/style11
+{ gsave
+  translate
+  /ym exch def
+  /xm exch def
+  0 700 horizontals
+  200 700 horizontals
+  400 700 horizontals
+  grestore
+} def
+
+/style12
+{ gsave
+  translate
+  /ym exch def
+  /xm exch def
+  0 700 diags45
+  200 700 diags45
+  400 700 diags45
+  grestore
+} def
+
+/style13
+{ gsave
+  translate
+  /ym exch def
+  /xm exch def
+  0 700 diags315
+  200 700 diags315
+  400 700 diags315
+  grestore
+} def
+
+/style14
+{ gsave
+  translate
+  /ym exch def
+  /xm exch def
+  0 400 verticals
+  0 400 horizontals
+  grestore
+} def
+
+/style15
+{ gsave
+  translate
+  /ym exch def
+  /xm exch def
+  0 400 diags45
+  0 400 diags315
+  grestore
+} def
+
+/LinWt 0 def
+/FillWt 0 def
+
+/outstyl {
+  /styl exch def
+  
+  styl 0 eq {gsave 1 1 1 setrgbcolor fill grestore}if
+  styl 1 eq {gsave fill grestore}if
+  styl 16 eq {gsave 1 1 1 setrgbcolor eofill grestore}if
+  styl 17 eq {gsave eofill grestore}if
+  styl 2 eq {style2}if 
+  styl 3 eq {style3}if 
+  styl 4 eq {style4}if 
+  styl 5 eq {style5}if 
+  styl 6 eq {style6}if 
+  styl 7 eq {style7}if 
+  styl 8 eq {style8}if 
+  styl 9 eq {style9}if 
+  styl 10 eq {style10}if 
+  styl 11 eq {style11}if 
+  styl 12 eq {style12}if 
+  styl 13 eq {style13}if 
+  styl 14 eq {style14}if 
+  styl 15 eq {style15}if 
+}def
+
+/SetLineType {
+  /ltyp exch def
+
+  ltyp 0 eq {[] 0 setdash}if
+  ltyp 1 eq {[3 2] 0 setdash}if
+  ltyp 2 eq {[8 8] 0 setdash}if
+  ltyp 3 eq {[12 4] 0 setdash}if
+  ltyp 4 eq {[1 3] 0 setdash}if
+  ltyp 5 eq {[1 7] 0 setdash}if
+  ltyp 6 eq {[11 2 1 2] 0 setdash}if
+  ltyp 7 eq {[8 2 1 2 1 2] 0 setdash}if
+  ltyp 8 eq {[9 2 3 2] 0 setdash}if
+  ltyp 9 eq {[10 2 2 2] 0 setdash}if
+  ltyp 10 eq {[7 2 3 2 3 2] 0 setdash}if
+  ltyp 11 eq {[9 2 3 2 3 2] 0 setdash}if
+}def
+
+/PthOut {
+  /ptyp exch def
+  /lw exch def
+  /vnum exch def
+
+  ptyp 2048 eq {/ptyp 0 def}if
+  ptyp 2048 gt ptyp 2059 le and {
+    ptyp 2048 sub SetLineType
+    /ptyp 0 def
+    /lw LinWt def
+  }if
+  ptyp 2 eq {
+    2 1 vnum { 
+      pop /segvcnt exch def
+      moveto
+      2 1 segvcnt {
+        pop lineto
+      }for
+      gsave closepath grestore
+      gsave fill grestore stroke
+    }for
+  }if
+  ptyp 1 eq {
+    ptyp setlinecap
+    lw setlinewidth
+    2 1 vnum {
+      pop
+      moveto
+      2 copy
+      lineto stroke
+    }for
+    pop pop
+  }if
+  ptyp 0 eq {
+    ptyp setlinecap
+    lw setlinewidth
+    moveto
+    2 1 vnum {
+      pop lineto
+    }for
+    stroke
+  }if
+  0 setlinecap
+  LinWt setlinewidth
+  [] 0 setdash
+}def %PthOut
+
+/useeo 0 def
+
+/SubBounOut {
+  /vnum exch def
+
+  vlimit vnum useeo add ge {
+    /useeo useeo vnum add def
+    moveto
+    2 1 vnum {
+      pop lineto
+    }for  
+  } {
+    pop pop
+    2 1 vnum {
+      pop pop pop
+    }for  
+  } ifelse
+  closepath
+}def %SubBounOut
+
+/BounOut {
+  /ep exch def
+  /fp exch def
+  /ncol exch def
+  /styl exch def
+  /vnum exch def
+
+  fp 0 ne styl 1 gt and {
+    /py2 exch def
+    /px2 exch def
+    /py1 exch def
+    /px1 exch def
+  }if
+
+  vlimit vnum useeo add ge {
+    moveto
+    2 1 vnum {
+      pop lineto
+    }for  
+  } {
+    pop pop
+    2 1 vnum {
+      pop pop pop
+    } for
+  } ifelse
+  closepath
+  gsave
+  ncol 0 gt { ncol ClrSet } if
+  fp 0 ne {
+    gsave
+    useeo 0 ne {
+      eoclip
+      FillWt setlinewidth
+      styl 1 gt {px1 py1 px2 py2 styl }
+                {styl 16 add} ifelse
+    } {
+      vlimit vnum ge {clip}if
+      FillWt setlinewidth
+      styl 1 gt {px1 py1 px2 py2}if
+      styl
+    } ifelse
+    outstyl
+    LinWt setlinewidth
+    grestore
+  }if
+  grestore
+  ep 0 ne {
+    stroke
+  }{ newpath }ifelse
+  /useeo 0 def
+}def %BounOut
+
+/ArcOut {
+  /ptyp exch def
+  /lw exch def
+
+  ptyp 2048 eq {/ptyp 0 def}if
+  ptyp 2048 gt ptyp 2059 le and {
+    ptyp 2048 sub SetLineType
+    /ptyp 0 def
+    /lw LinWt def
+  }if
+  ptyp 2 eq {
+    /segcnt exch def
+    1 1 segcnt {
+      pop
+      moveto lineto lineto arc lineto lineto arcn
+      gsave fill grestore stroke
+    }for
+  }if
+  ptyp 0 eq ptyp 1 eq or {
+    ptyp setlinecap
+    lw setlinewidth
+    arc stroke
+  }if
+  0 setlinecap
+  LinWt setlinewidth
+  [] 0 setdash
+}def %ArcOut
+
+/CircOut {
+  /ep exch def
+  /fp exch def
+  /ncol exch def
+  /styl exch def
+
+  fp 0 ne styl 1 gt and {
+    /py2 exch def
+    /px2 exch def
+    /py1 exch def
+    /px1 exch def
+  }if
+
+  0 360 arc
+  gsave
+  ncol 0 gt { ncol ClrSet } if
+  fp 0 ne {
+    clip
+    FillWt setlinewidth
+    styl 1 gt {px1 py1 px2 py2 }if
+    styl outstyl
+    LinWt setlinewidth
+  }if
+  grestore
+  ep 0 ne {
+    stroke
+  }if
+}def
+
+/CPthOut {
+  /ptyp exch def
+  /lw exch def
+  /vnum exch def
+
+  ptyp 2048 eq {/ptyp 0 def}if
+  ptyp 2048 gt ptyp 2059 le and {
+    ptyp 2048 sub SetLineType
+    /ptyp 0 def
+    /lw LinWt def
+  }if
+  ptyp 2 eq {
+    2 1 vnum { 
+      pop /segvcnt exch def
+      moveto
+      2 1 segvcnt {
+        pop lineto
+      }for
+      gsave closepath grestore
+      gsave fill grestore stroke
+    }for
+  }if
+  ptyp 0 eq ptyp 1 eq or{
+    1 1 vnum {
+      pop lineto
+    }for
+  }if
+  0 setlinecap
+  LinWt setlinewidth
+  [] 0 setdash
+}def %CPthOut
+
+/FlshOut {
+  gsave
+  translate
+  scale
+  rotate
+  cvx
+  exec
+  grestore
+}def %FlshOut
+
+/M {
+  moveto
+}def
+
+/L {
+  lineto
+}def
+
+/PBSgOut {
+  M L L L L L
+  gsave fill grestore stroke
+}def
+
+/PBEdOut {
+  M L L L L
+  gsave fill grestore stroke
+}def
+
+/Bknd {1 1 1} def
+/FGnd {0 0 0} def
+/RGBMp
+[
+[0.0 0.0 0.0]	%Black		1 
+[1.0 0.0 0.0]	%Red		2 
+[0.0 1.0 0.0]	%Green		3 
+[1.0 1.0 0.0]	%Yellow		4
+[0.0 0.0 1.0]	%Blue		5
+[1.0 0.0 1.0]	%Magen		6
+[0.0 1.0 1.0]	%Cyan		7
+]
+def
+/rgb_mod 7 def
+
+/setcol {
+  /pct exch def
+  /clr exch def
+ 
+  /colval RGBMp clr get def
+  /RVal colval 0 get pct mul def
+  /GVal colval 1 get pct mul def
+  /BVal colval 2 get pct mul def
+  RVal GVal BVal setrgbcolor
+}def
+
+/ClrSet {
+  /clr exch def
+
+  /pct 0 def
+
+  clr rgb_mod le clr 0 gt and {
+    /pct 1 def
+    clr 1 sub pct setcol
+  }if
+  MaxPn 0 gt pct 1 ne and{
+    /tmpclr clr MaxPn mod def
+    /pval2 MaxPn rgb_mod div .5 add def
+    /pval1 tmpclr rgb_mod div 1 add def
+    /pval pval1 pval2 div def
+    /pct 1 pval sub def
+    /clr clr rgb_mod mod def
+    clr 1 sub pct setcol
+  }if
+}def
+
+/ActMinX 0 def
+/ActMinY 0 def
+/ActMaxX 0 def
+/ActMaxY 0 def
+
+/DispNeg {
+  gsave
+  initgraphics
+  FGnd setrgbcolor
+  ActMinX ActMinY moveto
+  ActMaxX ActMinY lineto
+  ActMaxX ActMaxY lineto
+  ActMinX ActMaxY lineto
+  closepath fill stroke
+  grestore
+}def

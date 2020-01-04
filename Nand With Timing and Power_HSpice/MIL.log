@@ -1,0 +1,20 @@
+pnlAddPane();
+nil
+1
+designOpen("c:\\users\\ssa\\desktop\\hspice_ca2\\nand.sp");
+"D0"
+t
+quit();
+exit
+pnlDeletePane(1, 1);
+nil
+nil
+0","TIME"));
+nil
+pnlAddCurve(1, node(D0,"A0","v(out)"), node(D0,"A0","TIME"));
+nil
+quit();
+exit
+pnlDeletePane(1, 1);
+nil
+nil

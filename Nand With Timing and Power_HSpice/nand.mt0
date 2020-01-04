@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='A-2008.03 32-BIT'
+.TITLE '*cmos nand*'
+ average_power    temper           alter#            
+    0.              25.0000           1.0000         

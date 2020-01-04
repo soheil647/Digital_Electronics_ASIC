@@ -1,0 +1,202 @@
+(edif
+	Adder1Bit
+	(edifVersion 2 0 0)
+	(edifLevel 0)
+	(keywordMap (keywordLevel 0))
+	(status
+		(written
+			(timestamp 1999 2 11 20 55 6)
+			(program "S-Edit" (version "Version 6.00 Beta 6"))))
+	(library Adder1Bit
+		(edifLevel 0)
+		(technology (numberDefinition (scale 1 (E 1 -12) (unit CAPACITANCE))))
+
+		(cell XOR2
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 2 11 20 55 6)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port A
+						(property (rename &_23 "#") (string "1"))
+						(direction INPUT))
+					(port B
+						(property (rename &_23 "#") (string "2"))
+						(direction INPUT))
+					(port Out
+						(property (rename &_23 "#") (string "3"))
+						(direction OUTPUT))
+					(property DEVICE (string "XOR2"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "4"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "5"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell NAND2
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 2 11 20 55 6)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port A
+						(property (rename &_23 "#") (string "1"))
+						(direction INPUT))
+					(port B
+						(property (rename &_23 "#") (string "2"))
+						(direction INPUT))
+					(port Out
+						(property (rename &_23 "#") (string "3"))
+						(direction OUTPUT))
+					(property DEVICE (string "NAND2"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "4"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "5"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell Adder1Bit
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1999 2 11 20 55 6)
+					(program "S-Edit" (version "Version 6.00 Beta 6"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port A
+						(property (rename &_23 "#") (string "1"))
+						(direction INPUT))
+					(port B
+						(property (rename &_23 "#") (string "2"))
+						(direction INPUT))
+					(port Cin
+						(property (rename &_23 "#") (string "3"))
+						(direction INPUT))
+					(port Cout
+						(property (rename &_23 "#") (string "4"))
+						(direction OUTPUT))
+					(port S
+						(property (rename &_23 "#") (string "5"))
+						(direction OUTPUT))
+				)
+				(contents
+					(instance X1
+						(viewRef view_1 (cellRef XOR2))
+						(portInstance A)
+						(portInstance B)
+						(portInstance Out)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property Instance (string "X1"))
+					)
+					(instance X3
+						(viewRef view_1 (cellRef XOR2))
+						(portInstance A)
+						(portInstance B)
+						(portInstance Out)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property Instance (string "X3"))
+					)
+					(instance X2
+						(viewRef view_1 (cellRef NAND2))
+						(portInstance A)
+						(portInstance B)
+						(portInstance Out)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property Instance (string "X2"))
+					)
+					(instance X4
+						(viewRef view_1 (cellRef NAND2))
+						(portInstance A)
+						(portInstance B)
+						(portInstance Out)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property Instance (string "X4"))
+					)
+					(instance X5
+						(viewRef view_1 (cellRef NAND2))
+						(portInstance A)
+						(portInstance B)
+						(portInstance Out)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property Instance (string "X5"))
+					)
+					(net Cout
+						(joined
+							(portRef Out (instanceRef X5))
+							(portRef Cout)
+					))
+					(net Net1
+						(joined
+							(portRef B (instanceRef X3))
+							(portRef Out (instanceRef X1))
+							(portRef B (instanceRef X4))
+					))
+					(net Net2
+						(joined
+							(portRef A (instanceRef X5))
+							(portRef Out (instanceRef X4))
+					))
+					(net Net3
+						(joined
+							(portRef B (instanceRef X5))
+							(portRef Out (instanceRef X2))
+					))
+					(net A
+						(joined
+							(portRef A (instanceRef X1))
+							(portRef A (instanceRef X2))
+							(portRef A)
+					))
+					(net B
+						(joined
+							(portRef B (instanceRef X1))
+							(portRef B (instanceRef X2))
+							(portRef B)
+					))
+					(net S
+						(joined
+							(portRef Out (instanceRef X3))
+							(portRef S)
+					))
+					(net Cin
+						(joined
+							(portRef A (instanceRef X3))
+							(portRef A (instanceRef X4))
+							(portRef Cin)
+					))
+				)
+		))
+	)
+	(design ROOT
+		(cellRef Adder1Bit
+			(libraryRef Adder1Bit)))
+)

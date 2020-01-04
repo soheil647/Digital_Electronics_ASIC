@@ -1,0 +1,145 @@
+# File:            mHP_n05.ext
+# For:             Extract definition file
+# Vendor:          MOSIS/HP
+# Technology:      0.5u (Lambda = 0.35um) / N-well (SCN3M) Tight Metal
+# Technology File: mHP_n05.tdb
+# Copyright © 1991-2001 Tanner EDA, A Division of Tanner Research, Inc.
+# All Rights Reserved 
+#
+# This file will work only with L-EDIT Version 7 and greater.
+# ****************************************************************************
+
+connect(n well wire, ndiff, ndiff)
+connect(subs, pdiff, pdiff)
+connect(allsubs, subs, subs)
+connect(ndiff, AllMetal1, Active Contact)
+connect(pdiff, AllMetal1, Active Contact)
+connect(poly wire, AllMetal1, Poly Contact)
+connect(AllMetal1, AllMetal2, Via1)
+connect(AllMetal2, Metal3, Via2)
+connect(Metal1-Tight, Metal1, Metal1-Tight bloat)
+connect(Metal2-Tight, Metal2, Metal2-Tight bloat)
+connect(LPNP emitter, pdiff, LPNP emitter)
+connect(LPNP collector, pdiff, LPNP collector)
+
+# NMOS transistor with poly1 gate
+device = MOSFET(
+               RLAYER=ntran;  
+               Drain=ndiff,  AREA, PERIMETER;
+               Gate=poly wire;   
+               Source=ndiff,  AREA, PERIMETER;
+               Bulk=subs;
+               MODEL=NMOS;
+               )
+
+# PMOS transistor with poly1 gate
+device = MOSFET(
+               RLAYER=ptran;
+               Drain=pdiff, AREA, PERIMETER;
+               Gate=poly wire;
+               Source=pdiff, AREA, PERIMETER;
+               Bulk=n well wire;
+               MODEL=PMOS;
+               )
+
+# PNP transistor
+device = BJT(
+            RLAYER=LPNP ID, AREA;
+            Collector=LPNP collector;
+            Base=n well wire ;
+            Emitter=LPNP emitter;
+            Substrate=allsubs;
+            MODEL=PNP;
+            NominalArea = 1.0;
+            )
+
+# Linear capacitor using Cap-Well
+device = CAP(
+            RLAYER=cap using Cap-Well, AREA;
+            Plus=poly wire;
+            Minus=ndiff;
+            MODEL=;
+            )
+
+# NMOS capacitor
+device = CAP(
+            RLAYER=NMOS Capacitor, AREA;
+            Plus=poly wire;
+            Minus=ndiff;
+            MODEL=;
+            )
+
+# PMOS capacitor
+device = CAP(
+            RLAYER=PMOS Capacitor, AREA;
+            Plus=poly wire;
+            Minus=pdiff;
+            MODEL=;
+            )
+
+# Poly resistor
+device = RES(
+            RLAYER=Poly Resistor;
+            Plus=poly wire;
+            Minus=poly wire;
+            MODEL=;
+            )
+
+# N Diffusion resistor
+device = RES(
+            RLAYER=N Diff Resistor;
+            Plus=ndiff;
+            Minus=ndiff;
+            MODEL=;
+            )
+
+# P Diffusion resistor
+device = RES(
+            RLAYER=P Diff Resistor;
+            Plus=pdiff;
+            Minus=pdiff;
+            MODEL=;
+            )
+
+# N Well resistor
+device = RES(
+            RLAYER=N Well Resistor;
+            Plus=n well wire;
+            Minus=n well wire;
+            MODEL=;
+            )
+
+# Bonding Area Capacitance
+device = CAP(
+            RLAYER=Pad Comment, AREA;
+            Plus=AllMetal1;
+            Minus=allsubs;
+            MODEL=;
+            )
+
+# Diodes
+device = DIODE(
+              RLAYER=diode pdiff, AREA;
+              Plus=pdiff;
+              Minus=n well wire;
+              MODEL=Dpdiff;
+              NominalArea = 1.0;
+              ) IGNORE_SHORTS
+
+device = DIODE(
+              RLAYER=diode ndiff, AREA;
+              Plus=subs;
+              Minus=ndiff;
+              MODEL=Dndiff;
+              NominalArea = 1.0;
+              ) IGNORE_SHORTS
+
+# Lateral Diode
+device = DIODE(
+              RLAYER=diode_lat, AREA;
+              Plus=pdiff;
+              Minus=ndiff;
+              MODEL=D_lateral;
+              NominalArea = 1.0;
+              ) IGNORE_SHORTS
+

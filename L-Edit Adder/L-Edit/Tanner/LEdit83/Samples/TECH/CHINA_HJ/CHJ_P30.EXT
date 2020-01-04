@@ -1,0 +1,45 @@
+# File:		CHJ_p30.ext
+# For:		Extract definition file
+# Vendor:		China Hua-Jing Microelectronics Group - Toshiba
+# Technology:	3.0u (Lambda = 1.5um) / P-Well (1P 2M)
+# Technology File:	CHJ_p30.tdb
+# Copyright © 1994-2001 IEASIC, Academia Sinica Institute of Electronics, Beijing, R.R.China  
+# All Rights Reserved 
+#
+# This file will work only with L-EDIT Version 7 and greater.
+# ****************************************************************************
+
+connect(P- WELL, pdiff, pdiff)
+connect(subs, ndiff, subs)
+connect(allsubs, subs, subs)
+connect(ndiff, METAL 1, CONTACT)
+connect(pdiff, METAL 1, CONTACT)
+connect(POLY, METAL 1, CONTACT)
+connect(METAL 1, METAL 2, VIA)
+
+# NMOS transistor with poly gate
+device = MOSFET(
+               RLAYER=ntran;  
+               Drain=ndiff, AREA, PERIMETER;
+               Gate=POLY;
+               Source=ndiff, AREA, PERIMETER;
+               Bulk=P- WELL;
+               MODEL=NMOS;
+               )
+
+# PMOS transistor with poly gate
+device = MOSFET(
+               RLAYER=ptran;
+               Drain=pdiff, AREA, PERIMETER;
+               Gate=POLY;
+               Source=pdiff, AREA, PERIMETER;
+               Bulk=subs;
+               MODEL=PMOS;
+               )
+
+# Bonding Area
+# device = SUBCKT(
+#                RLAYER=PASSIVATION;
+#                Pin1=METAL 1;
+#                MODEL=PADBOND;
+#                )

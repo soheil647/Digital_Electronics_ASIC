@@ -1,0 +1,387 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\fswiss\fprq2\fcharset0 Arial;}{\f2\fswiss\fcharset0 Arial;}{\f3\fswiss Arial;}{\f4\froman\fprq2\fcharset204{\*\fname Times New Roman;}Times New Roman CYR;}{\f5\froman\fprq2 Times New Roman;}{\f6\fswiss\fprq2 Arial;}{\f7\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red255\green0\blue0;}
+\viewkind4\uc1\pard\qc\b\f0\fs36 L-Edit Pro\par
+Version 8.30\fs24\par
+\pard\par
+This program requires the following:\par
+\b0\f1\fs20    Microsoft\'ae Windows 2000**, Windows NT 4.0 (Service Pack 3 or greater), Windows 98/ME\par
+   Pentium (or better) class of Intel\f0\fs24\'ae \f1\fs20 processor, 166 MHZ or better\par
+   64 MB RAM or more\par
+   50 MB of available disk space (and additional 50 MB during installation)\par
+\b\f0\fs24\par
+\b0\f1\fs20 To install, insert the distribution CD and run SETUP.EXE from the Windows operating system.  The Tanner Tools Setup program will provide information on how to proceed.\par
+\b\f0\fs24\par
+\ul COPY PROTECTION\ulnone\par
+\b0\f1\fs20 This software is copy protected. It needs a license to work.  License must be obtained from Tanner Research, Inc.  Program will then verify a license either from License Server, installed on your company network, or from hardware lock, installed on your computer's parallel port.\par
+\b\f0\fs24\par
+\ul WARNING Windows 2000**\ulnone\par
+\b0\f2\fs20 Windows 2000 releases earlier than Service Pack 2 are known to contain a bug that can cause severe perfromance degradation of L-Edit Pro. Please refer to the Microsoft website to obtain the latest information on how to fix the problem.  A summary of the problem and a link to the Microsoft website is provided below:  Tanner recommends installing either the Latest Windows 2000 Service Pack or the Windows 2000 Post SP1 Update For Exchange 2000 Server and Commerce Server 2000.  Both the patch and service pack can be obtained from the URL below.\f3\par
+\par
+\b\i Article ID:\b0\i0  \cf1\b Q257357\cf0\b0\par
+\par
+\b\i Title:\b0\i0  Performance Degradation When Heap Is Fragmented\par
+\par
+\b\i Summary:\b0\i0  An application that frequently allocates or frees memory (directly or indirectly) may experience serious performance degradation when the heap is fragmented.  \par
+\par
+\cf1\ul http://support.microsoft.com/support/kb/articles/Q257/3/57.ASP\par
+\cf0\ulnone\b\f0\fs24\par
+\ul WARNING Interlink or LapLink\ulnone\b0\f1\fs20\par
+When using the Interlink or LapLink utilities over the same port as the Tanner Research Sentinel C-Plus-B hardware lock, the user must first remove the hardware lock from the parallel port.  This must be done in order to keep the Sentinel C-Plus-B lock functional.\par
+\b\f0\fs24\par
+Tanner Research, Inc.\par
+2650 East Foothill Boulevard\par
+Pasadena, CA  91107, USA\par
+\par
+Telephone:\tab 1-877-304-5544 (Toll Free)\par
+\tab\tab 1-626-792-3000\par
+Fax:\tab\tab 1-626-792-0300\par
+e-mail:\tab\tab support@tanner.com\par
+\fs36\par
+\pard\qc What's New in L-Edit v8.30\par
+\pard\tx360\cf2\b0\fs20\par
+\pard\b\fs32 Rendering Enhancements\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0\fs20 True-color mode (24 & 32-bit) is supported.  L-Edit is optimized for running in true-color mode on Windows NT/2000.  For optimal performance, Tanner recommends running L-Edit in true-color mode on Windows 2000 with a video card having at least 32 MB on-board memory.  256-color mode is still support but rendering will not be optimal in this mode.\par
+{\pntext\f7\'B7\tab}Full chip rendering speed is significantly improved.  Rendering in general is faster especially for new computers with the latest graphics cards.\par
+{\pntext\f7\'B7\tab}L-Edit now supports 16, 32, 64, 128, or 256 colors in the design color palette.  The previous version only allowed 16 colors.  See \b Setup>Palette\b0 .\par
+{\pntext\f7\'B7\tab}Setup of layer rendering has been simplified.  A new "paint" mode has been added that paints the geometry without any color mixing.  See \b Setup>Layers>Rendering\b0 .\par
+{\pntext\f7\'B7\tab}New rendering performance options.  See \b Setup>Application>Rendering:\b0\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li720\tx360\b Cache instances smaller than:\b0  Defines the minimum size in pixels an instance must be so it will be cached.  Cached instances can be rendered at much higher speeds than non-cached instances because they are rendered once and then copied everywhere they are instanced.\par
+\b{\pntext\f7\'B7\tab}Rendering can be interrupted:\b0  Enables interruption of rendering by any keystroke or mouse click, without having to finish the redraw.  Rendering is faster with this option turned off.\par
+\b{\pntext\f7\'B7\tab}Show design while rendering:\b0  Shows the partially rendered design at specific intervals of time.  If this option is turned off, then the design will not be displayed until all of the design has been rendered.  The intermediate rendering updates are useful when you need to quickly move-around a dense layout because you can make a decision for panning or zooming when you have seen only part of the layout.  Rendering is faster with this option turned off but might feel slower because there may be a delay between start of rendering and seeing the layout.\par
+\b{\pntext\f7\'B7\tab}Redraw All windows/Active window only:\b0  Sets rendering to update all windows when active window is modified, or only update the active window.  Selecting "\i Active window only\i0 " can improve editing responsiveness of L-Edit on large designs or when many windows are open. \par
+\b{\pntext\f7\'B7\tab}Fill objects when editing/drawing:\b0  Sets the default rendering of objects while drawing or graphical editing to be filled or unfilled.  Use \b Tab\b0  key to toggle filled/unfilled while drawing or graphically editing.\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\cf0\b New Tab key Functionality during Drawing or Editing:\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li720\tx360\b0 Pressing the \b Tab\b0  key while drawing objects will toggle the rendering of the object from filled to outline mode.  In filled mode, the object is rendered with a transparent checkered stipple patterned to see objects underneath, as color mixing is not performed until the drawing operation is finished.\par
+{\pntext\f7\'B7\tab}Pressing the \b Tab\b0  key while moving an instance will toggle the rendering of the instance from \i instance outline\i0  to \i insides rendered with outlines\i0  to \i insides rendered filled\i0 .  Only the top level inside the instance is rendered while toggling.\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\cf2\b New mouse wheel functions: \b0\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li720\tx360 With the cursor over the layout window, use the mouse wheel to pan the layout up and down. Hold the \b Shift\b0  key while rolling the mouse wheel to pan the layout left and right.  Hold the \b Ctrl\b0  key while rolling the mouse wheel to zoom in and out centered at the cursor.\par
+{\pntext\f7\'B7\tab}With the cursor over Design Navigator or text window, use the mouse wheel to scroll up and down.\par
+{\pntext\f7\'B7\tab}With mouse pointer over cross section, use the mouse wheel to step forward and backwards through the processing steps.\par
+{\pntext\f7\'B7\tab}With the mouse pointer over any other area of L-Edit that is not a layout window or design navigator (gray area, title bars, toolbars, menu) use the mouse wheel to cycle through (make active) all windows.  Hold Ctrl key to cycle though all windows of active TDB file.\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent0{\pntxtb\'B7}}\fi-360\li360\tx360 Outline styles are now rendered faster\par
+{\pntext\f7\'B7\tab}L-Edit does not zoom out during the Slice function.\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\tx360\par
+\b\fs32{\pntext\f7\'B7\tab}L-Edit Enhancements\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0\fs20 Deleting many objects in a dense layout is now much faster.\par
+{\pntext\f7\'B7\tab}CIF export warns when data is written smaller than default resolution of 0.01 micron for BOX center points.\par
+{\pntext\f7\'B7\tab}Progress dialogs now include both elapsed time and estimate time left.\par
+{\pntext\f7\'B7\tab}Better GDSII output filename suggestions for All Cells vs Selected Cell.  When exporting to GDSII, if "All Cells" is selected then the output filename is the TDB filename with the extension being .gds instead of .TDB (i.e. wipro6.tdb -> wipro6.gds).  If "Selected cell and its hierarchy"  is selected then the output filename is the cell name with the extension being .gds (i.e. chipTop -> chipTop.gds).  If the user changes the selected cell, the filename should be updated.\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\tx360\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\b\fs32 DRC Enhancements\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0\fs20 DRC speed is significantly improved, from 2 to 120 times faster (2x-120x).  In particular, DRC is faster for designs containing large numbers of derived layers with GROW or SHRINK.\par
+{\pntext\f7\'B7\tab}Flagging of off-grid objects is now supported.  See \b Tools>DRC>Advanced\b0  tab.\par
+{\pntext\f7\'B7\tab}Flagging of objects ignored by DRC engine is now supported (all-angle objects, arcs, tori, circles, polygons with curves).  See \b Tools>DRC>Advanced\b0  tab.\par
+{\pntext\f7\'B7\tab}Detailed DRC timing information can be written to the log file, allowing one to optimize the DRC runtime.\par
+{\pntext\f7\'B7\tab}Density checks can be performed with DRC such as layer utilization or contact density in pad opening.\par
+{\pntext\f7\'B7\tab}Setup DRC is now linked with Setup Layers\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\tx360\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\b\fs32 Generate Layers Enhancements\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0\fs20 New capability to select geometry based on its relation to other geometry.  Select operations include Inside, Outside, Hole, Cut, Touch, Enclose, Overlap, and Vertex.  This allows one to create a new layer with a copy of all geometry on one layer that is touching geometry on another layer.  See \b Setup>Layers>Derivation\b0  tab.\par
+{\pntext\f7\'B7\tab}New capability to select geometry based on its area.  This may be used in conjunction with a "NOT EXISTS" DRC check to detect area violations.  See \b Setup>Layers>Derivation\b0  tab.\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\tx360\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\b\f4\fs32 DRACULA\super\'ae\nosupersub  Rule Set Import\f0\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\tx360\b0\fs20 A translator is provided to import DRACULA\cf0\f4\'ae\cf2\f0  DRC rule sets into L-Edit.  See \b Tools>DRC>Setup DRC\b0  button\b >Import DRACULA\super\b0\'ae\nosupersub  button (or use Setup DRC button on the DRC toolbar).  The translator cannot translate conjunctive rules (&), LENGTH, PLENGTH, trapfile and R options (post-processing DRC rule results \{edges\}), connectivity-based rules such as same node, antenna rules or different potential rules, extraction rules, and LVS rules.\b\fs24\par
+\b0\fs20{\pntext\f7\'B7\tab}\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\b\fs32 UPI Enhancements\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0\i\fs20 LObject_ChangeLayer\i0  changes an object\rquote s layer.\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\tx360\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\b\fs32 Command Line\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0\fs20 Command Line interface is now available in L-Edit.  To activate the command line, use \b Tools>Activate Command Line.\b0   Please refer to documentation for details.\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\tx360\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\b\fs32 UPILIB\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0\fs20 UPILIB macros are now bundled with L-Edit, and are available from the \b Tools>UPILIB\b0  menu.  These include utilities for geometry text generator, alignment toolbar, layer view state manager, utilities for GDS Properties, text resizing, and saving a cell to TDB file.  Please refer to \b Help>UPILIB\b0  documentation for details.\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\cf0\fs24\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\tx360\cf2\b\fs32 Bug Fixes\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\li360\tx360\b\fs28 L-Edit - General\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\li720\tx360 Some INI files no longer take excessively long to load.\par
+{\pntext\f7\'B7\tab}Replace Setup now transfers X-Ref File information correctly.\par
+{\pntext\f7\'B7\tab}The number of vertices for polygons is displayed in the status bar.\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\li360\tx360\b\fs28 L-Edit - Rendering\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\li720\tx360 Selection outline no longer partially disappears on SHIFT + select.\par
+{\pntext\f7\'B7\tab}Wire centerline no longer displayed as diagonal at some zoom levels\par
+{\pntext\f7\'B7\tab}All-Angle polygon are rendered properly (correct color and no holes) at all zoom levels\par
+{\pntext\f7\'B7\tab}Instance outline is now rendered correctly on high zoom levels.\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\li360\tx360\b\fs28 L-Edit - Generate Layers\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\li720\tx360 L-Edit correctly generates layers for all NOT/Grow/Shrink combinations.\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\li360\tx360\b\fs28 Licensing\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\li720\tx360 L-Edit now handles two licenses servers.\par
+{\pntext\f7\'B7\tab}L-Edit no longer loses network licenses during heavy use.\par
+{\pntext\f7\'B7\tab}The registry can be updated for L-Edit, if the user does not have admin privileges.\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\li360\tx360\b\fs28 Extract\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\li720\tx360 Subcircuit extract no longer crashes when not writing nodes as names.\par
+{\pntext\f7\'B7\tab}Extract no longer reports cell version incorrectly: 1.1 instead of 1.01\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\li360\tx360\b\fs28 UPI\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\li720\tx360 UPI \ldblquote quiet mode\rdblquote  now suppresses the read-only warning on \i LFile_Open\i0 .\par
+{\pntext\f7\'B7\tab}The cell name conflict with UPI function \i LCell_Copy\i0  has been fixed.\par
+{\pntext\f7\'B7\tab}UPI sample POLARARY macro no longer crashes L-Edit, both DLL and interpreted.\par
+\i{\pntext\f7\'B7\tab}LFile_Save\i0  now works after GDSII Import.\par
+\i{\pntext\f7\'B7\tab}LFile_Save\i0  now always saves the design as TDB.\par
+{\pntext\f7\'B7\tab}New layers created with UPI macro are now saved to the design when using \i LFile_Save\i0 .\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlcont\pnf7\pnindent0{\pntxtb\'B7}}\li360\tx360\b\fs28 UPILIB\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\li720\tx360 Logo macro no longer crashes when not instancing the logo.\par
+\pard\cf0\fs24\par
+\pard\qc\cf2\b\f5\fs28 Known Issues\par
+\pard\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360 When extracting transistors with ring gate structures, \f0 the pin connections and W and L are extracted correctly, the \f5 area and perimeter of source and drain \f0 are \f5 not \f0 extracted \f5 correct\f0 ly\f5  for all bin sizes.\par
+\f0{\pntext\f7\'B7\tab}O\f5 utline \f0 rendering \f5 attributes will slow down rendering. \f0  \f5 Thick and/or patterned outline\f0 s\f5  \f0 are\f5  slower to draw than thin solid outline\f0 s\f5 .\par
+{\pntext\f7\'B7\tab}Extract definition files shipped with L-Edit version 7.0 and above may not work with L-Edit 6.6 and below. \f0  \f5 Be sure to use the correct version of an extract definition file.\par
+\pard\qc\cf0\b\fs36\par
+What's New in L-Edit v8.2\f0 3\b0\f5\fs20\par
+\b\fs28\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0\f0\fs20 L-Edit Pro now installs to C:\\Tanner\\L-EditXX directory by default. In the directory name XX indicates the major and first digit of minor release number.\cf2\f5\par
+\cf0\f0{\pntext\f7\'B7\tab}The MOSIS checksum for CIF and GDSII has been upgraded to use the CRC Checksum routine. \cf2\f5\par
+\cf0\f0{\pntext\f7\'B7\tab}Wire width is now properly reported in the status bar, rounding error has been fixed.  \cf2\f5\par
+\pard\qc\cf0\b\fs36\par
+What's New in L-Edit v8.22\b0\fs20\par
+\b\fs28\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\cf2\b0\fs20 Fixed duplicate first and last vertex in certain polygons with over 50 vertices, first appearing in L-Edit 8.21\cf0 . Fixes layer generation using polygons with over 50 vertices.\cf2\par
+\pard\qc\cf0\b\fs36\par
+What's New in L-Edit v8.21\b0\fs20\par
+\b\fs28\par
+\pard\fs24 TDB Design Database\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\cf2\b0 Speed of load and save to TDB for large designs is improved\cf3 .\cf2\par
+{\pntext\f7\'B7\tab}Performance of cell instancing across files is improved.\par
+\pard\fi-360\li360\tx360\b\par
+\pard\fs24 CIF Enhancements\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0 Rulers do not produce warning if hidden during CIF export.\par
+{\pntext\f7\'B7\tab}CIF header is now writes the correct date information and does not write beta.\par
+\pard\fi-360\li360\tx360\b\par
+\fs24 Extract Fixes\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0 Transistors with ring gate structures now extract W and L correctly for all bin sizes.\par
+{\pntext\f7\'B7\tab}For certain designs, Extract extracted incorrectly for large bin sizes.  This has been fixed.\par
+{\pntext\f7\'B7\tab}Subcircuit extract is no longer writing out duplicate subcircuits.\par
+{\pntext\f7\'B7\tab}Subcircuit extract is no longer extracting a single node as two separate nodes.\par
+\pard\fi-360\li360\tx360\b\par
+\fs24 New UPI Macros\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0 LLayer_Delete does not remove the layer if objects are on that layer.\par
+{\pntext\f7\'B7\tab}LSelection_AddAllObjectsOnLayer now adds all ports also.\par
+{\pntext\f7\'B7\tab}LObject_Delete does not crash if the object being deleted was selected in a cell that was no longer active.\par
+\pard\tx360\par
+\b\fs24 Licensing\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0\fs20 Version 5.38 of the Sentinel driver is now installed on Windows 2000 computers.\par
+\pard\b\par
+\fs24 LVS fix\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0 LVS now correctly optimizes parallel devices.\par
+\pard\qc\b\fs36\par
+What's New in L-Edit v8.2\b0\fs20\par
+\b\fs28\par
+\pard\fs24 GDSII Enhancements\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0 Handling of GDS properties is improved in L-Edit 8.2. Properties are read in from GDS, are preserved in TDB, and are exported back out to GDS. GDS properties may be edited, deleted, and new properties may be added.\par
+{\pntext\f7\'B7\tab}GDSII export is able to output only cell reference (SREF), without writing cell contents (STRUCTURE).\par
+{\pntext\f7\'B7\tab}GDSII export is able to output an individual selected cell.\par
+{\pntext\f7\'B7\tab}GDSII import is able to read files containing only cell references, and search the TDB library list to establish links to cell contents.\par
+{\pntext\f7\'B7\tab}GDSII import and export now produce a log file with detailed error and warning reporting.\par
+{\pntext\f7\'B7\tab}Full compatibility with Cadence for dates stored in GDSII.\par
+{\pntext\f7\'B7\tab}GDSII export now offers the option to output hidden layers.\par
+{\pntext\f7\'B7\tab}L-Edit is now able to support non-standard GDSII layer numbers and data-types, with warnings given on import and export for values out of range specified by GDSII format.\par
+{\pntext\f7\'B7\tab}Handling of GDS properties is improved in L-Edit 8.2. Properties are read in from GDS, are preserved in TDB, and are exported back out to GDS. Properties may also be edited, deleted, and new properties may be added.\b\par
+\pard\qc\b0\par
+\pard\b\fs24 TDB Library Support\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0 A TDB file can be setup with links to a list of other TDB files (Libraries). Cell from these libraries are readily accessible for instancing.\par
+{\pntext\f7\'B7\tab}Library cells are listed in the Design Navigator and Cell>Instance dialog for instancing or copying. Instancing from a library file establishes the instance as a reference to library cell.\b\par
+\pard\fi-360\li360\tx360\par
+\fs24 Layout Rendering Enhancements\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0 Wire centerline rendering is now an option. Wire centerlines may be rendered always, only when wire is selected, or never.\par
+{\pntext\f7\'B7\tab}Patterned outline rendering now supports all angle objects and specification of outline thickness in pixels as well as locator units.\par
+\pard\fi-360\li360\tx360\b\par
+\fs24 L-Edit Miscellaneous Enhancements\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0 The default cell chosen for Cell>Instance and Cell>Open operations now better anticipates the desired choice based on previous user operations.\par
+{\pntext\f7\'B7\tab}The warning for opening of read only files may now be turned off.\par
+\pard\fi-360\li360\tx360\b\par
+\fs24 DRC Modifications and Fixes\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0 The text alignment for DRC error ports is now center-below.\par
+{\pntext\f7\'B7\tab}The DRC warning for 45 degree objects with snap grid less than 100 internal units may now be turned off.\par
+{\pntext\f7\'B7\tab}False width error eliminated for particular 45 degree layout. Violation was flagged over area where no metal existed\par
+{\pntext\f7\'B7\tab}False surround rule errors produced when the surrounding layer is derived from a combination of Grow and Shrink operations have been fixed. \par
+{\pntext\f7\'B7\tab}Coincident Surround rule violations on geometry where enclosed layer was both intersecting and coincident with enclosing layer would be missed in previous versions of L-Edit, fixed in L-Edit 8.2.\par
+\pard\fi-360\li360\tx360\b\par
+\fs24 Extract Fixes\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0 Extract will no longer include the shared edge in the perimeter of a source or drain.\b\par
+\pard\fi-360\li360\tx360\par
+\fs24 New UPI Macros\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0 A macro to save a single cell to TDB is added to the UPI macro library.\par
+{\pntext\f7\'B7\tab}A macro to resize all port text in a file is added to the UPI macro library. Text may be scaled by a specified amount, or may be set to a specified size.\par
+{\pntext\f7\'B7\tab}A macro to save and restore layer settings for Lock, Hidden, and Derivation is added to the UPI macro library.\par
+\pard\tx360\par
+\b\fs24 Licensing\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0\fs20 Licensing checks performed during SPR no longer interfere with completion of the run.\par
+\pard\fi-360\li360\tx360\b\fs24\par
+\pard SPR fix\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0 Size of port text no longer affects SPR routing spacing.\par
+\pard\b\par
+\fs24 LVS fix\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\tx360\b0 Use of Area and Perimeter of Source and Drain in comparisons is fixed, permitting correct matching of parallel devices.\par
+{\pntext\f7\'B7\tab}Improved performance and memory utilization.\par
+\pard\qc\b\fs36\par
+What's New in L-Edit v8.11\b0\fs20\par
+\pard\b\fs24\par
+GDS\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 Enhanced GDS file import mechanism to handle dates in GDS II files that do not comply with Cadence's specification. \par
+\pard\fi-360\li360\par
+\pard\b\fs24 Extract\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\ul\fs20 Under certain circumstances\ulnone\b0 , subcircuit extract would cause program instabilities when subcircuit connection ports are located in the corner of subcircuit recognition polygons. This has been corrected\par
+{\pntext\f7\'B7\tab}Extract will no longer include the shared edge in the perimeter of a source or drain.\par
+\pard\qc\b\fs36\par
+What's New in L-Edit v8.1 \par
+\par
+\pard\fs24 Design Navigator \par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 Performance improvements: It now displays the hierarchy much faster.\i\par
+\i0{\pntext\f7\'B7\tab}A new option to display cells by \i date modified \i0 has been added.\i\par
+\pard\b\i0\fs24\par
+Editing \par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 Added two different edge selection mechanisms for objects (Refer to Setup->Application).\par
+{\pntext\f7\'B7\tab}Boxes can now be edited by specifying corners, center, width & height combinations (See Edit->EditObject)\par
+{\pntext\f7\'B7\tab}Noninteger rotation of instances is now possible.\par
+{\pntext\f7\'B7\tab}Selection is maintained after Undo.\par
+\pard\par
+\b\fs24 TDB\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360 File size now properly gets updated after saving the TDB.\par
+{\pntext\f7\'B7\tab}It is now possible to preview information about a TDB file including layers, technology, and entire design hierarchy, without having to open the file in L-Edit. Using the Windows file browser or the File Open dialog, right-click and select Properties from the pop-up menu.  Preview is available in a new Browse tab that has been added to the standard Windows file properties dialog.\f6\par
+\pard\f5\par
+\b\fs24 Rendering\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360 Faster rendering.\par
+{\pntext\f7\'B7\tab}Optional object display allows user to hide specified objects, reducing the amount of geometry L-Edit must draw on screen.\par
+{\pntext\f7\'B7\tab}We can now have patterned outline of objects. (See Setup->Layers.)\par
+{\pntext\f7\'B7\tab}Display is properly updated during an edit in-place operation.\par
+{\pntext\f7\'B7\tab}Point port locations are displayed as a cross (+).  (See Setup->Application.)\par
+{\pntext\f7\'B7\tab}Zoom in to circle now works properly.\par
+\pard\par
+\b\fs24 Port Text Alignment\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 Port texts are now handled in a way compatible with previous versions of L-Edit.\par
+\pard\par
+\b\fs24 Import & Export\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360 GDSII data type support has been fully implemented.\par
+{\pntext\f7\'B7\tab}Properties contained in a GDSII file can now be converted to ports. (File->Import Mask Data -.Options.)\par
+{\pntext\f7\'B7\tab}Import mask data defaults to the last-used file extension.\par
+\pard\par
+\b\fs24 XrefCells\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\lang1024 It is now possible to change the referenced cell name\lang1033 .\par
+\lang1024{\pntext\f7\'B7\tab}Fixed problem when XrefCells were not able to update if referenced cell had instances of newly created cells\lang1033 .\par
+{\pntext\f7\'B7\tab}An XrefCell can now be deleted from the Design Navigator.\par
+\pard\par
+\par
+\b\fs24 Toolbars\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 L-Edit now defaults to a better arrangement of toolbars.\par
+\pard\par
+\b\fs24 Find\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 Optional resumption of find operations at end of file.  When you search for an object in a TDB file, L-Edit prompts you to resume the search at the beginning of the file when it has found all specified objects. \par
+\pard\b\fs24\par
+Extract\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360 Extract definition files can now contain substrate node statements.  See "File Formats--Design Verification" (dvfiles.pdf) for updated syntax.\par
+{\pntext\f7\'B7\tab}Extract results are now independent of bin size.\par
+{\pntext\f7\'B7\tab}Areas and perimeters now partitioned correctly for multiple devices with shared sources and drains.\par
+{\pntext\f7\'B7\tab}Areas of rLayer or pins may be extracted for BJT, Diode, GAASFET, and JFET.\par
+{\pntext\f7\'B7\tab}Fringe capacitance works for both parasitic capacitance and capacitor devices.\par
+{\pntext\f7\'B7\tab}Source and drain perimeter now has option to include/exclude the gate width.\par
+{\pntext\f7\'B7\tab}Bulk node in device definition is optional for MOSFET.\par
+{\pntext\f7\'B7\tab}Device labels may be placed on recognition layer of each device or on specified layer.\par
+{\pntext\f7\'B7\tab}Memory usage improvements.\par
+{\pntext\f7\'B7\tab}IGNORE_SHORTS option fixed.\par
+\pard\par
+\par
+\b\fs24 SPR/EDIF\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 SPR can now handle large EDIF files much faster.\par
+\pard\par
+\par
+\b\fs24 BPR\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360 EDIF reading: it is possible now to map Exemplar Logic generated files.\par
+{\pntext\f7\'B7\tab}Routing quality improvements: removing of unnecessary jogs, better breakout quality, substantially reduced number of DRC violations near exits form pads and blocks.\par
+{\pntext\f7\'B7\tab}Miscellaneous bug fixes.\par
+\pard\par
+\b\fs24 UPI\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360 All DLL samples have been updated for Microsoft Developer Studio 6.0\par
+{\pntext\f7\'B7\tab}A new example has been added to illustrate MFC usage in a UPI macro.\par
+{\pntext\f7\'B7\tab}Various new functions have been added.\par
+\pard\qc\b\fs28\par
+\pard\fs24 UPILIB\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360 Added a new approximation macro for all-angle objects. This allows DRC, Extract and Cross Section on all-angle objects.\par
+\pard\qc\b\fs28\par
+\fs36 What's New in L-Edit v8.03\par
+\par
+\pard\fs24 Licensing \par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 Fixed the problem where L-Edit would freeze if a printer is also connected to the hardware lock.\par
+\pard\par
+\b\fs24 Extract \par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 Node conflicts are now written to the output spice file in comments.\par
+{\pntext\f7\'B7\tab}Source/drain area and perimeter calculations have been corrected.\par
+\pard\par
+\b\fs24 TDB\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360 Fixed backward compatibility problem if file contains cells copied from another TDB file.\par
+\pard\par
+\b\fs24 UPI\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360 Perimetr macro will now work properly if asked to check polygons, even rectilinear.\par
+\b{\pntext\f7\'B7\tab}w32ledit.lib \b0 is now called \b upilink.lib \b0 and can be found in \b <\i install_dir\i0 >\\upi\\DLL_include\b0 .\par
+\b{\pntext\f7\'B7\tab}lupi_usr.h \b0 has been merged into \b ldata.h\b0 .\par
+\pard\qc\b\fs36\par
+What's New in L-Edit v8.0\par
+\pard\b0\fs20\par
+\b\fs24 Design Navigator Enhancements\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 Reverse tree representation--a new display mode in the Design Navigator toggles between a top-down or bottom-up view of the hierarchy.\par
+\i{\pntext\f7\'B7\tab}Design Navigator\i0  information can be copied to a text view.\par
+{\pntext\f7\'B7\tab}Hierarchical cell lock and unlock.\par
+\b{\pntext\f7\'B7\tab}New Cell \b0 and \b Delete Cell \b0 buttons added to the Design Navigator.\par
+\pard\par
+\b\fs24 GUI Enhancements\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360 Display more information about the objects selected--a Details button on the status bar creates a text file with more detailed information about the objects selected.\par
+{\pntext\f7\'B7\tab}Editing toolbar.\par
+{\pntext\f7\'B7\tab}Verification toolbar.\par
+\pard\par
+\b\fs24 Viewing Enhancements\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360 View hierarchy by levels-- allows you to show or hide the insides of instances at any level of the design hierarchy.\par
+{\pntext\f7\'B7\tab}Basic support for more than 256 color settings-- when you run L-Edit with color resolution higher than 256 colors, L-Edit will prompt you to convert all layer rendering to outline mode.  (Outlines will be displayed correctly in 256 color mode but filled mode will not produce correct results in more than 256 colors.)\par
+\pard  \par
+\b\fs24 Drawing Enhancements\b0\fs20\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360 Warn when polygons or wires are self-intersecting or have ambiguous fills.\par
+\pard\par
+\b\fs24 Editing Enhancements\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 Add wire section--allows you to easily add vertices to wires.  This command allows you to add sections to a wire and stretch that section around other obstacles.\par
+{\pntext\f7\'B7\tab}Point selection of edges--select edges by clicking on them.\par
+{\pntext\f7\'B7\tab}Curve support--provides the ability to create polygons with curved edges.\par
+{\pntext\f7\'B7\tab}Better port text alignment and orientation control.\par
+{\pntext\f7\'B7\tab}Most recently set author and organization is retained and propagated to new cells and files.\par
+\pard\b\fs24\par
+Productivity Enhancements\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 Goto command.\par
+{\pntext\f7\'B7\tab}Ability to lock and unlock all layers except the current one.\par
+\pard\b\fs24\par
+File Enhancements\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 XrefCells provide the ability to link to a cell in another TDB file.\par
+{\pntext\f7\'B7\tab}File tracking--L-Edit displays the filename and user of open files.\par
+{\pntext\f7\'B7\tab}Layer mapping--when copying files with different layers, you can copy or map any missing layers.\par
+{\pntext\f7\'B7\tab}Properties--any object, file, cell or layer can have user-defined properties associated with it.\par
+\pard\b\fs24\par
+Setup Enhancements\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 GDSII data type support for layers allows you to use data types to bypass the 64-layer limit of GDSII.\par
+\pard\par
+\b\fs24 UPI Enhancements\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 New Properties UPI.\par
+{\pntext\f7\'B7\tab}Ability to add vertices to polygons and wires.\par
+\pard\par
+\b\fs24 SPR Enhancements\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 EDIF netlist input.\par
+{\pntext\f7\'B7\tab}Mapping of cell and port names between netlist and library.\par
+{\pntext\f7\'B7\tab}SDF output: choice between pin-to-pin delay and net delay.\par
+{\pntext\f7\'B7\tab}Initialize setup button: setup initialization with netlist information.\par
+{\pntext\f7\'B7\tab}Three-layer routing.\par
+{\pntext\f7\'B7\tab}Over-the-cell routing.\par
+{\pntext\f7\'B7\tab}Routing optimization: net length and via reduction.\par
+{\pntext\f7\'B7\tab}Channel compaction.\par
+{\pntext\f7\'B7\tab}Internal calculation of SPR grid.\par
+{\pntext\f7\'B7\tab}Pad contacts.\par
+{\pntext\f7\'B7\tab}Consideration of critical nets.\par
+{\pntext\f7\'B7\tab}Cell clustering: grouping of standard cells. \par
+{\pntext\f7\'B7\tab}Optional manual input for Vdd and Gnd rail widths. \par
+{\pntext\f7\'B7\tab}Summary of place and route results always accessible.\par
+\pard\par
+\b\fs24 Block Place and Route (BPR)\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360\b0\fs20 Block-level design planning, implementation and chip assembly tool suite.\par
+{\pntext\f7\'B7\tab}With BPR you can incorporate IP blocks, custom blocks and standard cells into your design, perform basic floorplanning, and evaluate and control interconnect parameters--resulting in a more tightly integrated design. At any time during the design process, you can easily place and route blocks or perform signal integrity and timing analysis to ensure adherence to performance requirements. Automatic and manual routing may be intermixed with the user-assisted routing feature.\par
+\pard\par
+During the design implementation stage, BPR provides you with powerful, flexible, connectivity-based tools for interactive and automatic placement and routing, including capabilities such as:\par
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li360 Persistent connectivity information throughout layout operations.\par
+{\pntext\f7\'B7\tab}Topology-driven automatic routing.\par
+{\pntext\f7\'B7\tab}Built-in fast delay calculator.\par
+{\pntext\f7\'B7\tab}On-line SPICE signal integrity analysis.\par
+{\pntext\f7\'B7\tab}Integrated design environment based on unified physical, electrical, and timing information.\par
+}
+ 

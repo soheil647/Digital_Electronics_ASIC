@@ -1,0 +1,278 @@
+ ****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+  Copyright (C) 2012 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: ca4_part3.sp                                                      
+  Command line options: -i ca4_part3.sp -o ca4_part3.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   Anita                HOSTNAME: Anita-PC 
+  lic: HOSTID: "00fff2ef28a6 904ce5701846 0027135fc035 904ce5701846 00269eb45b31
+ " PID:      10000 
+  lic: Using FLEXlm license file: 
+  lic: 27000@Anita-PC 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12 
+  lic: NODE LOCKED license on hostid "00fff2ef28a6 904ce5701846 0027135fc035 904
+ ce5701846 00269eb45b3
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_G-2012.06-SP1\meta.cfg
+  **warning** (ca4_part3.sp:8) Global net name, "gnd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ ****ca4_part3***
+
+  ******  circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x1.                             nand2              1.00 
+        2 x2.                             nand2              1.00 
+        3 x3.                             nand3              1.00 
+        4 x4.                             nand2              1.00 
+        5 x5.                             nand2              1.00 
+        6 x6.                             nand2              1.00 
+ ** warning** associated with encrypted blocks were suppressed
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=ca4_part3.pa0
+
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ ****ca4_part3***
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:clk     =   1.0000  0:d       =   1.0000  0:r1      = 386.9820m
+ +0:r2      = 723.2374m 0:r3      = 452.6433m 0:r4      = 494.7769m
+ +0:r5      =  16.6263m 0:r6      = 999.9756m 0:vdd     =   1.0000 
+ +1:q2      =  25.9421m 2:q2      =  15.8419m 3:q2      = 204.7571m
+ +3:q3      = 184.8468m 4:q2      = 393.5970m 5:q2      =   6.9519m
+ +6:q2      = 394.0270m
+
+
+ **** voltage sources
+
+ subckt                                   
+ element  0:vclock   0:vdin     0:vvin    
+  volts      1.0000     1.0000     1.0000 
+  current -553.1319p  -24.8228p   -9.8778u
+  power    553.1319p   24.8228p    9.8778u
+
+     total voltage source power dissipation=    9.8784u       watts
+
+
+
+
+ **** mosfets
+
+
+ subckt   x1         x1         x1         x1         x2         x2        
+ element  1:mp1      1:mp2      1:mn1      1:mn2      2:mp1      2:mp2     
+ model    0:pmos     0:pmos     0:nmos     0:nmos     0:pmos     0:pmos    
+ region     Saturati   Saturati   Saturati     Linear   Saturati     Cutoff
+  id        -2.2694u -166.5263n    2.4359u    2.4359u   -2.0921u  -48.9949p
+  ibs     -6.012e-25 -5.858e-25  -25.9437f  3.041e-26 -2.719e-25 -2.689e-25
+  ibd      623.0180f  623.0180f -396.9820f  -32.2989f  286.7624f  286.7624f
+  vgs     -505.2231m -276.7626m  468.8348m  723.2374m -613.0180m    0.     
+  vds     -613.0180m -613.0180m  361.0400m   25.9421m -276.7626m -276.7626m
+  vbs        0.         0.       -25.9421m    0.         0.         0.     
+  vth     -265.6521m -265.6521m  420.5026m  489.1869m -356.2560m -356.2560m
+  vdsat   -213.0561m  -79.0544m   75.6030m  152.7966m -229.2031m  -45.9963m
+  vod     -239.5711m  -11.1105m   48.3322m  234.0506m -256.7620m  356.2560m
+  beta      84.8800u   83.8707u    1.1984m  999.7028u   74.8916u   70.5226u
+  gam eff  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m
+  gm        14.7465u    2.9094u   29.4217u    5.6217u   12.2845u    1.1579n
+  gds        4.9704u  878.5693n    7.2230u   87.5569u    5.3290u  346.8859p
+  gmb        2.8643u  539.0101n    5.8769u    1.4055u    2.4097u  278.1243p
+  cdtot     20.4382a   19.4610a   23.2217a   29.9026a   24.1882a   20.9366a
+  cgtot     24.3127a   18.9375a   23.9249a   27.7218a   27.1061a   16.4974a
+  cstot     39.7524a   36.6032a   37.8323a   38.4875a   39.8697a   33.8016a
+  cbtot     40.8886a   41.0305a   41.4043a   43.2308a   41.9082a   42.3398a
+  cgs       17.5770a   11.7939a   14.3074a   16.8245a   17.8373a    8.2529a
+  cgd        5.9073a    5.5943a    8.4649a   10.3341a    8.5239a    6.1950a
+
+
+
+ subckt   x2         x2         x3         x3         x3         x3        
+ element  2:mn1      2:mn2      3:mp1      3:mp2      3:mp3      3:mn1     
+ model    0:nmos     0:nmos     0:pmos     0:pmos     0:pmos     0:nmos    
+ region     Saturati     Linear     Cutoff     Cutoff   Saturati   Saturati
+  id         2.0920u    2.0922u -116.8686n -323.3488p   -1.9546u    2.0718u
+  ibs      -15.8430f  2.812e-26 -5.236e-25 -5.225e-25 -5.354e-25 -204.7596f
+  ibd     -733.2374f  -20.4442f  557.3567f  557.3567f  557.3567f -462.6433f
+  vgs      371.1402m    1.0000  -276.7626m    0.      -505.2231m  518.4803m
+  vds      707.3955m   15.8419m -547.3567m -547.3567m -547.3567m  247.8862m
+  vbs      -15.8419m    0.         0.         0.         0.      -204.7571m
+  vth      342.2706m  491.4106m -283.3445m -283.3445m -283.3445m  478.7266m
+  vdsat     67.8901m  268.4767m  -72.5503m  -45.8441m -202.7786m   74.1162m
+  vod       28.8695m  508.5894m    6.5819m  283.3445m -221.8786m   39.7537m
+  beta       1.3378m  854.1539u   81.0084u   78.5576u   83.2676u    1.1113m
+  gam eff  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m
+  gm        27.2011u    1.1885u    2.1390u    7.5014n   13.7721u   26.2585u
+  gds        6.4959u  129.1901u  643.5047n    2.2267n    4.6146u    6.6401u
+  gmb        5.3915u  429.1456n  397.7080n    1.6972n    2.6492u    4.9233u
+  cdtot     19.1505a   34.9394a   19.9548a   19.3168a   21.2178a   23.7275a
+  cgtot     20.1761a   28.3458a   18.7969a   15.7782a   24.7996a   24.3005a
+  cstot     37.3685a   36.5475a   36.2529a   33.8023a   39.6904a   36.3226a
+  cbtot     40.5797a   43.3754a   41.2140a   41.4400a   41.0695a   39.7643a
+  cgs       13.3737a   16.1136a   11.2108a    8.2538a   17.4500a   13.9681a
+  cgd        5.4691a   11.8359a    5.9654a    5.4750a    6.5149a    9.2111a
+
+
+
+ subckt   x3         x3         x4         x4         x4         x4        
+ element  3:mn2      3:mn3      4:mp1      4:mp2      4:mn1      4:mn2     
+ model    0:nmos     0:nmos     0:pmos     0:pmos     0:nmos     0:nmos    
+ region       Linear   Saturati     Cutoff   Saturati   Saturati   Saturati
+  id         2.0719u    2.0720u -241.7969p   -2.3477u    2.3480u    2.3480u
+  ibs     -184.8494f  1.873e-25 -4.830e-25 -4.959e-25 -393.5995f  3.927e-25
+  ibd     -214.7536f -194.8393f  515.2231f  515.2231f -504.7769f -403.5970f
+  vgs      815.1532m  494.7769m    0.      -547.3567m  606.4030m  452.6433m
+  vds       19.9103m  184.8468m -505.2231m -505.2231m  101.1799m  393.5970m
+  vbs     -184.8468m    0.         0.         0.      -393.5970m    0.     
+  vth      525.3530m  454.2007m -294.6974m -294.6974m  543.3645m  408.2401m
+  vdsat    178.5278m   73.5043m  -45.8580m -223.0571m   83.4039m   73.9824m
+  vod      289.8002m   40.5762m  294.6974m -252.6593m   63.0385m   44.4032m
+  beta     923.5046u    1.1489m   77.2055u   81.2483u    1.0101m    1.2200m
+  gam eff  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m
+  gm         3.3442u   25.9467u    5.6308n   14.4759u   25.3692u   28.8252u
+  gds       99.5731u    6.8617u    1.6708n    5.0127u   11.5636u    7.0325u
+  gmb      836.7019n    5.2721u    1.2859n    2.8213u    4.5222u    5.8113u
+  cdtot     30.9911a   24.7966a   19.5102a   22.0758a   23.9286a   22.8645a
+  cgtot     27.9404a   24.4719a   15.8455a   25.7319a   25.3074a   23.4688a
+  cstot     36.3366a   37.8743a   33.8021a   39.8226a   35.7188a   37.9488a
+  cbtot     40.9536a   42.3809a   41.5659a   41.1757a   38.3939a   41.6242a
+  cgs       16.5531a   13.9694a    8.2535a   17.7253a   14.9821a   14.1249a
+  cgd       10.8941a    9.3125a    5.5426a    7.2134a    9.3970a    8.1498a
+
+
+
+ subckt   x5         x5         x5         x5         x6         x6        
+ element  5:mp1      5:mp2      5:mn1      5:mn2      6:mp1      6:mp2     
+ model    0:pmos     0:pmos     0:nmos     0:nmos     0:pmos     0:pmos    
+ region     Saturati     Cutoff     Linear     Linear     Linear     Linear
+  id      -922.2956n   -6.7812n  929.1195n  929.3644n -179.2857p -702.9563p
+  ibs     -9.451e-25 -9.320e-25   -6.9525f  1.740e-26    0.      -1.044e-26
+  ibd      993.3737f  993.3737f  -21.3909f   -9.3226f   33.9193a   33.9193a
+  vgs     -276.7626m  -24.4192u  716.2855m  999.9756m -547.3567m -983.3737m
+  vds     -983.3737m -983.3737m    9.6745m    6.9519m  -24.4192u  -24.4192u
+  vbs        0.         0.        -6.9519m    0.         0.         0.     
+  vth     -165.8598m -165.8598m  494.1409m  493.3679m -430.8230m -430.8230m
+  vdsat   -128.2938m  -46.8475m  147.7819m  267.7475m -138.7604m -414.4674m
+  vod     -110.9028m  165.8354m  222.1447m  506.6076m -116.5336m -552.5506m
+  beta     101.1581u   95.4255u  999.7363u  852.9711u   69.2244u   61.8043u
+  gam eff  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m  400.0000m
+  gm        10.4192u  147.0610n    2.1364u  508.8853n    1.3623n  888.5474p
+  gds        3.7793u   49.9995n   93.5995u  132.4127u    7.3417u   28.7865u
+  gmb        1.9626u   30.4049n  537.3300n  187.3284n  272.9308p  278.3319p
+  cdtot     17.6500a   17.8716a   31.9861a   35.6219a   30.2279a   35.5634a
+  cgtot     20.7947a   15.4325a   27.7846a   28.3633a   26.4770a   28.8895a
+  cstot     38.5969a   33.8187a   37.4620a   36.1631a   37.4144a   36.4278a
+  cbtot     40.1432a   40.3582a   43.2971a   43.4362a   43.4283a   43.4215a
+  cgs       15.3908a    8.2756a   16.2262a   15.9129a   15.1254a   16.6713a
+  cgd        4.2579a    5.1107a   11.0096a   12.0588a   10.4941a   11.7728a
+
+
+
+ subckt   x6         x6        
+ element  6:mn1      6:mn2     
+ model    0:nmos     0:nmos    
+ region       Cutoff     Cutoff
+  id       446.5254p  443.5699p
+  ibs     -394.0295f  3.788e-25
+  ibd       -1.0100p -404.0270f
+  vgs       58.6164m   16.6263m
+  vds      605.9486m  394.0270m
+  vbs     -394.0270m    0.     
+  vth      432.3003m  408.1455m
+  vdsat     39.0238m   38.8785m
+  vod     -373.6840m -391.5191m
+  beta       1.2254m    1.2653m
+  gam eff  400.0000m  400.0000m
+  gm        10.9468n   10.1677n
+  gds        2.5724n    2.4056n
+  gmb        2.2603n    2.6993n
+  cdtot     18.2276a   20.1814a
+  cgtot     16.0365a   16.4236a
+  cstot     31.6903a   33.9762a
+  cbtot     37.4010a   42.0101a
+  cgs        8.7732a    8.4275a
+  cgd        5.5036a    5.8581a
+
+
+
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ ****ca4_part3***
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:clk     =   1.0000  0:d       =   0.      0:r1      = 463.7086m
+ +0:r2      = 458.1809m 0:r3      = 527.2535m 0:r4      = 999.7476m
+ +0:r5      = 998.8241m 0:r6      = 235.7038m 0:vdd     =   1.0000 
+ +1:q2      = 381.6235m 2:q2      =  18.0056m 3:q2      =  32.1904m
+ +3:q3      =  15.9926m 4:q2      = 192.0339u 5:q2      = 272.7412m
+ +6:q2      =  19.4509m
+
+
+          ***** job concluded
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ ****ca4_part3***
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =     121 # elements   =      35
+  # resistors   =       0 # capacitors =       6 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      26 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.04           1          31
+  transient          0.23      200001        1228         465 rev=        57
+  readin             0.07
+  errchk             0.02
+  setup              0.03
+  output             0.00
+
+
+           peak memory used         55.04 megabytes
+           total cpu time            0.40 seconds
+           total elapsed time        7.03 seconds
+           job started at     21:59:35 12/27/2019
+           job ended   at     21:59:42 12/27/2019
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        6.61(s)

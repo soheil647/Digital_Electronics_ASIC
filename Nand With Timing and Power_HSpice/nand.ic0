@@ -1,0 +1,20 @@
+* "simulator" "HSPICE" 
+* "version" "A-2008.03 32-BIT"
+* "format" "HSP"
+* "rundate" "22:00:20 11/03/2019 "
+* "netlist" "c:\users\ssa\desktop\hspice_ca2\nand.sp "
+* "runtitle" "*cmos nand*"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a = 1.404e-22       
++ b =   1.0000        
++ c = 1.204e-22       
++ nab = 117.1312m       
++ nbc = 117.1310m       
++ out = 999.9995m       
++ vdd =   1.0000        
+***   END: Saved Operating Point ***                     

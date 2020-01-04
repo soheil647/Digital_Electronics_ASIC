@@ -1,0 +1,130 @@
+                                 Tanner Tools
+               L-Edit / Technology Setups Examples
+
+
+		WARNING
+
+All sample technology setups are distributed for demonstration purpose 
+only.  These setups may be out of date or may not match with the foundry’s
+process technology setup information and should be used for evaluation
+purposes only.
+
+
+All sample technology setups are provided "as is" without warranty of 
+any kind.  Tanner EDA disclaims all warranties, either express or implied,
+including their quality, performance, merchantability, or fitness for a
+particular purpose.  In no event will Tanner EDA be liable for direct, 
+indirect, special, incidental or consequential damages arising out of the 
+use or inability to use the programs or accompanying materials.  This 
+limitation will apply even if Tanner EDA or authorized dealer has been 
+advised of the possibility of such damage.  In particular, Tanner EDA is 
+not responsible for any costs including but not limited to those incurred
+as a result of loss of profits or revenue, loss of use of the provided 
+programs, loss of data, the cost of a substitute program, claims by third
+parties or for other similar costs.
+
+
+Location:  \SAMPLES\TECH\
+
+index.txt		This file.
+EXT_devc.md	A model list file for Layout vs. Schematic (LVS)
+		verification. This file is being referred during an LVS
+		execution.  It is not a SPICE model file for simulation.
+EXT_SubC.elm	An element file containing all of the cells in the Tanner
+		Standard Cell Libraries.  For Sub-Circuit Level LVS when
+		layout are extracted with L-Edit/EXT's Recognize Subcircuit
+		Extract option.
+
+
+Directory    \SAMPLES\TECH\MOSIS\
+--------------------------------------
+MOSIS Process Setups using Scalable Design Rules:
+
+mHP_nS5.tdb    Technology setup files for MOSIS/Hewlett Packard n-well 0.5 
+mHP_nS5.ext    micron process. (Technology = SCN3M_SUBM, (Sub-Micron)
+mHP_n05.xst    LAMBDA = 0.30 micron)  Also support Linear Capacitor Option (LC)
+
+mHP_n05.tdb    Technology setup files for MOSIS/Hewlett Packard n-well 0.5 
+mHP_n05.ext    micron process. (Technology = SCN3M (Tight Metal), 
+mHP_n05.xst    LAMBDA = 0.35 micron)
+
+mHP_nS8.tdb    Technology setup files for MOSIS/Hewlett Packard n-well 0.8
+mHP_nS8.ext    micron process. (Technology = SCN3M_SUBM (Sub-Micron), 
+mHP_n08.xst    LAMBDA = 0.40 micron)
+
+mHP_n08.tdb    Technology setup files for MOSIS/Hewlett Packard n-well 0.8
+mHP_n08.ext    micron process. (Technology = SCN3M (Tight Metal), 
+mHP_n08.xst    LAMBDA = 0.40 micron)
+
+mAMIn08.tdb    Technology setup files for MOSIS/AMI n-well 0.8 micron
+mAMIn08.ext    process.  (Technology = SCNPC, LAMBDA = 0.5 micron)
+mAMIn08.xst
+
+mHP_n12.tdb    Technology setup files for MOSIS/Hewlett Packard n-well 1.2 
+mHP_n12.ext    micron process. (Technology = SCNLC, LAMBDA = 0.6 micron)
+mHP_n12.xst    Also support Linear Capacitor Option (LC)
+
+mAMIn12.tdb    Technology setup files for MOSIS/AMI n-well 1.2 micron
+mAMIn12.ext    process.  (Technology = SCNA, LAMBDA = 0.6 micron)
+mANIn12.xst
+
+mORBn12.tdb    Technology setup files for MOSIS/Orbit n-well 1.2 micron
+mORBn12.ext    process.  (Technology = SCNA, LAMBDA = 0.6 micron)
+mORBn12.xst
+
+mORBn20.tdb    Technology setup files for MOSIS/Orbit n-well 2.0 micron
+mORBn20.ext    process.  (Technology = SCNA, LAMBDA = 1.0 micron)
+mORBn20.xst
+
+
+Directory  \SAMPLES\TECH\ORBIT\
+---------------------------------------
+Orbit Semiconductor/Foresight Process Setups using Scalable Design Rules:
+
+ORBTp12.tdb    Technology setup files for Orbit/Foresight p-well 1.2 micron 
+ORBTp12.ext    process. (Technology = P122P2M, LAMBDA = 0.60 micron)
+ORBTp12.xst
+
+ORBTn12.tdb    Technology setup files for Orbit/Foresight n-well 1.2 micron 
+ORBTn12.ext    process. (Technology = N122P2MNPN, LAMBDA = 0.60 micron)
+ORBTn12.xst
+
+ORBTn20.tdb    Technology setup files for Orbit/Foresight n-well 2.0 micron 
+ORBTn20.ext    process. (Technology = N202P2MNPN, LAMBDA = 1.00 micron) 
+ORBTn20.xst
+
+ORBTp20.tdb    Technology setup files for Orbit/Foresight p-well 2.0 micron 
+ORBTp20.ext    process. (Technology = P202P2MNPN, LAMBDA = 1.00 micron)
+ORBTp20.xst
+
+
+Directory \SAMPLES\TECH\CHARTRD8\
+-------------------------------
+Chartered Semiconductor Process Setups:
+
+CHRTn08.tdb    Technology setup files for Chartered Semiconductor 
+CHRTn08.ext    n-well 0.8 micron process.
+CHRTn08.xst
+
+
+Directory \SAMPLES\TECH\CHINA_HJ\
+-------------------------------
+China Hua-Jing Microelectronics Group Corp Process Setups
+
+CHJ_p30.tdb    Technology setup files for China Hua-Jing Microelectronics
+CHJ_P30.ext    Group, Co. Toshiba 3-micron single-poly, double-metal
+                         process.
+
+
+
+Copyright © 1988-2001 Tanner EDA, A Division of Tanner Research, Inc.
+All Rights Reserved.
+
+Tanner Research, Inc.
+2650 East Foothill Boulevard
+Pasadena, CA  91107, USA
+
+Telephone: 1-877-304-5544 (Toll Free)
+	   1-626-792-3000
+Fax:	   1-626-792-0300
+e-mail:	   support@tanner.com

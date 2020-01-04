@@ -1,0 +1,823 @@
+(edif
+	lights_edif
+	(edifVersion 2 0 0)
+	(edifLevel 0)
+	(keywordMap (keywordLevel 0))
+	(status
+		(written
+			(timestamp 1998 11 20 08 00 00)
+			(program "S-Edit" (version "Version 2.06"))))
+	(library Lights
+		(edifLevel 0)
+		(technology (numberDefinition (scale 1 (E 1 -12) (unit CAPACITANCE))))
+
+		(cell PadVdd
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1998 11 20 16 2 43)
+					(program "S-Edit" (version "Version 2.06"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(property DEVICE (string "PadVdd"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "1"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "2"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell PadOut
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1998 11 20 16 2 43)
+					(program "S-Edit" (version "Version 2.06"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port DataOut
+						(property (rename &_23 "#") (string "1"))
+						(direction INPUT))
+					(property DEVICE (string "PadOut"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "2"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "3"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell PadInC
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1998 11 20 16 2 43)
+					(program "S-Edit" (version "Version 2.06"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port DataIn
+						(property (rename &_23 "#") (string "1"))
+						(direction OUTPUT))
+					(port DataInB
+						(property (rename &_23 "#") (string "2"))
+						(direction OUTPUT))
+					(port DataInUnBuf
+						(property (rename &_23 "#") (string "3"))
+						(direction OUTPUT))
+					(property DEVICE (string "PadInC"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "4"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "5"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell PadGnd
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1998 11 20 16 2 43)
+					(program "S-Edit" (version "Version 2.06"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(property DEVICE (string "PadGnd"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "1"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell DFFC
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1998 11 20 16 2 43)
+					(program "S-Edit" (version "Version 2.06"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port ClB
+						(property (rename &_23 "#") (string "1"))
+						(direction INPUT))
+					(port Clk
+						(property (rename &_23 "#") (string "2"))
+						(direction INPUT))
+					(port Data
+						(property (rename &_23 "#") (string "3"))
+						(direction INPUT))
+					(port Q
+						(property (rename &_23 "#") (string "4"))
+						(direction OUTPUT))
+					(port QB
+						(property (rename &_23 "#") (string "5"))
+						(direction OUTPUT))
+					(property DEVICE (string "DFFC"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "6"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "7"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell NAND2C
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1998 11 20 16 2 43)
+					(program "S-Edit" (version "Version 2.06"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port A
+						(property (rename &_23 "#") (string "1"))
+						(direction INPUT))
+					(port B
+						(property (rename &_23 "#") (string "2"))
+						(direction INPUT))
+					(port Out1
+						(property (rename &_23 "#") (string "3"))
+						(direction OUTPUT))
+					(port Out2
+						(property (rename &_23 "#") (string "4"))
+						(direction OUTPUT))
+					(property DEVICE (string "NAND2C"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "5"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "6"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell NAND3C
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1998 11 20 16 2 43)
+					(program "S-Edit" (version "Version 2.06"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port A
+						(property (rename &_23 "#") (string "1"))
+						(direction INPUT))
+					(port B
+						(property (rename &_23 "#") (string "2"))
+						(direction INPUT))
+					(port C
+						(property (rename &_23 "#") (string "3"))
+						(direction INPUT))
+					(port Out1
+						(property (rename &_23 "#") (string "4"))
+						(direction OUTPUT))
+					(port Out2
+						(property (rename &_23 "#") (string "5"))
+						(direction OUTPUT))
+					(property DEVICE (string "NAND3C"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "6"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "7"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell NOR2C
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1998 11 20 16 2 43)
+					(program "S-Edit" (version "Version 2.06"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port A
+						(property (rename &_23 "#") (string "1"))
+						(direction INPUT))
+					(port B
+						(property (rename &_23 "#") (string "2"))
+						(direction INPUT))
+					(port Out1
+						(property (rename &_23 "#") (string "3"))
+						(direction OUTPUT))
+					(port Out2
+						(property (rename &_23 "#") (string "4"))
+						(direction OUTPUT))
+					(property DEVICE (string "NOR2C"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "5"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "6"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell NOR2
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1998 11 20 16 2 43)
+					(program "S-Edit" (version "Version 2.06"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port A
+						(property (rename &_23 "#") (string "1"))
+						(direction INPUT))
+					(port B
+						(property (rename &_23 "#") (string "2"))
+						(direction INPUT))
+					(port Out
+						(property (rename &_23 "#") (string "3"))
+						(direction OUTPUT))
+					(property DEVICE (string "NOR2"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "4"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "5"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell NOR3C
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1998 11 20 16 2 43)
+					(program "S-Edit" (version "Version 2.06"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface
+					(port A
+						(property (rename &_23 "#") (string "1"))
+						(direction INPUT))
+					(port B
+						(property (rename &_23 "#") (string "2"))
+						(direction INPUT))
+					(port C
+						(property (rename &_23 "#") (string "3"))
+						(direction INPUT))
+					(port Out1
+						(property (rename &_23 "#") (string "4"))
+						(direction OUTPUT))
+					(port Out2
+						(property (rename &_23 "#") (string "5"))
+						(direction OUTPUT))
+					(property DEVICE (string "NOR3C"))
+					(property LEVEL (string "STD"))
+					(property PARTS (string "1"))
+					(port Gnd
+						(property (rename &_23 "#") (string "6"))
+						(property implicitPortClass (string "Gnd"))
+						(property portType (string "supply")))
+					(port Vdd
+						(property (rename &_23 "#") (string "7"))
+						(property implicitPortClass (string "Vdd"))
+						(property portType (string "supply")))
+		)))
+
+		(cell Lights
+			(cellType GENERIC)
+			(status
+				(written
+					(timestamp 1998 11 20 16 2 43)
+					(program "S-Edit" (version "Version 2.06"))))
+			(view view_1
+				(viewType NETLIST)
+				(interface)
+				(contents
+					(instance PadVdd_1
+						(viewRef view_1 (cellRef PadVdd))
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property PAD (string "L3"))
+					)
+					(instance PadOut_10
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property PAD (string "R4"))
+					)
+					(instance PadOut_9
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property PAD (string "T1"))
+					)
+					(instance PadOut_8
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property PAD (string "T2"))
+					)
+					(instance PadOut_7
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property PAD (string "T3"))
+					)
+					(instance PadOut_6
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property PAD (string "R2"))
+					)
+					(instance PadOut_5
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property PAD (string "L4"))
+					)
+					(instance PadOut_4
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property PAD (string "B1"))
+					)
+					(instance PadOut_3
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property PAD (string "B2"))
+					)
+					(instance PadOut_2
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property PAD (string "B3"))
+					)
+					(instance PadOut_1
+						(viewRef view_1 (cellRef PadOut))
+						(portInstance DataOut)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property PAD (string "R1"))
+					)
+					(instance PadInC_2
+						(viewRef view_1 (cellRef PadInC))
+						(portInstance DataIn)
+						(portInstance DataInB)
+						(portInstance DataInUnBuf)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property PAD (string "L1"))
+					)
+					(instance PadInC_1
+						(viewRef view_1 (cellRef PadInC))
+						(portInstance DataIn)
+						(portInstance DataInB)
+						(portInstance DataInUnBuf)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property PAD (string "L2"))
+					)
+					(instance PadGnd_1
+						(viewRef view_1 (cellRef PadGnd))
+						(portInstance Gnd)
+						(property EDIF_PRIMITIVE (string "0"))
+						(property PAD (string "R3"))
+					)
+					(instance (rename core_1_DFFC_1 "core_1/DFFC_1")
+						(viewRef view_1 (cellRef DFFC))
+						(portInstance ClB)
+						(portInstance Clk)
+						(portInstance Data)
+						(portInstance Q)
+						(portInstance QB)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_DFFC_2 "core_1/DFFC_2")
+						(viewRef view_1 (cellRef DFFC))
+						(portInstance ClB)
+						(portInstance Clk)
+						(portInstance Data)
+						(portInstance Q)
+						(portInstance QB)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_DFFC_3 "core_1/DFFC_3")
+						(viewRef view_1 (cellRef DFFC))
+						(portInstance ClB)
+						(portInstance Clk)
+						(portInstance Data)
+						(portInstance Q)
+						(portInstance QB)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_DFFC_4 "core_1/DFFC_4")
+						(viewRef view_1 (cellRef DFFC))
+						(portInstance ClB)
+						(portInstance Clk)
+						(portInstance Data)
+						(portInstance Q)
+						(portInstance QB)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_DFFC_5 "core_1/DFFC_5")
+						(viewRef view_1 (cellRef DFFC))
+						(portInstance ClB)
+						(portInstance Clk)
+						(portInstance Data)
+						(portInstance Q)
+						(portInstance QB)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_DFFC_6 "core_1/DFFC_6")
+						(viewRef view_1 (cellRef DFFC))
+						(portInstance ClB)
+						(portInstance Clk)
+						(portInstance Data)
+						(portInstance Q)
+						(portInstance QB)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_DFFC_7 "core_1/DFFC_7")
+						(viewRef view_1 (cellRef DFFC))
+						(portInstance ClB)
+						(portInstance Clk)
+						(portInstance Data)
+						(portInstance Q)
+						(portInstance QB)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_NAND2C_1 "core_1/NAND2C_1")
+						(viewRef view_1 (cellRef NAND2C))
+						(portInstance A)
+						(portInstance B)
+						(portInstance Out1)
+						(portInstance Out2)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_NAND2C_2 "core_1/NAND2C_2")
+						(viewRef view_1 (cellRef NAND2C))
+						(portInstance A)
+						(portInstance B)
+						(portInstance Out1)
+						(portInstance Out2)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_NAND3C_1 "core_1/NAND3C_1")
+						(viewRef view_1 (cellRef NAND3C))
+						(portInstance A)
+						(portInstance B)
+						(portInstance C)
+						(portInstance Out1)
+						(portInstance Out2)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_NOR2C_1 "core_1/NOR2C_1")
+						(viewRef view_1 (cellRef NOR2C))
+						(portInstance A)
+						(portInstance B)
+						(portInstance Out1)
+						(portInstance Out2)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_NOR2_2 "core_1/NOR2_2")
+						(viewRef view_1 (cellRef NOR2))
+						(portInstance A)
+						(portInstance B)
+						(portInstance Out)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_NOR2_5 "core_1/NOR2_5")
+						(viewRef view_1 (cellRef NOR2))
+						(portInstance A)
+						(portInstance B)
+						(portInstance Out)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_NOR2_6 "core_1/NOR2_6")
+						(viewRef view_1 (cellRef NOR2))
+						(portInstance A)
+						(portInstance B)
+						(portInstance Out)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_NOR2_7 "core_1/NOR2_7")
+						(viewRef view_1 (cellRef NOR2))
+						(portInstance A)
+						(portInstance B)
+						(portInstance Out)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_NOR3C_1 "core_1/NOR3C_1")
+						(viewRef view_1 (cellRef NOR3C))
+						(portInstance A)
+						(portInstance B)
+						(portInstance C)
+						(portInstance Out1)
+						(portInstance Out2)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(instance (rename core_1_NOR3C_2 "core_1/NOR3C_2")
+						(viewRef view_1 (cellRef NOR3C))
+						(portInstance A)
+						(portInstance B)
+						(portInstance C)
+						(portInstance Out1)
+						(portInstance Out2)
+						(portInstance Gnd)
+						(portInstance Vdd)
+						(property EDIF_PRIMITIVE (string "0"))
+					)
+					(net core_1_N40
+						(joined
+							(portRef Out2 (instanceRef core_1_NAND3C_1))
+							(portRef A (instanceRef core_1_NOR3C_1))
+							(portRef A (instanceRef core_1_NOR3C_2))
+					))
+					(net core_1_N10
+						(joined
+							(portRef Q (instanceRef core_1_DFFC_3))
+					))
+					(net core_1_N12
+						(joined
+							(portRef Out1 (instanceRef core_1_NAND3C_1))
+					))
+					(net core_1_N13
+						(joined
+							(portRef Out1 (instanceRef core_1_NOR2C_1))
+					))
+					(net core_1_N11
+						(joined
+							(portRef Out1 (instanceRef core_1_NOR3C_1))
+					))
+					(net N1
+						(joined
+							(portRef DataOut (instanceRef PadOut_1))
+							(portRef Q (instanceRef core_1_DFFC_7))
+							(portRef B (instanceRef core_1_NAND2C_1))
+							(portRef B (instanceRef core_1_NOR2_6))
+							(portRef A (instanceRef core_1_NOR2_7))
+							(portRef C (instanceRef core_1_NOR3C_2))
+					))
+					(net N2
+						(joined
+							(portRef DataOut (instanceRef PadOut_5))
+							(portRef Out2 (instanceRef core_1_NOR3C_2))
+					))
+					(net N3
+						(joined
+							(portRef DataOut (instanceRef PadOut_4))
+							(portRef Out (instanceRef core_1_NOR2_6))
+					))
+					(net N4
+						(joined
+							(portRef DataOut (instanceRef PadOut_3))
+							(portRef Out2 (instanceRef core_1_NAND2C_2))
+					))
+					(net N5
+						(joined
+							(portRef DataOut (instanceRef PadOut_2))
+							(portRef Out (instanceRef core_1_NOR2_7))
+							(portRef B (instanceRef core_1_NOR3C_2))
+					))
+					(net N6
+						(joined
+							(portRef DataOut (instanceRef PadOut_10))
+							(portRef Out2 (instanceRef core_1_NOR3C_1))
+					))
+					(net N7
+						(joined
+							(portRef DataOut (instanceRef PadOut_9))
+							(portRef Out (instanceRef core_1_NOR2_5))
+					))
+					(net N8
+						(joined
+							(portRef DataOut (instanceRef PadOut_8))
+							(portRef Out2 (instanceRef core_1_NAND2C_1))
+					))
+					(net N9
+						(joined
+							(portRef DataOut (instanceRef PadOut_6))
+							(portRef QB (instanceRef core_1_DFFC_7))
+							(portRef Data (instanceRef core_1_DFFC_7))
+							(portRef B (instanceRef core_1_NAND2C_2))
+							(portRef A (instanceRef core_1_NOR2_2))
+							(portRef A (instanceRef core_1_NOR2_5))
+							(portRef C (instanceRef core_1_NOR3C_1))
+					))
+					(net core_1_N22
+						(joined
+							(portRef Q (instanceRef core_1_DFFC_1))
+							(portRef A (instanceRef core_1_NAND3C_1))
+					))
+					(net core_1_N20
+						(joined
+							(portRef QB (instanceRef core_1_DFFC_3))
+							(portRef Data (instanceRef core_1_DFFC_3))
+							(portRef Clk (instanceRef core_1_DFFC_4))
+					))
+					(net N10
+						(joined
+							(portRef DataOut (instanceRef PadOut_7))
+							(portRef Out (instanceRef core_1_NOR2_2))
+							(portRef B (instanceRef core_1_NOR3C_1))
+					))
+					(net N11
+						(joined
+							(portRef DataIn (instanceRef PadInC_2))
+							(portRef ClB (instanceRef core_1_DFFC_1))
+							(portRef ClB (instanceRef core_1_DFFC_2))
+							(portRef ClB (instanceRef core_1_DFFC_3))
+							(portRef ClB (instanceRef core_1_DFFC_4))
+							(portRef ClB (instanceRef core_1_DFFC_5))
+							(portRef ClB (instanceRef core_1_DFFC_6))
+							(portRef ClB (instanceRef core_1_DFFC_7))
+					))
+					(net N12
+						(joined
+							(portRef DataIn (instanceRef PadInC_1))
+							(portRef Clk (instanceRef core_1_DFFC_1))
+					))
+					(net N13
+						(joined
+							(portRef Q (instanceRef core_1_DFFC_6))
+							(portRef B (instanceRef core_1_NAND3C_1))
+							(portRef B (instanceRef core_1_NOR2_5))
+							(portRef A (instanceRef core_1_NOR2_6))
+					))
+					(net N14
+						(joined
+							(portRef Q (instanceRef core_1_DFFC_5))
+					))
+					(net N15
+						(joined
+							(portRef Q (instanceRef core_1_DFFC_4))
+					))
+					(net N16
+						(joined
+							(portRef QB (instanceRef core_1_DFFC_5))
+							(portRef Data (instanceRef core_1_DFFC_5))
+							(portRef Clk (instanceRef core_1_DFFC_6))
+							(portRef C (instanceRef core_1_NAND3C_1))
+							(portRef A (instanceRef core_1_NOR2C_1))
+					))
+					(net N17
+						(joined
+							(portRef DataInUnBuf (instanceRef PadInC_1))
+					))
+					(net core_1_N1
+						(joined
+							(portRef QB (instanceRef core_1_DFFC_1))
+							(portRef Data (instanceRef core_1_DFFC_1))
+							(portRef Clk (instanceRef core_1_DFFC_2))
+					))
+					(net N19
+						(joined
+							(portRef DataInUnBuf (instanceRef PadInC_2))
+					))
+					(net N18
+						(joined
+							(portRef DataInB (instanceRef PadInC_1))
+					))
+					(net core_1_N3
+						(joined
+							(portRef QB (instanceRef core_1_DFFC_2))
+							(portRef Data (instanceRef core_1_DFFC_2))
+							(portRef Clk (instanceRef core_1_DFFC_3))
+					))
+					(net core_1_N2
+						(joined
+							(portRef QB (instanceRef core_1_DFFC_6))
+							(portRef Data (instanceRef core_1_DFFC_6))
+							(portRef Clk (instanceRef core_1_DFFC_7))
+							(portRef B (instanceRef core_1_NOR2C_1))
+					))
+					(net core_1_N4
+						(joined
+							(portRef Out1 (instanceRef core_1_NOR3C_2))
+					))
+					(net core_1_N7
+						(joined
+							(portRef Q (instanceRef core_1_DFFC_2))
+					))
+					(net core_1_N6
+						(joined
+							(portRef QB (instanceRef core_1_DFFC_4))
+							(portRef Data (instanceRef core_1_DFFC_4))
+							(portRef Clk (instanceRef core_1_DFFC_5))
+					))
+					(net core_1_N8
+						(joined
+							(portRef Out1 (instanceRef core_1_NAND2C_1))
+					))
+					(net core_1_N5
+						(joined
+							(portRef A (instanceRef core_1_NAND2C_1))
+							(portRef A (instanceRef core_1_NAND2C_2))
+							(portRef Out2 (instanceRef core_1_NOR2C_1))
+							(portRef B (instanceRef core_1_NOR2_2))
+							(portRef B (instanceRef core_1_NOR2_7))
+					))
+					(net core_1_N9
+						(joined
+							(portRef Out1 (instanceRef core_1_NAND2C_2))
+					))
+					(net N20
+						(joined
+							(portRef DataInB (instanceRef PadInC_2))
+					))
+				)
+		))
+	)
+	(design ROOT
+		(cellRef Lights
+			(libraryRef Lights)))
+)

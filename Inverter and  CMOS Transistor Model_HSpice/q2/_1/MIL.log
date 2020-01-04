@@ -1,0 +1,13 @@
+pnlAddPane();
+nil
+1
+designOpen("c:\\users\\ssa\\desktop\\hspice_inverter\\q2\\_1\\part2.sp");
+"D0"
+t
+pnlAddCurve(1, node(D0,"A0","i(vvoltagesource_3)"), node(D0,"A0","vddvoltage"));
+nil
+quit();
+exit
+pnlDeletePane(1, 1);
+nil
+nil

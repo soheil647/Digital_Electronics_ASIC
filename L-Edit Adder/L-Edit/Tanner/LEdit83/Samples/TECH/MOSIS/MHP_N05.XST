@@ -1,0 +1,35 @@
+# File:            mHP_n05.xst
+# For:             Cross-section process definition file
+# Vendor:          MOSIS/HP
+# Technology:      0.5u (Lambda = 0.35um) / N-well (SCN3M) Tight Metal
+# Technology File: mHP_n05.tdb
+# Copyright © 1991-2001 Tanner EDA, A Division of Tanner Research, Inc.
+# All Rights Reserved 
+# ************************************************************************
+#
+#     L-Edit
+#Step Layer Name      Depth     Label	 [Angle[offset]]	Comment
+#----------------------------------------------------------------------
+gd   -                10        p-                          #  1. Substrate
+id  "Well X"           3        n-                          #  2. n-Well
+id   ActPSelNotPoly    0.9      p+      75      0           #  3. p-Implant
+id   ActNSelNotPoly    0.9      n+      75      0           #  4. n-Implant
+gd   -                 0.6      -                           #  5. Field Oxide
+e    Active            0.6      -       45                  #  6. 
+gd   -                 0.04     -                           #  7. Gate Oxide
+gd   Poly              0.4      -                           #  8. Polysilicon
+e    NotPoly           0.44     -       45                  #  9.
+gd   -                 0.9      -                           # 10. 
+e   "Poly/Act Contact" 0.9      -       60                  # 11.
+gd   Metal1            0.6      -                           # 12. Metal 1
+e   "Not Metal1"       0.6      -       45                  # 13.
+gd   -                 1        -                           # 14. 
+e    Via1              1        -       60                  # 15.
+gd   Metal2            1.15     -                           # 16. Metal 2
+e    "Not Metal2"      1.15     -       45                  # 17.
+gd   -                 1        -                           # 18. 
+e    Via2              1        -       60                  # 19.
+gd   Metal3            1.3      -                           # 20. Metal 3
+e    "Not Metal3"      1.3      -       45                  # 21.
+gd   -                 2        -                           # 22. Overglass
+e    Overglass         2        -                           # 23.

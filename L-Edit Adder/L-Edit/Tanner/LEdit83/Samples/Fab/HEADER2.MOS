@@ -1,0 +1,35 @@
+REQUEST:           NEW-PROJECT
+  D-NAME:          Tanner
+  AFFILIATION:     Tanner Research, Inc.
+  ACCOUNT:         9999-COM
+  D-PASSWORD:      Tanner
+  PHONE:           (626)792-3000
+  NET-ADDRESS:     tanner@tanner.com
+  MAILING-ADDRESS: Tanner Research, Inc.
+                   2650 East Foothill Blvd.
+                   Pasadena, CA  91107
+  PO-NUMBER :      11111
+                 
+P-NAME:            HSVID10b
+  P-PASSWORD:      LITTLEBOY
+  DESCRIPTION:     High-Speed Video Sensor Prototype Chip
+  TECHNOLOGY:      Tiny-SCNA
+  PADS:            40
+  LAMBDA:          1.00
+
+REQUEST:           FABRICATE
+  ID:              *
+  P-PASSWORD:      LITTLEBOY
+
+CIF-CHECKSUM:      4040567  82260
+
+CIF:
+
+( CIF file starts here ... )
+
+... 
+
+( ... CIF file ends. )
+
+REQUEST:          END
+

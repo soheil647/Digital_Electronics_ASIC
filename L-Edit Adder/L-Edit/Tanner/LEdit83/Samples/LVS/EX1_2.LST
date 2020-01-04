@@ -1,0 +1,236 @@
+Node and elements after first round of iterations
+
+Perfectly matched nodes
+=======================
+
+File: Ex1_2.spc                 <==>  Ex2_1.spc                     
+========================
+19                              <==>  N52(XSUBA/X34/)               
+11                              <==>  N52(XSUBA/X33/)               
+14                              <==>  N23(XSUBA/X34/)               
+2                               <==>  N23(XSUBA/X33/)               
+13                              <==>  N39(XSUBA/X34/)               
+1                               <==>  N39(XSUBA/X33/)               
+6                               <==>  2                             
+12                              <==>  4                             
+8                               <==>  6                             
+17                              <==>  7                             
+3                               <==>  N25(XSUBA/X33/)               
+15                              <==>  N25(XSUBA/X34/)               
+9                               <==>  N60(XSUBA/X33/)               
+18                              <==>  N60(XSUBA/X34/)               
+16                              <==>  5                             
+10                              <==>  3                             
+7                               <==>  1                             
+5                               <==>  8                             
+-----------------------
+
+Other nodes
+=======================
+
+-----------------------
+GND                           
+VDD                           
+4                             
+0                             
+
+-----------------------
+
+
+Perfectly matched elements
+=======================
+
+File: Ex1_2.spc                 <==>  Ex2_1.spc                     
+=======================
+M5                              <==>  M5(XSUBA/X33)                 
+M345                            <==>  M5(XSUBA/X34)                 
+M3420                           <==>  M20(XSUBA/X34)                
+M20                             <==>  M20(XSUBA/X33)                
+M14                             <==>  M14(XSUBA/X33)                
+M3414                           <==>  M14(XSUBA/X34)                
+M16                             <==>  M16(XSUBA/X33)                
+M3416                           <==>  M16(XSUBA/X34)                
+M17                             <==>  M17(XSUBA/X33)                
+M3417                           <==>  M17(XSUBA/X34)                
+M4                              <==>  M4(XSUBA/X33)                 
+M344                            <==>  M4(XSUBA/X34)                 
+M12                             <==>  M12(XSUBA/X33)                
+M3412                           <==>  M12(XSUBA/X34)                
+M18                             <==>  M18(XSUBA/X33)                
+M3418                           <==>  M18(XSUBA/X34)                
+M8                              <==>  M8(XSUBA/X33)                 
+M348                            <==>  M8(XSUBA/X34)                 
+M9                              <==>  M9(XSUBA/X33)                 
+M342                            <==>  M2(XSUBA/X34)                 
+M3415                           <==>  M15(XSUBA/X34)                
+M3413                           <==>  M13(XSUBA/X34)                
+M2                              <==>  M2(XSUBA/X33)                 
+M15                             <==>  M15(XSUBA/X33)                
+M13                             <==>  M13(XSUBA/X33)                
+M349                            <==>  M9(XSUBA/X34)                 
+M347                            <==>  M7(XSUBA/X34)                 
+M346                            <==>  M6(XSUBA/X34)                 
+M3411                           <==>  M11(XSUBA/X34)                
+M7                              <==>  M7(XSUBA/X33)                 
+M6                              <==>  M6(XSUBA/X33)                 
+M11                             <==>  M11(XSUBA/X33)                
+-----------------------
+
+Other elements
+=======================
+
+-----------------------
+M350                          
+M341                          
+M1(XSUBA/X34)_2               
+M1(XSUBA/X34)_1               
+M3                            
+M1                            
+M1(XSUBA/X33)_2               
+M1(XSUBA/X33)_1               
+M352                          
+M3419                         
+M19(XSUBA/X34)_2              
+M19(XSUBA/X34)_1              
+M22                           
+M19                           
+M19(XSUBA/X33)_2              
+M19(XSUBA/X33)_1              
+M10                           
+M21                           
+M10(XSUBA/X33)_1              
+M10(XSUBA/X33)_2              
+M351                          
+M3410                         
+M10(XSUBA/X34)_2              
+M10(XSUBA/X34)_1              
+C1_4                          
+C1_3                          
+C1_2                          
+C1_1                          
+C1(XSUBA/X34)_2               
+C1(XSUBA/X34)_1               
+C1(XSUBA/X33)_2               
+C1(XSUBA/X33)_1               
+
+-----------------------
+
+==============================================================================
+
+Perfectly matched nodes
+=======================
+
+File: Ex1_2.spc                 <==>  Ex2_1.spc                     
+========================
+19                              <==>  N52(XSUBA/X34/)               
+11                              <==>  N52(XSUBA/X33/)               
+14                              <==>  N23(XSUBA/X34/)               
+2                               <==>  N23(XSUBA/X33/)               
+13                              <==>  N39(XSUBA/X34/)               
+1                               <==>  N39(XSUBA/X33/)               
+6                               <==>  2                             
+12                              <==>  4                             
+8                               <==>  6                             
+17                              <==>  7                             
+3                               <==>  N25(XSUBA/X33/)               
+15                              <==>  N25(XSUBA/X34/)               
+9                               <==>  N60(XSUBA/X33/)               
+18                              <==>  N60(XSUBA/X34/)               
+16                              <==>  5                             
+10                              <==>  3                             
+7                               <==>  1                             
+5                               <==>  8                             
+-----------------------
+
+Other nodes
+=======================
+
+-----------------------
+GND                           
+VDD                           
+4                             
+0                             
+
+-----------------------
+
+
+Perfectly matched elements
+=======================
+
+File: Ex1_2.spc                 <==>  Ex2_1.spc                     
+=======================
+M5                              <==>  M5(XSUBA/X33)                 
+M345                            <==>  M5(XSUBA/X34)                 
+M3420                           <==>  M20(XSUBA/X34)                
+M20                             <==>  M20(XSUBA/X33)                
+M14                             <==>  M14(XSUBA/X33)                
+M3414                           <==>  M14(XSUBA/X34)                
+M16                             <==>  M16(XSUBA/X33)                
+M3416                           <==>  M16(XSUBA/X34)                
+M17                             <==>  M17(XSUBA/X33)                
+M3417                           <==>  M17(XSUBA/X34)                
+M4                              <==>  M4(XSUBA/X33)                 
+M344                            <==>  M4(XSUBA/X34)                 
+M12                             <==>  M12(XSUBA/X33)                
+M3412                           <==>  M12(XSUBA/X34)                
+M18                             <==>  M18(XSUBA/X33)                
+M3418                           <==>  M18(XSUBA/X34)                
+M8                              <==>  M8(XSUBA/X33)                 
+M348                            <==>  M8(XSUBA/X34)                 
+M9                              <==>  M9(XSUBA/X33)                 
+M342                            <==>  M2(XSUBA/X34)                 
+M3415                           <==>  M15(XSUBA/X34)                
+M3413                           <==>  M13(XSUBA/X34)                
+M2                              <==>  M2(XSUBA/X33)                 
+M15                             <==>  M15(XSUBA/X33)                
+M13                             <==>  M13(XSUBA/X33)                
+M349                            <==>  M9(XSUBA/X34)                 
+M347                            <==>  M7(XSUBA/X34)                 
+M346                            <==>  M6(XSUBA/X34)                 
+M3411                           <==>  M11(XSUBA/X34)                
+M7                              <==>  M7(XSUBA/X33)                 
+M6                              <==>  M6(XSUBA/X33)                 
+M11                             <==>  M11(XSUBA/X33)                
+-----------------------
+
+Other elements
+=======================
+
+-----------------------
+M350                          
+M341                          
+M1(XSUBA/X34)_2               
+M1(XSUBA/X34)_1               
+M3                            
+M1                            
+M1(XSUBA/X33)_2               
+M1(XSUBA/X33)_1               
+M352                          
+M3419                         
+M19(XSUBA/X34)_2              
+M19(XSUBA/X34)_1              
+M22                           
+M19                           
+M19(XSUBA/X33)_2              
+M19(XSUBA/X33)_1              
+M10                           
+M21                           
+M10(XSUBA/X33)_1              
+M10(XSUBA/X33)_2              
+M351                          
+M3410                         
+M10(XSUBA/X34)_2              
+M10(XSUBA/X34)_1              
+C1_4                          
+C1_3                          
+C1_2                          
+C1_1                          
+C1(XSUBA/X34)_2               
+C1(XSUBA/X34)_1               
+C1(XSUBA/X33)_2               
+C1(XSUBA/X33)_1               
+
+-----------------------
+
+==============================================================================
+

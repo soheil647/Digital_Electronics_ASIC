@@ -1,0 +1,35 @@
+***** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******
+ Input File: c:\users\ssa\desktop\hspice_inverter\inverter.sp
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   ssa                  HOSTNAME: DESKTOP-UOD7U06
+ lic: HOSTID: "086266b8f0ab 00ff8567868f cc2f71da2fff cc2f71da2f00 ce2f71da2fff"
+ lic: Using FLEXlm license file:
+ lic: 7182@DESKTOP-UOD7U06
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9
+ lic: NODE LOCKED license on hostid "086266b8f0ab 00ff8567868f cc2f71da2fff cc2f
+ lic:
+ Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
+ init: begin read circuit files,  cpu clock=  6.30E-02
+ init: end read circuit files,  cpu clock=  6.60E-02 memory=    145 kb
+ init: begin check errors,  cpu clock=  6.60E-02
+ init: end check errors,  cpu clock=  7.50E-02 memory=    145 kb
+ init: begin setup matrix, pivot=    10 cpu clock=  7.50E-02
+       establish matrix -- done,  cpu clock=  7.90E-02 memory=    148 kb
+       re-order matrix -- done,  cpu clock=  8.10E-02 memory=    148 kb
+ init: end setup matrix,  cpu clock=  8.30E-02 memory=    159 kb
+ dcop: begin dcop,  cpu clock=  8.50E-02
+ dcop: end dcop,  cpu clock=  9.20E-02 memory=    159 kb  tot_iter=       8
+ output: c:\users\ssa\desktop\hspice_inverter\inverter.tr0
+ sweep: tran tran0    begin, stop_t=  2.20E-08 #sweeps=  23 cpu clock=  9.70E-02
+ tran: time= 4.3276E-09 tot_iter=      42 conv_iter=      19 cpu clock= 1.00E-01
+ tran: time= 9.3276E-09 tot_iter=      44 conv_iter=      20 cpu clock= 1.16E-01
+ tran: time= 1.4328E-08 tot_iter=      46 conv_iter=      21 cpu clock= 1.23E-01
+ tran: time= 1.9328E-08 tot_iter=      48 conv_iter=      22 cpu clock= 1.28E-01
+ tran: time= 2.0010E-08 tot_iter=      50 conv_iter=      23 cpu clock= 1.31E-01
+ tran: time= 2.2000E-08 tot_iter=      92 conv_iter=      41 cpu clock= 1.38E-01
+ sweep: tran tran0    end,  cpu clock=  1.43E-01 memory=    159 kb
+>info:         ***** hspice job concluded
+ Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
+ lic: Release hspice token(s)

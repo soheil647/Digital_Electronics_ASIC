@@ -1,0 +1,36 @@
+REQUEST:           NEW-PROJECT
+  D-NAME:          Tanner
+  AFFILIATION:     Tanner Research, Inc.
+  ACCOUNT:         9999-COM
+  D-PASSWORD:      Tanner
+  PHONE:           (626)792-3000
+  NET-ADDRESS:     tanner@tanner.com
+  MAILING-ADDRESS: Tanner Research, Inc.
+                   2650 East Foothill Blvd.
+                   Pasadena, California  91107
+  PO-NUMBER :      11111
+                 
+P-NAME:            M8X8DIR7
+  P-PASSWORD:      FATMAN
+  DESCRIPTION:     Two-Dimensional Analog Motion Detector
+  TECHNOLOGY:      SCNA
+  PADS:            21
+  LAMBDA:          1.00
+
+REQUEST:           FABRICATE
+  ID:              *    
+  P-PASSWORD:      FATMAN
+  SIZE:            3878 x 3447
+
+CIF-CHECKSUM:      2495211  51336
+
+CIF:
+
+( CIF file starts here ... )
+
+... 
+
+( ... CIF file ends. )
+
+REQUEST:          END
+

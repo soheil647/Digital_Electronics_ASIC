@@ -1,0 +1,122 @@
+File written by LVS 3.1/Win 95 as a result of: "C:\lvs_product\LVS V3.00\V3.0 Release\Examples\resonator.vdb" on Sun Jul 26 11:33:29 1998
+
+Command line:
+lvs layout_resonator.spc schematic_resonator.spc -o resonator.out -l layout_resonator.lst -e resonator.elm -nrcl -y2 -vfpar 
+
+Engine configuration report:
+Consider Bulk nodes...................................................ON
+Consider Resistors as polarized elements..............................OFF
+Consider Capacitors as polarized elements.............................OFF
+Consider Inductors as polarized elements..............................OFF
+Optimize shorted & parallel R, C, MOSFETs; series R and C.............OFF
+Replace series MOSFETs................................................OFF
+Fast Iteration........................................................OFF
+
+Reading element definitions from file resonator.elm
+Parsing file layout_resonator.spc...
+Flattening network...
+Not resolving subckt fspring
+Not resolving subckt comb
+Not resolving subckt fspring
+Not resolving subckt comb
+Not resolving subckt plate4
+Parsing file schematic_resonator.spc...
+
+Warning: Did not recognize and will ignore element: V1 N5 0 5 
+Flattening network...
+Not resolving subckt comb
+Not resolving subckt comb
+Not resolving subckt fspring
+Not resolving subckt fspring
+Not resolving subckt plate4
+
+Device               layout_resonator.spc schematic_resonator.spc
+--------------       ------------ ------------
+
+fspring                         2            2
+plate4                          1            1
+comb                            2            2
+Total elements                  5            5
+
+Total nodes                    16           16
+Single-pin nodes                8            8
+
+Nodes in file layout_resonator.spc connected to only one pin
+*********************
+4_e
+4_m
+1_e
+1_m
+2_e
+2_m
+20_e
+20_m
+*********************
+
+
+Nodes in file schematic_resonator.spc connected to only one pin
+*********************
+N1
+N4
+N3
+N2
+N6
+N7
+N8
+N5
+*********************
+
+********************************** ITERATING *********************************
+
+Iterating...
+5% done
+10% done
+15% done
+20% done
+25% done
+30% done
+35% done
+40% done
+45% done
+50% done
+55% done
+60% done
+65% done
+70% done
+75% done
+80% done
+85% done
+90% done
+95% done
+100% done
+
+*************************** REPORTING AUTOMORPHISM ***************************
+
+Report of elements:
+*******************
+Automorph class of elements
+layout_resonator.spc XPlateInst_plate4    fanout: 1 =  1   2 =  1   3 =  1   4 =  1   5 =  1   6 =  1   7 =  1   8 =  1   
+schematic_resonator.spc XMass5_plate4        fanout: 1 =  1   2 =  1   3 =  1   4 =  1   5 =  1   6 =  1   7 =  1   8 =  1   
+---------------------------------------------------
+
+
+****************************** ITERATION SUMMARY *****************************
+
+
+4 perfectly matched element class(es)
+1 automorphed element class(es)
+16 perfectly matched node class(es)
+
+
+************************** POST ITERATION MATCHING **************************
+Doing detailed trial matching...
+Matched Elements XPlateInst_plate4 and XMass5_plate4
+
+
+******************************* FINAL RESULT *******************************
+
+
+Circuits are equal.
+Note: Networks only compared as far down as specified in the element description file.
+
+	0 error(s), 1 warning(s)

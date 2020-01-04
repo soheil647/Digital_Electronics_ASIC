@@ -1,0 +1,161 @@
+ ****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+  Copyright (C) 2012 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: test.sp                                                           
+  Command line options: -i test.sp -o test.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   Anita                HOSTNAME: Anita-PC 
+  lic: HOSTID: "00fff2ef28a6 904ce5701846 0027135fc035 904ce5701846 00269eb45b31
+ " PID:      8536 
+  lic: Using FLEXlm license file: 
+  lic: 27000@Anita-PC 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12 
+  lic: NODE LOCKED license on hostid "00fff2ef28a6 904ce5701846 0027135fc035 904
+ ce5701846 00269eb45b3
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_G-2012.06-SP1\meta.cfg
+  **warning** (test.sp:9) Global net name, "gnd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ ****ca4_part2***
+
+  ******  circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x3.                             inverter           1.00 
+ ** warning** associated with encrypted blocks were suppressed
+
+  
+
+ **warning** the following singular supplies were terminated to 1 meg resistor 
+   supply       node1            node2
+  vdin                    0:d                defined in subckt 0                     0:0                defined in subckt 0               
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=test.pa0
+
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ ****ca4_part2***
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:clk     =   1.0000  0:clkbar  = 350.7256u 0:d       =   1.0000 
+ +0:vdd     =   1.0000 
+
+
+ **** voltage sources
+
+ subckt                                   
+ element  0:vclock   0:vdin     0:vvin    
+  volts      1.0000     1.0000     1.0000 
+  current   -3.5510n   -1.0000u  -11.9247m
+  power      3.5510n    1.0000u   11.9247m
+
+     total voltage source power dissipation=   11.9257m       watts
+
+
+
+
+ **** mosfets
+
+
+ subckt   x3         x3        
+ element  1:mp3      1:mn3     
+ model    0:pmos     0:nmos    
+ region       Cutoff     Linear
+  id      -312.3624n  314.1360n
+  ibs      -11.9244m  7.047e-26
+  ibd       14.2676f -486.3105a
+  vgs        0.         1.0000 
+  vds     -999.6493m  350.7256u
+  vbs       -1.0000     0.     
+  vth      -48.4303m  494.8213m
+  vdsat    -52.6809m  287.2197m
+  vod       48.4303m  505.1787m
+  beta     477.1404u    7.0490m
+  gam eff  400.0000m  400.0000m
+  gm         5.3842u  136.7636n
+  gds        1.9547u  895.3305u
+  gmb      366.4893n   50.6745n
+  cdtot     67.4751a  262.2809a
+  cgtot     64.4824a  232.3811a
+  cstot    133.1437a  238.8034a
+  cbtot    149.7220a  262.9978a
+  cgs       42.2538a  130.4725a
+  cgd       19.6066a  101.0382a
+
+
+
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ ****ca4_part2***
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:clk     =   1.0000  0:clkbar  = 350.7256u 0:d       =   0.     
+ +0:vdd     =   1.0000 
+
+
+          ***** job concluded
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ ****ca4_part2***
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      13 # elements   =       7
+  # resistors   =       1 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       2 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.03           1          24
+  transient          0.10         201        1131         402 rev=        38
+  readin             0.07
+  errchk             0.03
+  setup              0.02
+  output             0.00
+
+
+           peak memory used         55.00 megabytes
+           total cpu time            0.32 seconds
+           total elapsed time        7.03 seconds
+           job started at     11:21:16 12/18/2019
+           job ended   at     11:21:23 12/18/2019
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        6.69(s)
