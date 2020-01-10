@@ -1,0 +1,18 @@
+* "simulator" "HSPICE" 
+* "version" "A-2008.03 32-BIT"
+* "format" "HSP"
+* "rundate" "22:47:26 01/10/2020 "
+* "netlist" "c:\users\ssa\desktop\l-edit adder\l-edit\hspice_adder_verification\adder.sp "
+* "runtitle" "*****libraries*****"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ b =   0.            
++ cin =   0.            
++ cout =   0.            
++ s =   1.0000        
+***   END: Saved Operating Point ***                     

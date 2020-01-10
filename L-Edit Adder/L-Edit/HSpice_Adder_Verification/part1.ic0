@@ -1,0 +1,33 @@
+* "simulator" "HSPICE" 
+* "version" "A-2008.03 32-BIT"
+* "format" "HSP"
+* "rundate" "21:40:20 01/10/2020 "
+* "netlist" "c:\users\ssa\desktop\l-edit adder\l-edit\hspice_adder_verification\part1.sp "
+* "runtitle" "* circuit extracted by tanner research's l-edit version 8.30 / extract"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 1 = 112.3972m       
++ 2 = 999.9999m       
++ 3 = 999.9998m       
++ 4 =   1.0000        
++ 6 =  25.4312m       
++ 7 =  27.0576n       
++ 9 =   3.0143m       
++ 11 = 360.7812n       
++ 14 =  84.4774m       
++ 18 =  49.4853m       
++ 20 =  18.0214m       
++ a =   0.            
++ anot = 999.9999m       
++ b =   0.            
++ bnot = 999.9999m       
++ cin =   0.            
++ cinnot = 999.9999m       
++ cout =  54.1152n       
++ sum = 999.9990m       
++ vdd =   1.0000        
+***   END: Saved Operating Point ***                     

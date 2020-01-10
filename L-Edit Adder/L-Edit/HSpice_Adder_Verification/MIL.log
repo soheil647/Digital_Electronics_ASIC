@@ -1,0 +1,15 @@
+pnlAddPane();
+nil
+1
+designOpen("c:\\users\\ssa\\desktop\\l-edit adder\\l-edit\\hspice_adder_verification\\adder.sp");
+"D0"
+t
+pnlAddCurve(1, node(D0,"A0","v(cout)"), node(D0,"A0","TIME"));
+nil
+pnlAddCurve(1, node(D0,"A0","v(s)"), node(D0,"A0","TIME"));
+nil
+quit();
+exit
+pnlDeletePane(1, 1);
+nil
+nil

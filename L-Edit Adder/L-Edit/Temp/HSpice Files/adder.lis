@@ -1,0 +1,148 @@
+ ****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+  Copyright (C) 2008 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement found in:
+    C:\synopsys\Hspice_A-2008.03\license.warn
+  Use of this program is your acceptance to be bound by this 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: c:\users\ssa\desktop\l-edit adder\l-edit\hspice_adder_verification
+ Init: read install configuration file: C:\synopsys\Hspice_A-2008.03\meta.cfg
+ Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
+
+ **warning** found .endl outside of a lib file ignored
+
+
+
+
+
+  **warning** (0.5micron.lib:11)  associated with encrypted blocks were suppressed due to encrypted content
+
+ *****sources*****
+
+ vain a gnd 1v pulse 0v 1v 0 0p 0p 30n 60n
+ vbin b  gnd 1v pulse 0v 1v 10n 0p 0p 20n 60n
+ vcin1 cin  gnd 1v pulse 0v 1v 20n 0p 0p 10n 60n
+ vcout1 cout  gnd 1v pulse 0v 1v 5p 80p 80p 10n 20n
+ vsum  s gnd 1v pulse 1v 0v 8p 80p 80p 10n 30n
+
+
+
+ .tran 1ps 200ns
+ .op
+ .end
+
+ ***********************************************************************
+ ** runlvl is invoked, you can disable it by:
+      a) Add option runlvl=0 to your current simulation job.
+      b) Copy $installdir/hspice.ini to your HOME directory and
+         customize it by adding option runlvl=0, which disables
+         it for all of your simulation jobs.
+      c) Re-invoke $installdir/bin/config program and unselect the
+         option runlvl setting in box 'hspice.ini' which disables
+         it for whole group simulation jobs.
+
+ ** runlvl is invoked, some options are ignored or automatically set:
+      Options below are automatically set(user setting will overwrite them):
+      if runlvl=6,            .option bypass=0
+      if runlvl=[1|2|3|4|5],  .option bypass=2
+
+      Options below are ignored, they are replaced by automated algorithms:
+        lvltim    dvdt      ft    fast   trtol  absvar  relvar
+          relq  chgtol    dvtr    imin    itl3    rmax
+
+ ** runlvl is invoked, actual option value used by HSPICE are:
+       runlvl= 3       bypass= 2      mbypass=   2.00   bytol= 100.00u
+ ***********************************************************************
+
+
+ *** warning *** pulse rise time is  < or = zero, reset to tstep
+
+
+ *** warning *** pulse fall time is  < or = zero, reset to tstep
+
+
+ *** warning *** pulse rise time is  < or = zero, reset to tstep
+
+
+ *** warning *** pulse fall time is  < or = zero, reset to tstep
+
+
+ *** warning *** pulse rise time is  < or = zero, reset to tstep
+
+
+ *** warning *** pulse fall time is  < or = zero, reset to tstep
+
+ 
+
+ **warning** the following singular supplies were terminated to 1 meg resistor 
+   supply       node1            node2
+  vain                    0:a                defined in subckt 0                     0:0                defined in subckt 0               
+  vbin                    0:b                defined in subckt 0                     0:0                defined in subckt 0               
+  vcin1                   0:cin              defined in subckt 0                     0:0                defined in subckt 0               
+  vcout1                  0:cout             defined in subckt 0                     0:0                defined in subckt 0               
+  vsum                    0:s                defined in subckt 0                     0:0                defined in subckt 0               
+      
+1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+ ******  
+ *****libraries*****                                                            
+  ******  operating point information      tnom=  25.000 temp=  25.000          
+ ******  
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:a       =   1.0000  0:b       =   1.0000  0:cin     =   1.0000 
+ +0:cout    =   1.0000  0:s       =   1.0000 
+
+
+ ****  voltage sources
+
+ subckt                                                         
+ element  0:vain     0:vbin     0:vcin1    0:vcout1   0:vsum    
+  volts      1.0000     1.0000     1.0000     1.0000     1.0000 
+  current   -1.0000u   -1.0000u   -1.0000u   -1.0000u   -1.0000u
+  power      1.0000u    1.0000u    1.0000u    1.0000u    1.0000u
+
+     total voltage source power dissipation=    5.0000u       watts
+
+
+1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+ ******  
+ *****libraries*****                                                            
+  ******  operating point information      tnom=  25.000 temp=  25.000          
+ ******  
+ ***** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:a       =   0.      0:b       =   0.      0:cin     =   0.     
+ +0:cout    =   0.      0:s       =   1.0000 
+
+
+          ***** job concluded
+1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+ ******  
+ *****libraries*****                                                            
+  ******  job statistics summary           tnom=  25.000 temp=  25.000          
+ ******  
+
+           total memory used        156 kbytes
+
+  # nodes =       6 # elements=      10
+  # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =       0
+  # va device =       0
+
+    analysis           time    # points   tot. iter  conv.iter
+
+    op point           0.02           1           6
+    transient          0.06      200001         686         343 rev=         0
+    readin             0.00
+    errchk             0.00
+    setup              0.01
+    output             0.00
+           total cpu time          0.14 seconds
+           total elapsed time         1 seconds
+               job started at  22:47:26 01/10/2020
+               job ended   at  22:47:26 01/10/2020
+
+
+ Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
